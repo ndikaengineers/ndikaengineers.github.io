@@ -1,0 +1,1215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Ndika Engineers</title>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ndika Engineers Limited">
+<meta property="og:title" content="Ndika Engineers Limited">
+<meta property="og:description" content="Environmental &amp; water resources consultancy and a buildings, roads &amp; earthworks construction company, operating across Tanzania and the Nile &amp; Rufiji basins.">
+<meta property="og:image" content="https://ndikaengineers.github.io/og-construction.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ndika Engineers Limited">
+<meta name="twitter:description" content="Environmental &amp; water resources consultancy and a buildings, roads &amp; earthworks construction company, operating across Tanzania and the Nile &amp; Rufiji basins.">
+<meta name="twitter:image" content="https://ndikaengineers.github.io/og-construction.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<meta property="og:url" content="https://ndikaengineers.github.io/">
+<meta name="description" content="Ndika Engineers Limited: environmental &amp; water resources consultancy and construction across Tanzania.">
+<link rel="icon" type="image/png" href="logo-roof-icon.png">
+</head><body>
+<style>
+  /*
+    Layout concept: a light, editorial "consultancy" system borrowed from
+    Ndika's sister company Sky Engineers (skyengineers.github.io) — airy
+    blue-grey ground, oversized Bricolage Grotesque headlines, a pill nav
+    button, a three-up stat strip, full-bleed field-photo bands with a
+    caption overlay, and department cards with hairline-divided sub-items
+    and tag pills. The hub keeps the shared blue identity; Construction
+    switches to the green/charcoal drawn straight out of the company's own
+    roof-and-raindrop mark, so the two licensed divisions read as one
+    family with two palettes.
+  */
+  :root{
+    --bg:#eef1f6;
+    --surface:#ffffff;
+    --surface-2:#e3e9f1;
+    --ink:#0b2944;
+    --ink-dim:#56677a;
+    --ink-faint:#8294a3;
+    --line:#d6dee8;
+    --line-soft:#e6ebf2;
+    --blue:#039873;
+    --blue-deep:#026b52;
+    --blue-tint:#e1f4ee;
+    --green:#2f7d3c;
+    --green-deep:#1b5423;
+    --green-tint:#e6f3e7;
+    --charcoal:#272524;
+    --accent:var(--blue);
+    --accent-deep:var(--blue-deep);
+    --accent-tint:var(--blue-tint);
+    --font-display:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
+    --font-body:Georgia,'Times New Roman',serif;
+    --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono',Consolas,monospace;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;color:var(--ink);text-wrap:balance;margin:0}
+  p{margin:0}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  [hidden]{display:none!important}
+  ::selection{background:var(--accent);color:#fff}
+  .wrap{
+    max-width:1180px;
+    margin-inline:auto;
+    padding-left:max(20px, env(safe-area-inset-left,0px));
+    padding-right:max(20px, env(safe-area-inset-right,0px));
+  }
+  .eyebrow{
+    display:inline-block;
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:.76rem;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+
+  /* ---------- nav ---------- */
+  .topbar{
+    position:sticky;top:0;z-index:20;
+    background:rgba(238,241,246,.92);
+    -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+    padding-top:env(safe-area-inset-top,0px);
+  }
+  .topbar .wrap{
+    padding-block:14px;
+    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+  .brand .chip{
+    width:40px;height:40px;border-radius:10px;
+    background:var(--accent-tint);
+    display:flex;align-items:center;justify-content:center;
+    flex:none;overflow:hidden;
+  }
+  .brand .chip img{width:68%;height:68%;object-fit:contain}
+  .brand-text{display:flex;flex-direction:column;line-height:1.15}
+  .brand-name{font-family:var(--font-display);font-weight:800;font-size:1.5rem;letter-spacing:.01em}
+  .brand-sub{font-size:.9rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+  .navlinks{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .navlinks button.navlink{
+    font-family:var(--font-body);font-size:.88rem;font-weight:500;color:var(--ink-dim);
+    background:none;border:none;cursor:pointer;padding:4px 0;
+  }
+  .navlinks button.navlink:hover{color:var(--ink)}
+  .navcta{
+    font-family:var(--font-body);font-weight:600;font-size:.86rem;
+    background:var(--accent);color:#fff;border:none;cursor:pointer;
+    padding:10px 20px;border-radius:999px;white-space:nowrap;
+  }
+  .navcta:hover{background:var(--accent-deep)}
+  .back-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .back-link{
+    font-size:.86rem;font-weight:600;color:var(--ink-dim);text-decoration:none;
+    display:inline-flex;align-items:center;gap:6px;
+  }
+  .back-link:hover{color:var(--ink)}
+  .topbar-meta{font-size:.82rem;color:var(--ink-faint);font-weight:500}
+  button{font:inherit}
+  button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* ---------- hero ---------- */
+  .hero{padding-block:56px 44px;position:relative}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-bg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden}
+  .hero-bg-contour{fill:none;stroke:var(--blue);stroke-width:1.6;opacity:.15}
+  .hero-bg-contour-2{stroke:var(--blue);opacity:.07;stroke-width:1.2}
+  .hero-bg-grid path{fill:none;stroke:var(--green);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.26}
+  @media (max-width:860px){.hero-bg{display:none}}
+  .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+  @media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+  .hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.04;margin-top:12px}
+  .hero .lede{margin-top:18px;max-width:52ch;color:var(--ink-dim);font-size:1.08rem}
+  .hero-art{display:flex;align-items:center;justify-content:center;min-height:200px}
+  .hero-art img{width:100%;max-width:420px}
+  .reg-row{
+    margin-top:26px;display:flex;flex-wrap:wrap;gap:8px 20px;
+    font-size:.82rem;color:var(--ink-dim);
+  }
+  .reg-row b{color:var(--ink);font-weight:600}
+  .crosslink{
+    margin-top:22px;display:inline-flex;align-items:center;gap:8px;
+    font-weight:600;font-size:.88rem;color:var(--accent);text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .crosslink:hover{border-color:var(--accent)}
+  .crosslink svg{width:14px;height:14px}
+
+  /* ---------- stat strip ---------- */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+  .stats .wrap{
+    padding-block:30px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:520px;
+  }
+  @media (max-width:640px){.stats .wrap{grid-template-columns:1fr}}
+  .stat b{
+    display:block;font-family:var(--font-display);font-weight:800;
+    font-size:2rem;color:var(--accent);line-height:1.1;
+    font-variant-numeric:tabular-nums;
+  }
+  .stat span{font-size:.86rem;color:var(--ink-dim)}
+
+  /* ---------- diptych (hub) ---------- */
+  .diptych{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding-block:44px}
+  @media (max-width:760px){.diptych{grid-template-columns:1fr}}
+  .div-card{
+    background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    padding:30px 28px;text-decoration:none;color:var(--ink);
+    display:flex;flex-direction:column;transition:box-shadow .2s ease,transform .2s ease;
+  }
+  .div-card:hover{box-shadow:0 12px 28px -16px rgba(11,41,68,.22);transform:translateY(-2px)}
+  .div-card .chip{
+    height:116px;display:flex;align-items:center;justify-content:flex-start;margin-bottom:20px;
+    background:none;border:none;border-radius:0;padding:0;
+  }
+  .div-card.water{--accent:var(--blue);--accent-tint:var(--blue-tint)}
+  .div-card.earth{--accent:var(--green);--accent-tint:var(--green-tint)}
+  .div-card .chip img{height:100%;width:auto;object-fit:contain;filter:drop-shadow(0 2px 6px rgba(11,41,68,.12))}
+  .div-card h3.portfolio-label{font-size:1.1rem;font-weight:700;letter-spacing:-.01em}
+  .div-card h3.portfolio-label b{color:var(--accent)}
+  .div-card p.desc{margin-top:10px;color:var(--ink-dim);font-size:.95rem;flex:1}
+  .div-card .stats-mini{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:16px;font-size:.78rem;color:var(--ink-faint)}
+  .div-card .enter{
+    margin-top:20px;display:inline-flex;align-items:center;gap:8px;
+    font-weight:600;font-size:.88rem;color:var(--accent);
+  }
+  .div-card .enter svg{width:14px;height:14px;transition:transform .2s ease}
+  .div-card:hover .enter svg{transform:translateX(4px)}
+  @media (prefers-reduced-motion:reduce){.div-card,.div-card .enter svg{transition:none}}
+
+  /* ---------- full-bleed photo band ---------- */
+  .photoband{position:relative;min-height:400px;display:flex;align-items:flex-end;overflow:hidden}
+  .photoband img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .photoband::after{
+    content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(0deg,rgba(8,20,32,.82) 0%,rgba(8,20,32,.32) 55%,rgba(8,20,32,0) 100%);
+  }
+  .photoband .wrap{position:relative;z-index:2;padding-block:34px}
+  .photoband .eyebrow{color:#bcd7ef}
+  .photoband h2{color:#fff;font-size:clamp(1.5rem,3.4vw,2.3rem);max-width:30ch;margin-top:8px}
+  .photoband.green .eyebrow{color:#c7e8cb}
+
+  /* ---------- section shell ---------- */
+  section.block{padding-block:48px;border-bottom:1px solid var(--line)}
+  section.block:last-of-type{border-bottom:none}
+  .block-head{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;margin-bottom:30px;align-items:end}
+  @media (max-width:760px){.block-head{grid-template-columns:1fr}}
+  .block-head h2{font-size:clamp(1.5rem,3vw,2.1rem);margin-top:8px}
+  .block-head .lede{color:var(--ink-dim);font-size:.98rem;max-width:50ch}
+
+  /* ---------- department cards ---------- */
+  .dept-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media (max-width:760px){.dept-grid{grid-template-columns:1fr}}
+  .dept-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .dept-card .icon{
+    width:46px;height:46px;border-radius:11px;background:var(--accent-tint);
+    display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:16px;
+  }
+  .dept-card .icon svg{width:22px;height:22px}
+  .dept-card h3{font-size:1.14rem}
+  .dept-card > p.intro{margin-top:8px;color:var(--ink-dim);font-size:.9rem}
+  .dept-card .sub{margin-top:14px;padding-top:14px;border-top:1px solid var(--line-soft)}
+  .dept-card .sub + .sub{margin-top:0}
+  .dept-card .sub b{display:block;font-size:.92rem;font-weight:600;color:var(--ink)}
+  .dept-card .sub p{margin-top:3px;font-size:.86rem;color:var(--ink-dim)}
+  .tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft)}
+  .tag{
+    font-size:.74rem;font-weight:500;color:var(--ink-dim);
+    background:var(--surface-2);border-radius:6px;padding:4px 9px;
+  }
+
+  /* ---------- facts / narrative two-col ---------- */
+  .facts-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px}
+  @media (max-width:760px){.facts-grid{grid-template-columns:1fr}}
+  .narrative p{color:var(--ink-dim);font-size:.98rem;margin-top:14px}
+  .narrative p:first-child{margin-top:0}
+  .facts-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 24px}
+  .facts-card dl{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;margin:0}
+  .facts-card dt{font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;white-space:nowrap;padding-top:1px}
+  .facts-card dd{margin:0;font-size:.9rem;color:var(--ink)}
+  .facts-card .row{display:contents}
+  .facts-card .row + .row dt, .facts-card .row + .row dd{border-top:1px solid var(--line-soft);padding-top:10px;margin-top:0}
+  .facts-card .row dt{padding-top:10px}
+  .facts-card .row:first-child dt,.facts-card .row:first-child dd{padding-top:0}
+
+  /* ---------- map ---------- */
+  .map-layout{display:grid;grid-template-columns:1.15fr 1fr;gap:26px;align-items:start}
+  @media (max-width:760px){.map-layout{grid-template-columns:1fr}}
+  .map-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;overflow:hidden}
+  .map-card svg{width:100%;height:auto;display:block}
+  .map-country{fill:#d7dee7}
+  .map-country.is-home{fill:var(--accent-tint)}
+  .map-border{fill:none;stroke:var(--surface);stroke-width:1.4;stroke-linejoin:round}
+  .map-dot{fill:var(--accent);stroke:var(--surface);stroke-width:1.6}
+  .map-dot.is-hq{fill:var(--ink);r:6.5}
+  .map-legend{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .map-legend li{display:flex;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px solid var(--line-soft);font-size:.88rem;color:var(--ink-dim)}
+  .map-legend li b{color:var(--ink);font-weight:600}
+  .map-legend .dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:4px}
+  .map-legend .dot.is-hq{background:var(--ink)}
+  .map-river{fill:none;stroke:#2f7fb0;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+  .catchment-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  @media (max-width:760px){.catchment-grid{grid-template-columns:1fr}}
+
+  .catchment-item .map-card{padding:10px;position:relative}
+  .catchment-map-img{width:100%;height:auto;aspect-ratio:46/50;object-fit:cover;border-radius:10px;display:block;background:#dfe6ee}
+  .catchment-item:nth-child(2) .catchment-map-img{aspect-ratio:52/46}
+  .catchment-caption{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:10px;font-family:var(--font-mono);font-size:.72rem;color:var(--ink-faint);letter-spacing:.03em}
+  .catchment-name{margin:16px 0 6px;font-family:var(--font-display);font-size:1.18rem;color:var(--ink)}
+  .catchment-note{margin:0;color:var(--ink-dim);font-size:.92rem;line-height:1.55}
+
+  /* ---------- table ---------- */
+  .tbl-wrap{overflow-x:auto;border-top:1px solid var(--line)}
+  table{border-collapse:collapse;width:100%;font-size:.88rem}
+  th,td{text-align:left;padding:12px 14px 12px 0;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  th{font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;white-space:nowrap}
+  td.num,th.num{font-variant-numeric:tabular-nums;white-space:nowrap;font-family:var(--font-mono)}
+  .fig{font-family:var(--font-mono);font-size:.93em;letter-spacing:-.01em}
+  .clients-strip{border-bottom:1px solid var(--line);background:var(--surface)}
+  .clients-strip .wrap{padding-block:20px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 22px}
+  .clients-strip .cl-label{font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;flex:none}
+  .clients-strip .cl-names{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:.86rem;color:var(--ink-dim)}
+  .clients-strip .cl-names b{color:var(--ink);font-weight:600}
+
+  /* ---------- people ---------- */
+  .people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:760px){.people{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:460px){.people{grid-template-columns:1fr}}
+  .person{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:10px;padding:16px}
+  .person .name{font-family:var(--font-display);font-weight:700;font-size:1rem}
+  .person .field{margin-top:5px;font-size:.84rem;color:var(--ink-dim)}
+
+  /* ---------- chips ---------- */
+  .chipline{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{
+    font-size:.78rem;font-weight:500;color:var(--ink-dim);
+    background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 13px;
+  }
+  .chip.strong{color:var(--accent);border-color:var(--accent);font-weight:600}
+
+  /* ---------- mission/vision ---------- */
+  .mv-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:36px}
+  @media (max-width:760px){.mv-grid{grid-template-columns:1fr}}
+  .mv-grid h2{font-size:clamp(1.5rem,3vw,2rem)}
+  .mv-item + .mv-item{margin-top:24px}
+  .mv-item .eyebrow{display:block;margin-bottom:6px}
+  .mv-item p{font-family:var(--font-display);font-weight:700;font-size:1.18rem;line-height:1.35;color:var(--ink)}
+  .values-row{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+  .value-pill{
+    font-size:.84rem;font-weight:500;color:var(--ink);
+    background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;
+  }
+
+  /* ---------- project list ---------- */
+  .plist{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+  .plist li{list-style:none;padding:14px 0;border-bottom:1px solid var(--line-soft);display:flex;gap:14px;font-size:.92rem}
+  .plist li .tag-sm{
+    flex:none;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--accent);background:var(--accent-tint);border-radius:5px;padding:3px 8px;min-width:5.4em;text-align:center;height:fit-content;
+  }
+
+  /* ---------- gallery ---------- */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media (max-width:760px){.gallery{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:480px){.gallery{grid-template-columns:1fr}}
+  .gallery button{
+    all:unset;cursor:zoom-in;position:relative;border-radius:12px;overflow:hidden;
+    aspect-ratio:4/3;background:var(--surface-2);
+  }
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+  .gallery button:hover img{transform:scale(1.04)}
+  .gallery figcaption{
+    position:absolute;left:0;right:0;bottom:0;z-index:1;padding:10px 12px;
+    font-size:.74rem;color:#fff;background:linear-gradient(0deg,rgba(8,20,32,.78),rgba(8,20,32,0));
+  }
+  @media (prefers-reduced-motion:reduce){.gallery img{transition:none}}
+
+  .lightbox{
+    position:fixed;inset:0;z-index:50;background:rgba(8,14,22,.92);
+    display:flex;align-items:center;justify-content:center;padding:28px;
+    padding-top:max(28px, env(safe-area-inset-top,0px));
+    padding-bottom:max(28px, env(safe-area-inset-bottom,0px));
+  }
+  .lightbox img{max-width:100%;max-height:100%;border-radius:8px}
+  .lightbox-close{
+    position:absolute;top:max(18px, env(safe-area-inset-top,0px));right:max(18px, env(safe-area-inset-right,0px));
+    width:38px;height:38px;border-radius:999px;border:none;background:rgba(255,255,255,.14);color:#fff;
+    font-size:1.1rem;cursor:pointer;
+  }
+
+  /* ---------- footer ---------- */
+  footer.site{border-top:1px solid var(--line);padding-block:40px;background:var(--surface)}
+  footer.site .wrap{display:flex;flex-wrap:wrap;gap:28px 48px;justify-content:space-between}
+  .foot-col h4{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;margin:0 0 10px}
+  .foot-col p{font-size:.9rem;color:var(--ink-dim)}
+  .foot-links{display:flex;flex-direction:column;gap:7px}
+  .foot-links button{
+    all:unset;cursor:pointer;font-size:.9rem;color:var(--ink-dim);border-bottom:1px solid transparent;
+  }
+  .foot-links button:hover{color:var(--accent);border-color:var(--accent)}
+  .copy-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .copy-btn{
+    font-size:.72rem;font-weight:600;color:var(--ink-dim);background:transparent;
+    border:1px solid var(--line);border-radius:999px;padding:4px 11px;cursor:pointer;
+  }
+  .copy-btn:hover{color:var(--ink);border-color:var(--ink-faint)}
+  .foot-logo{height:28px;width:auto;margin-bottom:10px}
+
+  section[data-division="construction"]{--accent:var(--green);--accent-deep:var(--green-deep);--accent-tint:var(--green-tint)}
+
+  /* ---------- photo hero ---------- */
+  .hero-photo{position:relative;min-height:460px;display:flex;align-items:center;overflow:hidden}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .hero-photo::after{
+    content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(7,18,30,.74) 0%,rgba(7,18,30,.58) 55%,rgba(7,18,30,.76) 100%);
+  }
+  .hero-photo-inner{position:relative;z-index:2;padding-block:72px;text-align:center;max-width:760px;margin-inline:auto}
+  .hero-photo .eyebrow{color:#bcd7ef}
+  .hero-photo h1{color:#fff;font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.08;margin-top:14px}
+  .hero-photo .lede{margin-top:16px;color:#d9e4ed;font-size:1.04rem;max-width:56ch;margin-inline:auto}
+  .hero-photo .crosslink{margin-top:20px;color:#fff;border-bottom:1px solid rgba(255,255,255,.4);justify-content:center}
+  .hero-photo .crosslink:hover{border-color:#fff}
+  @media (max-width:640px){.hero-photo{min-height:360px}.hero-photo-inner{padding-block:48px}}
+
+  /* ---------- quick-nav pill row ---------- */
+  .quicknav{background:var(--surface);border-bottom:1px solid var(--line)}
+  .quicknav-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding-block:18px}
+  .qpill{
+    font-family:var(--font-body);font-weight:600;font-size:.84rem;color:var(--ink-dim);
+    background:var(--surface-2);border:1px solid transparent;border-radius:999px;
+    padding:9px 18px;cursor:pointer;transition:background .15s ease,color .15s ease;
+  }
+  .qpill:hover{background:var(--accent-tint);color:var(--accent-deep)}
+  @media (prefers-reduced-motion:reduce){.qpill{transition:none}}
+
+  /* ---------- heading accent underline ---------- */
+  .block-head > div:first-child h2,.mv-grid > h2,.facts-grid h2{position:relative;padding-bottom:14px}
+  .mv-grid > h2{align-self:start}
+  .block-head > div:first-child h2::after,.mv-grid > h2::after,.facts-grid h2::after{
+    content:"";position:absolute;left:0;bottom:0;width:40px;height:3px;background:var(--green);border-radius:2px;
+  }
+  section[data-division="construction"] .block-head > div:first-child h2::after,
+  section[data-division="construction"] .mv-grid > h2::after{background:var(--blue)}
+
+  /* ---------- person avatar ---------- */
+  .person{border-top:none;padding-top:22px;text-align:center}
+  .person-avatar{
+    width:56px;height:56px;border-radius:50%;margin:0 auto 12px;
+    background:var(--accent-tint);color:var(--accent-deep);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-display);font-weight:700;font-size:.92rem;
+    border:2px solid var(--accent);
+  }
+
+  /* ---------- dark multi-column footer ---------- */
+  footer.site.dark{background:var(--ink);border-top:none;color:#c7d4e0}
+  footer.site.dark .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px 40px}
+  @media (max-width:760px){footer.site.dark .wrap{grid-template-columns:1fr}}
+  footer.site.dark .foot-col h4{color:var(--green);letter-spacing:.09em}
+  section[data-division="construction"] footer.site.dark .foot-col h4{color:#5fd38a}
+  footer.site.dark .foot-col p{color:#9fb0c0}
+  footer.site.dark .foot-col .brand-blurb{font-size:.9rem;color:#9fb0c0;max-width:34ch;margin-top:4px}
+  footer.site.dark .foot-links{gap:9px}
+  footer.site.dark .foot-links a,footer.site.dark .foot-links button{color:#c7d4e0;text-decoration:none;border:none}
+  footer.site.dark .foot-links a:hover,footer.site.dark .foot-links button:hover{color:#fff}
+  footer.site.dark .copy-row span{color:#dce5ed}
+  footer.site.dark .copy-btn{border-color:#3a4c5e;color:#c7d4e0}
+  footer.site.dark .copy-btn:hover{color:#fff;border-color:#5a6c7e}
+  footer.site.dark .contact-line{display:flex;align-items:flex-start;gap:9px;font-size:.9rem;color:#c7d4e0;margin-top:10px}
+  footer.site.dark .contact-line:first-of-type{margin-top:0}
+  footer.site.dark .contact-line svg{width:15px;height:15px;flex:none;margin-top:3px;color:var(--green)}
+  section[data-division="construction"] footer.site.dark .contact-line svg{color:#5fd38a}
+  footer.site.dark .foot-social{display:flex;gap:10px;margin-top:16px}
+  footer.site.dark .foot-social a{
+    width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);
+    display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;flex:none;
+  }
+  footer.site.dark .foot-social a:hover{background:rgba(255,255,255,.18)}
+  footer.site.dark .foot-social svg{width:16px;height:16px}
+  footer.site.dark .foot-bottom{
+    grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);margin-top:10px;padding-top:18px;
+    font-size:.78rem;color:#7e90a1;text-align:center;
+  }
+</style>
+
+<svg hidden>
+  <symbol id="i-droplet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.5 4 6 7.2 6 10.2A6 6 0 0 1 6 13.2C6 10.2 8.5 7 12 3Z"/></symbol>
+  <symbol id="i-wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c1.6 0 1.6-2 3.2-2s1.6 2 3.2 2 1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.2-2 1.6 2 3.2 2"/><path d="M2 12c1.6 0 1.6-2 3.2-2s1.6 2 3.2 2 1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.2-2 1.6 2 3.2 2"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 3 5v16l6-2 6 2 6-2V3l-6 2-6-2Z"/><path d="M9 3v16M15 5v16"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-9 0-16 5-16 14 9 0 16-5 16-14Z"/><path d="M5 19 16 8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.6 20c.9-3.6 3.4-5.6 6.4-5.6s5.5 2 6.4 5.6"/><circle cx="17.5" cy="8.6" r="2.4"/><path d="M16 14.9c2.3.3 4 2 4.6 4.5"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.6"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 5.5v6c0 5 3 8 7 9.5 4-1.5 7-4.5 7-9.5v-6L12 3Z"/><path d="m9 12 2 2 4-4.2"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="11" height="18"/><path d="M8 7h3M8 11h3M8 15h3"/><path d="M15 10h5v11h-5"/></symbol>
+  <symbol id="i-road" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 3 21"/><path d="M16 3l5 18"/><path d="M12 3v3M12 10.5v3M12 18v3"/></symbol>
+  <symbol id="i-drill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 15.5 8.5 21 21 8.5c1-1 1-2.5 0-3.5s-2.5-1-3.5 0L5 17.5"/><path d="m13 9 2 2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="7" width="12" height="9"/><path d="M13.5 10h4l3.5 3.5V16h-7.5z"/><circle cx="5.5" cy="17.5" r="1.7"/><circle cx="16.5" cy="17.5" r="1.7"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></symbol>
+</svg>
+
+<!-- ============================================================= HUB ============================================================= -->
+<section data-view="hub" data-division="hub">
+  <div class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="brand-text">
+          <span class="brand-name">NDIKA ENGINEERS</span>
+          <span class="brand-sub">Limited</span>
+        </span>
+      </a>
+      <div class="navlinks">
+        <button class="navlink" data-scroll="hub-divisions">Portfolios</button>
+        <button class="navlink" data-scroll="hub-field">In the field</button>
+        <button class="navlink" data-scroll="hub-footer">Contact</button>
+      </div>
+      <button class="navcta" data-scroll="hub-footer">Contact us</button>
+    </div>
+  </div>
+
+  <div class="hero-photo" id="hub-hero">
+    <img src="map-rufiji.jpg" alt="Satellite terrain of the Rufiji Basin, Tanzania">
+    <div class="hero-photo-inner wrap">
+      <span class="eyebrow">One registration &middot; two licensed portfolios</span>
+      <h1>One company. Two disciplines. Endless possibilities.</h1>
+      <p class="lede">Ndika Engineers Ltd trades through two portfolios: consultancy and construction.</p>
+    </div>
+  </div>
+
+  <div class="quicknav">
+    <div class="wrap quicknav-row">
+      <button class="qpill" data-scroll="hub-divisions">Portfolios</button>
+      <button class="qpill" data-scroll="hub-field">In the field</button>
+      <button class="qpill" data-scroll="hub-footer">Contact</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>2014</b><span>Incorporated, Companies Act 2002</span></div>
+      <div class="stat"><b>2</b><span>Licensed portfolios, one registration</span></div>
+    </div>
+  </div>
+
+  <section class="block" id="hub-divisions" style="border-bottom:none">
+    <div class="wrap">
+      <div class="diptych">
+        <a class="div-card earth" href="#construction">
+          <span class="chip"><img src="logo-construction-full-transparent.png" alt="Ndika Construction logo"></span>
+          <h3 class="portfolio-label"><b>Portfolio 1:</b> Construction</h3>
+          <p class="desc">Class I civil and building contractor &mdash; roads, water-supply schemes, hydrometric stations and a plant-hire fleet.</p>
+          <div class="stats-mini"><span>Class I licence</span><span>20+ unit fleet</span><span>4 regions active</span></div>
+          <span class="enter">Enter construction <svg><use href="#i-arrow"/></svg></span>
+        </a>
+        <a class="div-card water" href="#consultants">
+          <span class="chip"><img src="consult-logo-full.png" alt="Ndika Engineers Ltd logo"></span>
+          <h3 class="portfolio-label"><b>Portfolio 2:</b> Consultancy</h3>
+          <p class="desc">Hydrology, water resources, environmental flows, GIS and flood early warning &mdash; across Tanzania and the Nile, Songwe and Zambezi basins.</p>
+          <div class="stats-mini"><span>12 yrs operating</span><span>UDSM &amp; SUA faculty</span><span>HYDROC GmbH partner</span></div>
+          <span class="enter">Enter the consultancy <svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="photoband" id="hub-field">
+    <img src="site-earthworks-fleet-1.jpg" alt="Ndika earthworks fleet of grader and rollers compacting a wide site platform">
+    <div class="wrap">
+      <span class="eyebrow">In the field</span>
+      <h2>Buildings, boreholes and basins &mdash; one company, two disciplines.</h2>
+    </div>
+  </div>
+
+  <footer class="site dark" id="hub-footer">
+    <div class="wrap">
+      <div class="foot-col">
+        <h4>Ndika Engineers</h4>
+        <p class="brand-blurb">A Tanzanian company trading through two licensed portfolios &mdash; environmental &amp; water-resources consultancy, and Class I building &amp; civil works.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/ndikaengineersltd_" target="_blank" rel="noopener" aria-label="Ndika Engineers on Instagram"><svg><use href="#i-instagram"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Portfolios</h4>
+        <div class="foot-links">
+          <a href="#consultants">Ndika Environmental Consultants</a>
+          <a href="#construction">Ndika Construction Company</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="contact-line"><svg><use href="#i-pin"/></svg><span>P.O. Box 876, Morogoro, Tanzania</span></div>
+        <div class="contact-line"><svg><use href="#i-mail"/></svg><span style="user-select:all">ndikaengineers@gmail.com</span></div>
+        <div class="copy-row" style="margin-top:10px">
+          <button class="copy-btn" data-copy="ndikaengineers@gmail.com">Copy email</button>
+        </div>
+      </div>
+      <div class="foot-bottom">&copy; 2026 Ndika Engineers Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</section>
+
+<!-- ============================================================= CONSULTANTS ============================================================= -->
+<section data-view="consultants" data-division="consultants" hidden>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="back-row">
+        <a class="back-link" href="#"><svg style="width:14px;height:14px;transform:rotate(180deg)"><use href="#i-arrow"/></svg> Ndika Engineers</a>
+        <span class="topbar-meta">&middot; Environmental &amp; Water Resources Consultancy</span>
+      </div>
+      <div class="navlinks">
+        <button class="navlink" data-scroll="c-services">Services</button>
+        <button class="navlink" data-scroll="c-track">Track record</button>
+        <button class="navlink" data-scroll="c-map">Map</button>
+        <button class="navlink" data-scroll="c-footer">Contact</button>
+      </div>
+      <button class="navcta" data-scroll="c-footer">Contact us</button>
+    </div>
+  </div>
+
+  <div class="hero-photo" id="c-hero">
+    <img src="map-katuma.jpg" alt="Satellite map of the Upper Katuma River catchment boundary, Katavi Region">
+    <div class="hero-photo-inner wrap">
+      <span class="eyebrow">Ndika Environmental Consultants</span>
+      <h1>Water resources, hydrology and environmental engineering.</h1>
+      <p class="lede">Founded in 2014, Ndika specialises in hydrology and hydrological modelling, flood monitoring, environmental flows, GIS and remote sensing, and catchment management for government agencies, basin water boards, river-basin organisations, utilities and development partners &mdash; in English and Kiswahili.</p>
+      <a class="crosslink" href="#construction">Looking for the construction portfolio? <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+
+  <div class="quicknav">
+    <div class="wrap quicknav-row">
+      <button class="qpill" data-scroll="c-services">Services</button>
+      <button class="qpill" data-scroll="c-track">Track record</button>
+      <button class="qpill" data-scroll="c-map">Map</button>
+      <button class="qpill" data-scroll="c-footer">Contact</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>12 yrs</b><span>Operating since 2014</span></div>
+      <div class="stat"><b>Tz&middot;Mw&middot;Ke&middot;Rw</b><span>Countries of experience, plus the Nile Basin</span></div>
+      <div class="stat"><b>ISO 9001</b><span>Based quality management system</span></div>
+    </div>
+  </div>
+
+  <div class="clients-strip">
+    <div class="wrap">
+      <span class="cl-label">Clients &amp; partners</span>
+      <span class="cl-names"><b>TANESCO</b> &middot; <b>World Bank</b> / NELSAP &middot; <b>KfW</b> &middot; <b>WWF Tanzania</b> &middot; <b>The Nature Conservancy</b> &middot; <b>Songwe River Basin Commission</b> &middot; <b>Nile Basin Initiative</b> &middot; <b>HYDROC GmbH</b> (partner)</span>
+    </div>
+  </div>
+
+  <div class="photoband" id="c-songwe">
+    <img src="songwe-adcp-survey.jpg" alt="Hydrographic survey crew with an ADCP unit crossing the Songwe River">
+    <div class="wrap">
+      <span class="eyebrow">In the field</span>
+      <h2>Flood early warning on the Songwe River.</h2>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="facts-grid">
+        <div class="narrative">
+          <h2 style="font-size:clamp(1.3rem,2.6vw,1.7rem)">Who we are</h2>
+          <p>Ndika Engineers Limited is a Tanzanian consultancy founded in 2014 that specialises in water resources management, hydrology and hydrological modelling, flood monitoring, environmental flows, GIS and remote sensing, and catchment management.</p>
+          <p>Our team combines senior academics from the University of Dar es Salaam (UDSM) and Sokoine University of Agriculture (SUA) with practising engineers, giving clients rigorous science together with practical, field-based delivery.</p>
+          <p>Ndika has a long working partnership with <strong>HYDROC GmbH</strong>, with joint assignments for NELSAP (Akagera River avulsion), GIZ/Nile Basin Initiative (environmental flows guidance), the Kenya Ministry of Water and Irrigation (Nzoia watershed), KfW (Katavi and Mahale National Parks) and the Songwe River Basin flood early warning system.</p>
+        </div>
+        <div class="facts-card">
+          <dl>
+            <div class="row"><dt>Legal name</dt><dd>Ndika Engineers Limited</dd></div>
+            <div class="row"><dt>Registration</dt><dd>Cert. of Incorporation No. <span class="fig">111834</span>, Companies Act 2002, 6 Oct 2014</dd></div>
+            <div class="row"><dt>Tax</dt><dd>TRA TIN <span class="fig">127-305-366</span> &middot; VAT registered</dd></div>
+            <div class="row"><dt>Head office</dt><dd>Morogoro &mdash; seat of the Wami/Ruvu Basin Water Board</dd></div>
+            <div class="row"><dt>Managing Director</dt><dd>Ms Sophia Tuka</dd></div>
+            <div class="row"><dt>Quality</dt><dd>ISO 9001&#8209;based QMS; internal peer review of every deliverable</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="c-services">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Services</span><h2>Four areas, one team</h2></div>
+        <p class="lede">Each assignment draws on whichever of these the brief needs &mdash; often more than one at once.</p>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-wave"/></svg></span>
+          <h3>Hydrology &amp; Flood Risk</h3>
+          <p class="intro">Understanding how water moves, and warning people before it floods.</p>
+          <div class="sub"><b>Hydrological &amp; hydraulic modelling</b><p>Flood risk assessment and flood mapping for basins, roads and infrastructure.</p></div>
+          <div class="sub"><b>Flood early warning systems</b><p>Design of hydrometeorological monitoring networks and EWS architecture.</p></div>
+          <div class="sub"><b>Monitoring stations</b><p>Installation of water level, water quality and flow stations, with telemetry.</p></div>
+        </div>
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-droplet"/></svg></span>
+          <h3>Water Resources &amp; Basin Planning</h3>
+          <p class="intro">Managing the resource at catchment and basin scale.</p>
+          <div class="sub"><b>IWRM &amp; basin planning</b><p>Integrated water resources management and basin management plans.</p></div>
+          <div class="sub"><b>Environmental flows</b><p>Assessments that balance ecosystem needs against abstraction.</p></div>
+          <div class="sub"><b>Groundwater &amp; WSS</b><p>Groundwater management, water supply and sanitation studies.</p></div>
+        </div>
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-map"/></svg></span>
+          <h3>GIS, Remote Sensing &amp; Climate</h3>
+          <p class="intro">Geospatial evidence and climate risk behind every decision.</p>
+          <div class="sub"><b>GIS &amp; remote sensing</b><p>Erosion and sedimentation studies, bathymetric surveys.</p></div>
+          <div class="sub"><b>Climate vulnerability</b><p>Climate change vulnerability assessment and adaptation planning.</p></div>
+        </div>
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-users"/></svg></span>
+          <h3>Environmental &amp; Capacity Services</h3>
+          <p class="intro">The institutional and people side of every assignment.</p>
+          <div class="sub"><b>Environmental &amp; social management</b><p>Safeguards, ESIA support and stakeholder processes.</p></div>
+          <div class="sub"><b>Capacity building</b><p>Training, workshops and stakeholder engagement.</p></div>
+          <div class="sub"><b>ICT &amp; construction management</b><p>Monitoring ICT systems and construction-management support.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="c-track">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Track record</span><h2>Selected assignments</h2></div>
+        <p class="lede">A sample of basin, flood and environmental assignments. Full project reference sheets are available on request.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Assignment</th><th>Client</th><th>Country</th><th>Period</th></tr></thead>
+          <tbody>
+            <tr><td>Flood early warning system &amp; monitoring network design, Songwe River Basin</td><td>Songwe River Basin Commission</td><td>Tanzania, Malawi</td><td class="num">2020&ndash;</td></tr>
+            <tr><td>Water level, water quality &amp; flow monitoring stations, Wami/Ruvu Basin</td><td>Wami/Ruvu Basin Water Board</td><td>Tanzania</td><td class="num">2018&ndash;2019</td></tr>
+            <tr><td>Detailed environmental flow assessment, Ruvu River</td><td>Wami/Ruvu Basin Water Board</td><td>Tanzania</td><td class="num">2018&ndash;2020</td></tr>
+            <tr><td>Assessment &amp; mitigation of Akagera River avulsion <span style="color:var(--ink-faint)">(with HYDROC)</span></td><td>NELSAP, Nile Basin Initiative</td><td>Tanzania, Rwanda</td><td class="num">2019&ndash;2020</td></tr>
+            <tr><td>Hydrological &amp; sedimentation study, Rufiji Basin</td><td>TANESCO</td><td>Tanzania</td><td class="num">2022&ndash;2023</td></tr>
+            <tr><td>Rufiji Basin Management Plan</td><td>TANESCO</td><td>Tanzania</td><td class="num">2022&ndash;2023</td></tr>
+            <tr><td>Physiographic survey, Nzoia watershed <span style="color:var(--ink-faint)">(with HYDROC)</span></td><td>Ministry of Water &amp; Irrigation</td><td>Kenya</td><td class="num">2016&ndash;2017</td></tr>
+            <tr><td>NBI guidance document on environmental flows <span style="color:var(--ink-faint)">(with HYDROC)</span></td><td>GIZ / Nile Basin Initiative</td><td>Nile Basin</td><td class="num">2015&ndash;2016</td></tr>
+            <tr><td>Feasibility study, Katavi &amp; Mahale National Parks <span style="color:var(--ink-faint)">(with HYDROC)</span></td><td>KfW</td><td>Tanzania</td><td class="num">2017</td></tr>
+            <tr><td>Environmental flows assessment, Lake Rukwa Basin IWRMDP</td><td>WREM International</td><td>Tanzania</td><td class="num">2014&ndash;2016</td></tr>
+            <tr><td>Water resources management, Kilombero River Basin</td><td>Sida</td><td>Tanzania</td><td class="num">2015&ndash;2020</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:1rem;margin:32px 0 14px">From the Songwe FEWS field programme</h3>
+      <div class="gallery">
+        <button type="button" data-full="songwe-gps-survey-team.jpg" data-caption="Topographic shoreline survey with a GPS rover, Songwe River">
+          <img src="songwe-gps-survey-team.jpg" alt="Survey team with a GPS rover taking a topographic shoreline survey on the Songwe River, with a village elder">
+          <figcaption>GPS topographic survey</figcaption>
+        </button>
+        <button type="button" data-full="songwe-staff-gauge.jpg" data-caption="Staff gauge installed for water-level monitoring, Songwe River">
+          <img src="songwe-staff-gauge.jpg" alt="Staff gauge installed on the bank of the Songwe River for water-level monitoring">
+          <figcaption>Water-level monitoring</figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="c-map">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Where we've worked</span><h2>Nine basins, five countries</h2></div>
+        <p class="lede">Approximate locations of the assignments above, plus our head office in Morogoro.</p>
+      </div>
+      <div class="map-layout">
+        <div class="map-card"><svg viewBox="0 0 620 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of Tanzania and neighbouring countries with project locations marked">
+      <path class="map-country" d="M164.9,784L159.4,784.1L149.8,784.1L139.9,784.1L130.6,786.1L123.2,789.2L114.2,794.1L111.3,796L109.1,797.5L107.6,799.4L106.9,803.6L106.9,810L106.1,814.6L103.3,818.8L89.7,824L80.9,828.2L72.1,833.2L65.6,839.6L61,847.6L53.5,857.4L45.9,866L37.8,875.1L28.7,878.4L21.1,877.6L11.9,873.9L4.6,873.2L-0.7,875.6L-5.7,874.8L-10.3,871.1L-14.1,869.8L-17.2,870.7L-21.3,870.6L-28.5,868.6L-34.9,862.2L-38.2,859.6L-40.8,858.7L-48.3,857.6L-65.6,856.2L-67.4,856.6L-74.6,857.8L-83.5,859.4L-91.1,860.9L-99.2,862.5L-106.7,855.9L-115.2,848.5L-124,840.2L-130.7,833.7L-133.9,829.9L-139.8,825L-144,822.6L-145.6,821.4L-149.7,808.3L-152,796.2L-152,787.2L-152,774.6L-152,762.1L-152,749.6L-152,737.2L-152,724.7L-152,712.2L-152,699.8L-152,687.4L-152,681.3L-143.3,681.3L-133.5,681.3L-123.2,681.3L-112,681.3L-100.9,681.3L-89.6,681.3L-81.8,681.3L-79.7,681.2L-77.3,680.8L-77.1,679.6L-80.4,673.5L-80.1,671.4L-79.3,667.2L-78,663.7L-76.2,659L-76.1,656.3L-77.4,647.3L-77.3,642.3L-76.9,637.1L-76.5,632.1L-77,628.7L-76.5,626.9L-75.4,624.2L-74.8,621.2L-74.2,619.9L-74.3,618.7L-75,616.5L-75.5,611.4L-76.3,604.4L-77.1,599.4L-75.8,599.7L-72.9,600.1L-71.6,602.6L-70.8,605.3L-68.9,605.5L-63.9,607.1L-62.1,609.3L-61,614.1L-61.7,616.6L-63.3,618.6L-61.7,620.3L-58.3,621.5L-56.4,621.1L-50.7,617.9L-48.5,617.3L-45.6,616.7L-42.9,615.8L-35.4,614.3L-31.3,613.7L-29,612.5L-27.4,612.5L-26.2,613.4L-27.3,616.8L-27.7,619.9L-26.2,625.6L-25.1,628.3L-22.7,630.2L-20.9,631.2L-19,633.3L-14.9,632.9L-6.1,635.8L-3.4,637.1L0.4,638.5L3,639L12.2,640L15.6,640.7L21.8,641.7L26.8,641.8L30.5,641.4L32.9,640.5L34.4,639.6L35.1,638.9L36.2,636L38.1,629.8L38.7,628L40.6,627.1L43.1,626.5L44.4,627.5L46.1,634.4L53,640.6L55.4,645.8L57.2,650.2L58.7,651.5L61.2,653L65.6,653.6L69.4,653.7L77.2,656.9L83.6,659.5L88.2,661.3L90.2,662.7L91.7,665L92.6,666.8L93.9,671.3L95.4,674.9L97.8,675.7L100,675.9L102.2,678.4L103.8,680.6L107.1,685.9L109.4,689.6L110.2,693.2L112.9,695.5L116.5,696.6L119.9,696.7L121.8,695.6L126.7,693.8L130.5,691.6L133.2,690.9L134.8,691.4L136.1,692.9L136.7,695.7L136.9,697.4L139.6,698.8L141.5,698.2L142.3,696.5L142.3,695.6L142.3,687.8L142.3,681L142.3,674.6L142.3,666.8L142.3,660.1L142.3,654.5L142.3,648.7L140.5,649L138.4,650.4L133.4,650.5L131.5,651.5L130.9,653L131.2,655L131.3,657.6L130.6,658.9L128.5,659.3L125.2,658.3L119.5,657L114.8,656.2L111.4,652.6L106.6,647.4L103.7,644.7L96.3,639.2L95.1,638.1L92.8,635.5L90.9,631.1L90,628.3L89.2,626.1L88.1,622.9L89.8,617.9L92.4,608.5L94.2,601.7L95.1,596.7L98.8,591.6L99.1,587.1L97.6,581.2L98,578L98.1,569.8L98.4,562.9L98.4,559.6L97.4,553.8L95,547.3L89.7,538.3L89.7,536.4L93,534.3L97.8,530.6L100.3,528.4L103.3,525.3L104.6,523.7L107.5,519.7L109.2,516.4L109.9,512.3L108.5,508.2L111.3,507.4L120.5,506L130.5,504.5L141.2,502.9L151.9,501.2L162.4,499.6L171.7,498.1L178.2,497.1L179.3,499.9L181.2,504.5L183.6,507.8L186.5,510.7L188.9,512.5L190.5,513.1L200.8,512.9L204.5,514.6L207.8,517L208.6,520.5L210.7,522.6L213,524.4L214,524.6L215.6,524.2L218.5,524.1L221,524.9L222.3,525.6L222.4,528.6L223.1,529.9L226.6,530.4L230.1,530.6L233.7,532.6L237.3,533L241.6,533.8L243.7,535.9L248.2,538.2L253.7,540.1L257.8,542.4L259.9,543.4L260.1,544.4L261,546.3L262.1,547.7L262.2,549.7L262.8,551.6L264.4,552L265.6,552.2L266.9,550.9L268.5,550.9L270.2,551.7L270.9,553.9L272.4,556.8L274.6,558.8L276.2,560.7L275.7,564.3L274.7,567.5L277.7,570.6L281.8,573.7L282.9,575L283.1,579.5L283.8,581L286.5,584.7L287.9,587.2L287.7,588.6L280.4,596L278.1,596.7L275.9,597.1L273.9,598.7L272.8,600.2L273.2,601.1L274,603.6L275.7,607.6L277.3,610.4L275.9,613.9L273.1,619.8L271.7,620.3L271.5,624.9L272.4,626.5L273.8,627.8L274.3,630.9L274.4,635.1L274.3,638.4L272.4,647.1L275.8,654.6L276.9,655.5L281.5,655.5L282.2,656.1L281.1,658.3L279.2,660.5L278,661.6L272.1,664.2L263.7,667L262,669.8L260.9,673.7L261.8,676.1L262.9,677.4L262.5,680.9L261.8,684.5L262.1,687.4L261.7,690L260.6,691.2L259.1,695.1L257.4,699L255.9,700.7L253.8,702.6L250.6,704.1L250.6,704.9L254.4,706.7L255.3,707.9L255.6,708.8L254.8,709.6L254.1,710.7L255.9,712L257.9,713L259.9,715.5L261.7,719.2L262.2,720.4L262.7,720.9L263.3,721L264.6,720.4L266.9,718.4L268.5,717.7L270.5,720.6L262.4,723.3L258.2,724.7L246.1,728.9L235.5,732.6L232.8,733.2L227.3,735.1L224.6,736.1L215.1,739.3L211.2,740.9L207.9,742.4L200,744.8L192.6,747L184.4,749.3L175.4,751.9L170.2,753.7L166.8,755.3L158.7,758.5L158.3,759.3L158.4,761.5L159.5,766L161.5,770.2L163.2,772.5L164.3,778.6Z"/>
+      <path class="map-country" d="M296.9,225.4L292.9,225.4L286.1,225.4L279.5,225.4L272.8,225.4L266,225.4L259.4,225.4L252.6,225.4L246,225.4L239.3,225.4L232.6,225.4L225.9,225.4L219.1,225.4L212.5,225.4L205.9,225.4L199.1,225.4L192.4,225.4L185.8,225.4L181.7,225.4L181.1,225.2L180.5,225L177.9,225.6L175.4,227.2L172.5,227.9L169.5,227.6L169.1,227.8L167.6,227.7L165.5,227.6L163.6,228L162.1,229.5L160.5,232L157.7,234.8L155.6,237.3L153.8,239.1L149.6,242.1L147.3,242.9L146.2,242.8L145.5,242.3L144.2,238.5L143.4,237.9L135.2,239.8L134,239.9L134.2,238.7L133.6,229.8L133.5,224.4L134.6,221L135.1,217.1L135.2,213.7L136.7,207.8L136.2,204.2L138.1,191.9L138.6,189.9L139.3,183.9L140.5,182.1L141.6,181.4L143,177.7L145.7,171.8L147.6,168.8L147.2,162.2L147.4,157.8L147.9,156.7L151.8,155.1L156.9,151L159,146.1L162.1,143L167.9,141L168,141L185.5,124.2L193.7,115.2L197.2,110.6L197.3,108.9L198,106.8L196.5,105.1L194.9,103.5L194.3,102.1L192.9,101.4L190.7,101.4L189.3,100.4L187.8,98.4L186.2,97.1L181.2,97.2L177.4,95.1L177.4,92.3L179,86.8L181.9,80.3L182,78.6L181.6,77.1L180.9,75.8L179.6,74.5L178.4,73L179.3,68.4L181.2,63.9L182.7,61.7L184.2,59.2L183.6,57.1L181.6,56.1L182.7,54.1L185,50.7L189.5,47.3L193.4,45L196,45L201.1,46.8L205.7,48.9L208.3,49L211.3,48.1L217.7,44.3L219.1,45.5L221,47.9L223.1,51.7L227.1,53.4L229,54.6L230.4,55L231.2,54.7L232.7,51.7L234.5,50L238,47.9L245.4,46.3L250.7,45.8L253,45.4L256.8,44.5L262.8,41.4L268.8,45.4L275.1,46.2L281.4,46.1L283.3,44.9L284.3,44L290.8,37.5L299.7,28.5L305.6,41.1L307.5,41.8L307.2,42.9L306.8,43.9L310.6,47L315.4,48.5L317,50L317.3,51.7L315.7,59.1L315.9,61.1L317.4,68.4L320.3,70.1L322.8,77.5L327.9,80.5L328.5,81.5L329.7,85.1L331.2,88.9L332.5,89.8L333.1,90.1L334.6,94.2L333.8,96.6L335,103.6L336.9,109.9L337.3,117.5L337.5,120.8L337.3,122.9L336.9,125.7L336,127.4L334.4,129L332.6,131.6L331.1,134.2L330.2,135.6L330.8,139.7L330.7,140.7L330.3,141.2L328,141.9L325,143L323.2,144L320.8,146.1L318.8,148.4L316.1,155L311.6,160.1L310.9,161.8L306.7,164.8L304.8,168.6L303.6,173.2L302,176.5L298.4,181L297.6,188.2L297.8,202.6L296.8,218.9Z"/>
+      <path class="map-country is-home" d="M507.6,420.5L510.4,428.6L510,430.1L508,431L506.9,431.1L505.7,429.8L504.7,427.1L503.2,427.7L500.7,424.5L498,424.3L495.7,420.4L496.6,417.1L496.1,411.3L498.9,408.4L500.5,403.4L502.3,406.8L502.7,412L505.1,418.3L507.2,420.2ZM521.4,372.5L521.7,374.5L521,376.2L521.1,382L521,385.8L518.8,391L517.1,392.9L515.4,392.3L514.2,391.5L513.1,390L515.2,380.4L514.2,373.4L518.3,374ZM259.9,543.4L257.8,542.4L253.7,540.1L248.2,538.2L243.7,535.9L241.6,533.8L237.3,533L233.7,532.6L230.1,530.6L226.6,530.4L223.1,529.9L222.4,528.6L222.3,525.6L221,524.9L218.5,524.1L215.6,524.2L214,524.6L213,524.4L210.7,522.6L208.6,520.5L207.8,517L204.5,514.6L200.8,512.9L190.5,513.1L188.9,512.5L186.5,510.7L183.6,507.8L181.2,504.5L179.3,499.9L178.2,497.1L177.1,493.8L174.6,488.7L171,481.5L168.3,475.6L165.3,469.3L164.1,464.7L161.8,459.5L158,453.2L156.1,450.8L154,448.6L148.5,444.3L142.4,440.1L139,437.3L134.6,428.9L132.7,425.8L131.5,420.4L130.4,414.9L130.8,412.6L134.8,405.5L135.2,403.4L134.7,400.7L132.8,395L131.3,391.3L130.2,388.1L128.2,382.7L125.2,375.5L124.5,372.2L124.5,369.9L126.2,363.6L127.5,357.1L127.5,355.3L139.3,355.5L141.3,354.1L148,350L155.6,341.6L157.1,338L160.1,332.7L163.2,330L164.3,328.1L165.1,325.3L166,322.8L169.9,319.2L173.7,316.4L173.5,315.2L172.9,314.4L173.6,313.7L175.6,312.3L179.7,311L180.5,308.2L180.5,305L179.8,303.2L180,301.2L179.3,300L176.7,299.7L172.8,298.1L169.4,297.5L167.1,296.6L166.3,295.9L166,294L166.6,291.9L167,291.3L167.8,289.1L166.3,287.7L166,287.1L166.7,286L170.1,279L170.9,278L172.4,277.9L174.7,277L176.9,276.6L178.8,276.9L180,276.6L181.2,275.6L182.1,272.9L183,268.3L182.6,264.6L180.8,261.7L180.4,257.3L181.2,251.4L180.5,246.5L178.6,242.5L176.7,240.2L173.7,239.1L169.1,233.1L167.6,230.2L167.9,228.4L169.1,227.8L169.5,227.6L172.5,227.9L175.4,227.2L177.9,225.6L180.5,225L181.1,225.2L181.7,225.4L185.8,225.4L192.4,225.4L199.1,225.4L205.9,225.4L212.5,225.4L219.1,225.4L225.9,225.4L232.6,225.4L239.3,225.4L246,225.4L252.6,225.4L259.4,225.4L266,225.4L272.8,225.4L279.5,225.4L286.1,225.4L292.9,225.4L296.9,225.4L299.8,225.4L302.5,226.7L305.5,228.4L313.6,232.9L321.6,237.4L329.6,241.9L337.6,246.3L345.6,250.9L353.7,255.3L361.7,259.8L369.7,264.3L377.7,268.8L385.7,273.3L393.9,277.7L401.9,282.2L409.9,286.7L417.9,291.2L426,295.7L434,300.2L437.8,302.3L438.3,303.3L439,307.3L439.4,309.9L439.3,312.2L437.1,316L436.4,318L436.4,319.4L437,319.9L438.7,320.1L440.4,321L440.9,321.7L442.1,324.6L443.6,326L447,328.5L452.7,332.7L458.5,336.8L464.3,341L470,345.2L475.9,349.4L481.7,353.5L487.4,357.7L493.2,361.9L496.1,363.9L497.1,364.4L496.5,367.7L493.5,375.3L493.3,378.5L492.1,382.4L491,384.8L488.1,395.7L485.5,399.7L482.1,409.3L481.4,416.6L483.5,421.7L484.1,426.4L488.2,431.2L491.3,432.8L493.6,435L497.4,439.9L499.7,444.8L506.6,447.2L509.3,452.7L508.4,456.5L505.1,459.7L502.2,464.7L499.7,471.5L499.6,481.7L501.3,480.2L505,482.7L505.4,490.2L501.6,499L500.5,503.1L500.3,506.6L503.1,517.2L507.2,522.6L506.9,524.3L505.8,525.7L513,535.2L512.3,543.5L515,549.9L516.3,555.5L518,559.8L518.3,562.7L516.1,566L521.4,566.8L524.4,569.6L525.9,572.1L529.7,572L531.7,573.7L534.7,575.2L541.1,579.5L542.8,581.7L543.5,583L543.9,583.8L539.6,587.1L532.8,592.4L526,597.5L519.6,600.9L515,602.6L510,603.5L505.4,605.7L500.9,609L495.2,610.7L488.3,610.7L481.1,613.1L474,617.6L469.8,620.2L463,616.3L457.8,615L451.9,615.1L448.2,615.7L446.9,616.5L445.8,618.9L444.8,622.8L440.9,626.6L434,630.3L427.6,631.6L421.8,630.7L417.9,629.2L415.8,627.1L412.7,626.1L408.8,626.3L405,627.7L401.3,630.6L395.4,631.8L387.4,631.5L383.2,630.1L382.5,627.7L379,624.9L372.6,621.8L367.8,621.7L364.7,624.7L362,626.7L359.4,627.5L357.3,627.5L355.2,626.9L354,626.7L345.1,626.4L336.7,626.5L336.4,625.2L335.8,622.1L334.1,619.4L332.6,617.8L330.7,617.4L329.7,617.5L328.9,616.2L328,613.5L326.5,611.1L324.6,609.2L323.5,607.4L323.1,605.7L323.4,603.9L325.1,599.5L325.7,596.3L325.5,593.2L324.6,590L322.6,586.1L322.8,585L322.2,582.4L322,580.5L322.4,578.3L322,575.3L320.3,568.8L320.3,567.2L318.5,564.1L312.9,556.7L312.7,555.8L303.9,548.3L300.5,546.7L299.1,548.1L298.7,549.4L299.1,551.8L298.8,553L298.4,553.5L296.4,553.4L295.1,553.2L291.8,551.2L289.2,550.7L282.9,551.1L280.5,551.5L278.8,551.1L275.4,547.7L271.5,546.9L267.8,546.7L262,542.9L260.6,543.1ZM515.6,488.9L513.5,489.4L512.7,488.9L511.5,487.4L513.7,486L515.8,483.4L520.7,479.5L522.4,477L523,476.5L522.6,479.4L519.9,486L517.5,486.4Z"/>
+      <path class="map-country" d="M134,239.9L135.2,239.8L143.4,237.9L144.2,238.5L145.5,242.3L146.2,242.8L147.3,242.9L149.6,242.1L153.8,239.1L155.6,237.3L157.7,234.8L160.5,232L162.1,229.5L163.6,228L165.5,227.6L167.6,227.7L169.1,227.8L167.9,228.4L167.6,230.2L169.1,233.1L173.7,239.1L176.7,240.2L178.6,242.5L180.5,246.5L181.2,251.4L180.4,257.3L180.8,261.7L182.6,264.6L183,268.3L182.1,272.9L181.2,275.6L180,276.6L178.8,276.9L176.9,276.6L174.7,277L172.4,277.9L170.9,278L169.9,277.8L168.2,277.1L165.3,274.7L160.2,276L158.8,276L156.9,277.1L155.3,278.5L154.4,278.6L153.4,278.4L148.9,275.6L147.3,275.7L146.6,283.6L146,287.9L145,289.9L141.9,291.8L138.6,292.8L136.9,292.8L129.8,293.4L127,293.4L125.5,292.7L123.5,288.3L119.8,286.3L116.1,285.4L114.8,285.6L113.4,287.9L112.9,290L109.4,288.6L108.4,286.8L108.3,283.8L106.9,279.8L107.7,278L109.1,276.9L111.9,274.7L116.4,271.7L117.4,270.3L117.9,267.9L117.6,262.4L117.2,257.7L117.8,256L119.8,252.4L122.4,248.6L125.6,244.8L127.5,244.4L130,242.9L132.5,240.7Z"/>
+      <path class="map-country" d="M198.4,1053.4L203.8,1049.2L209.1,1043.3L215.4,1036.4L221,1030.2L225.9,1024.8L232.6,1017.4L239.2,1010.1L240.8,1009.2L241.5,1008.5L238.7,1002.1L243.3,994.5L243.4,989.7L243.3,985L243.8,982.9L245.2,981L250.6,977.1L254.7,970.8L258,965.1L262.7,955.7L263.1,953.6L263.2,951.3L261.8,948.2L258.9,943.1L256.6,938.7L254.5,931.9L256.6,926L257.2,922.5L257.2,920.6L256.4,918.8L254.1,917.4L252.2,916.5L251.7,914.1L251.7,911.2L252.5,909.6L257.5,907L258.6,905.7L259.1,904.1L259.3,901.9L260.8,896.3L262.7,891L262.8,889.1L262.1,887.5L261.6,884.5L261.3,880L261.2,867.5L262.2,854.5L261.8,847.2L258.6,838.8L258.3,832.7L260.6,828.4L261,825.9L259.3,825.6L255.7,825.4L253.2,824.5L249.2,821.1L242.3,818.2L234.5,815.5L223.1,814.8L213.6,806.4L206.1,805L203.7,804L196.5,798.9L185.4,798.5L173.7,797.9L166.4,797.8L165.3,797.1L164.9,790.2L164.9,784L164.3,778.6L163.2,772.5L161.5,770.2L159.5,766L158.4,761.5L158.3,759.3L158.7,758.5L166.8,755.3L170.2,753.7L175.4,751.9L184.4,749.3L192.6,747L200,744.8L207.9,742.4L211.2,740.9L215.1,739.3L224.6,736.1L227.3,735.1L232.8,733.2L235.5,732.6L246.1,728.9L258.2,724.7L262.4,723.3L270.5,720.6L272.1,721.7L277.6,731.3L281.9,736.9L286.9,742.1L287.7,741.8L289.1,740.6L291.7,740.1L299.4,738.9L302.5,738.8L304.4,737.5L308.5,736.5L313.1,735.9L314.7,736.5L319.6,743.2L320.3,748.4L321.3,755.9L321.6,759.5L321.5,764.4L320.9,770.5L317,777.5L316.2,781L314,786.4L311.2,789.1L309.8,791.3L310,793.6L311.5,795.5L314.7,798.9L315.8,801.1L315.5,803.1L315.5,805.8L316.3,807.6L317.1,808.7L320.5,810.5L323.6,814.9L329.2,820.3L335.7,827.8L338.8,830.1L341.3,830.7L342.5,833.3L341.8,836.2L339.9,837.9L340.7,840.3L341.7,841.6L342.9,842.2L345.9,842.4L348.5,841.9L349.1,841.1L348.9,829.7L346.8,823L344.9,820.5L344.5,820L345.2,817.8L347.4,812.7L349.3,807.6L350.4,805.5L351.7,804.2L360.8,802.9L365,801.7L366.6,800.3L368,796.4L369.1,785.5L369.5,775.2L368.5,769.3L369.9,760.3L371.9,754.7L370.8,753.6L370.1,746.1L364.2,738.1L356.6,727.8L352.4,722.3L347.5,716L338.7,706.2L334.8,702.7L332.6,701.3L325.5,700.1L323.6,698.2L321.8,695.2L321.1,689.6L321.1,685.5L320.3,678.4L318.8,668.4L318.1,665.5L316.1,658L314.2,650.8L314,649.1L314.7,647.4L318,642.1L320.4,638.4L321.5,636.3L323.4,630.8L323.9,628.1L325.4,626.9L331.6,626.4L336.7,626.5L345.1,626.4L354,626.7L355.2,626.9L357.3,627.5L359.4,627.5L362,626.7L364.7,624.7L367.8,621.7L372.6,621.8L379,624.9L382.5,627.7L383.2,630.1L387.4,631.5L395.4,631.8L401.3,630.6L405,627.7L408.8,626.3L412.7,626.1L415.8,627.1L417.9,629.2L421.8,630.7L427.6,631.6L434,630.3L440.9,626.6L444.8,622.8L445.8,618.9L446.9,616.5L448.2,615.7L451.9,615.1L457.8,615L463,616.3L469.8,620.2L474,617.6L481.1,613.1L488.3,610.7L495.2,610.7L500.9,609L505.4,605.7L510,603.5L515,602.6L519.6,600.9L526,597.5L532.8,592.4L539.6,587.1L543.9,583.8L545.9,587.8L549.5,591.4L547.4,593.4L544.9,595.3L548.9,597.8L545.9,601.6L545.5,604.3L546.3,605.3L547,606.9L545,611.2L542.3,614.5L541.6,617.1L544,621.6L542.8,629.5L545.1,636.7L545.7,640.4L546.5,642.9L545.4,647.4L545.7,654.8L546.2,657.9L544.9,661.7L547.2,663L548.4,667.2L548,672L547.3,674.5L543.4,677.6L542.8,678.8L543,680.6L547.8,680.7L548.1,683.5L547.7,685.7L548,690L547.3,692.7L548.4,695.7L547,699.2L547.6,701.9L547.6,705.3L548.8,714L548.9,724.8L549.2,726.5L551,727.7L553.4,728.3L553.4,731.3L550.5,735.2L550.4,737.6L550.8,740.9L553.8,736.3L555.7,736.4L557.3,738.2L557.1,740.8L557.6,742.2L557.3,744.7L558.3,748L557.9,750.8L555.7,752.8L552.8,756.1L552.3,759.4L552.6,761.4L550.7,762.1L549.7,763.4L551.1,766.4L551,769.1L547.6,777.4L538.3,788.7L534.3,792.8L530.6,797.2L530.6,799L530.2,800.6L525.9,806.8L521.3,807.9L518.6,809.6L520.6,815.1L517.6,816.4L512.3,820.7L498,829.1L495.7,831L492,836.2L487.2,837.5L484.5,838.9L479.7,839.4L478,839L476.4,839.2L475,840.3L465.6,844L456.6,846.8L454.4,848.1L453,849.9L445.1,852.7L432.8,859.8L422.7,866.4L415.4,873.2L413.5,874.2L411.2,876.5L410.5,879.9L409.7,881.8L404.3,888.9L396.2,897.2L394.7,899.6L391.4,904.2L391.1,907.2L388.2,908.2L385.7,905.3L384.8,910.9L382.7,911.3L380.6,910.1L375.2,913L370.4,916.1L362.8,922.9L352,936.2L336.3,948.9L334.1,949.2L332.7,949.2L327.7,944.8L325,944.4L327.4,947.1L329.1,949.3L328.7,953.5L328.8,960L326.9,972.6L327.2,975.4L329.3,978.9L333.5,983.3L337.6,988.8L342.6,1004.5L343,1012.5L348.3,1022.9L348.5,1027.4L350.6,1038.6L350.5,1047.6L350.1,1053.2L352.7,1055.5L353.6,1053.4L353.3,1049.9L354,1044.2L355.4,1041.7L356.9,1042.1L357.3,1044.8L358.2,1047.1L358.6,1049.3L358.6,1052.3L356.7,1063.8L357.3,1068.5L359.8,1076.3L356.9,1085.4L352.4,1106.8L352.2,1110.5L353.2,1112.2L355.6,1112.7L356.5,1110L357.9,1110L358.6,1111.6L356.7,1121.5L354.7,1125.9L347.8,1136.6L344.1,1141.2L337.9,1145.7L323.5,1152.8L294.4,1163L282.9,1168.1L276.1,1171.1L261.4,1180.6L255.1,1187L252.5,1194.4L249.9,1197.8L247.5,1202.1L249.6,1205.8L251.8,1208.6L254.3,1210.4L255.6,1212L257.2,1213.2L259,1207.4L259.8,1205.5L261.3,1205.4L260.5,1212.5L258.7,1236.9L258.6,1237.7L254.5,1237.7L247.5,1237.9L243.3,1238L238.5,1238.2L232.8,1236.9L229.6,1237.2L229.3,1223.8L228.2,1220.8L227.1,1216.5L226.9,1213.7L227.6,1210.9L227.8,1206.6L227.6,1202.7L224.2,1200.7L223.3,1200.2L222.5,1197.1L222.3,1192.5L224.7,1186.5L224.6,1175.1L224.8,1171.2L224.7,1163.3L224.7,1153.7L224.7,1145.2L224.7,1137.9L224,1134.4L223.5,1132.4L221.9,1128.6L220,1120.5L217.8,1114.4L214.9,1110.4L214,1108.2L213,1105.5L210.3,1100.5L208.2,1097.5L207.6,1095.2L207.6,1089.2L205.2,1078.5L203.4,1070.6L200.7,1062.2L199,1056.5L198.7,1055.5ZM324.7,643.3L324.1,642.1L322.8,641.6L321.5,642.1L320.9,643.5L322.4,645.3L324.1,645.3ZM327.7,647L328.7,646.2L329.1,645L329.1,644L328.4,643.2L327.4,642.8L326.2,643.1L325.7,644.6L325.5,646.6L326.4,647.3Z"/>
+      <path class="map-country" d="M327.7,647L326.4,647.3L325.5,646.6L325.7,644.6L326.2,643.1L327.4,642.8L328.4,643.2L329.1,644L329.1,645L328.7,646.2ZM324.7,643.3L324.1,645.3L322.4,645.3L320.9,643.5L321.5,642.1L322.8,641.6L324.1,642.1ZM270.5,720.6L268.5,717.7L266.9,718.4L264.6,720.4L263.3,721L262.7,720.9L262.2,720.4L261.7,719.2L259.9,715.5L257.9,713L255.9,712L254.1,710.7L254.8,709.6L255.6,708.8L255.3,707.9L254.4,706.7L250.6,704.9L250.6,704.1L253.8,702.6L255.9,700.7L257.4,699L259.1,695.1L260.6,691.2L261.7,690L262.1,687.4L261.8,684.5L262.5,680.9L262.9,677.4L261.8,676.1L260.9,673.7L262,669.8L263.7,667L272.1,664.2L278,661.6L279.2,660.5L281.1,658.3L282.2,656.1L281.5,655.5L276.9,655.5L275.8,654.6L272.4,647.1L274.3,638.4L274.4,635.1L274.3,630.9L273.8,627.8L272.4,626.5L271.5,624.9L271.7,620.3L273.1,619.8L275.9,613.9L277.3,610.4L275.7,607.6L274,603.6L273.2,601.1L272.8,600.2L273.9,598.7L275.9,597.1L278.1,596.7L280.4,596L287.7,588.6L287.9,587.2L286.5,584.7L283.8,581L283.1,579.5L282.9,575L281.8,573.7L277.7,570.6L274.7,567.5L275.7,564.3L276.2,560.7L274.6,558.8L272.4,556.8L270.9,553.9L270.2,551.7L268.5,550.9L266.9,550.9L265.6,552.2L264.4,552L262.8,551.6L262.2,549.7L262.1,547.7L261,546.3L260.1,544.4L259.9,543.4L260.6,543.1L262,542.9L267.8,546.7L271.5,546.9L275.4,547.7L278.8,551.1L280.5,551.5L282.9,551.1L289.2,550.7L291.8,551.2L295.1,553.2L296.4,553.4L298.4,553.5L298.8,553L299.1,551.8L298.7,549.4L299.1,548.1L300.5,546.7L303.9,548.3L312.7,555.8L312.9,556.7L318.5,564.1L320.3,567.2L320.3,568.8L322,575.3L322.4,578.3L322,580.5L322.2,582.4L322.8,585L322.6,586.1L324.6,590L325.5,593.2L325.7,596.3L325.1,599.5L323.4,603.9L323.1,605.7L323.5,607.4L324.6,609.2L326.5,611.1L328,613.5L328.9,616.2L329.7,617.5L330.7,617.4L332.6,617.8L334.1,619.4L335.8,622.1L336.4,625.2L336.7,626.5L331.6,626.4L325.4,626.9L323.9,628.1L323.4,630.8L321.5,636.3L320.4,638.4L318,642.1L314.7,647.4L314,649.1L314.2,650.8L316.1,658L318.1,665.5L318.8,668.4L320.3,678.4L321.1,685.5L321.1,689.6L321.8,695.2L323.6,698.2L325.5,700.1L332.6,701.3L334.8,702.7L338.7,706.2L347.5,716L352.4,722.3L356.6,727.8L364.2,738.1L370.1,746.1L370.8,753.6L371.9,754.7L369.9,760.3L368.5,769.3L369.5,775.2L369.1,785.5L368,796.4L366.6,800.3L365,801.7L360.8,802.9L351.7,804.2L350.4,805.5L349.3,807.6L347.4,812.7L345.2,817.8L344.5,820L344.9,820.5L346.8,823L348.9,829.7L349.1,841.1L348.5,841.9L345.9,842.4L342.9,842.2L341.7,841.6L340.7,840.3L339.9,837.9L341.8,836.2L342.5,833.3L341.3,830.7L338.8,830.1L335.7,827.8L329.2,820.3L323.6,814.9L320.5,810.5L317.1,808.7L316.3,807.6L315.5,805.8L315.5,803.1L315.8,801.1L314.7,798.9L311.5,795.5L310,793.6L309.8,791.3L311.2,789.1L314,786.4L316.2,781L317,777.5L320.9,770.5L321.5,764.4L321.6,759.5L321.3,755.9L320.3,748.4L319.6,743.2L314.7,736.5L313.1,735.9L308.5,736.5L304.4,737.5L302.5,738.8L299.4,738.9L291.7,740.1L289.1,740.6L287.7,741.8L286.9,742.1L281.9,736.9L277.6,731.3L272.1,721.7Z"/>
+      <path class="map-country" d="M564,268.9L562.5,269.2L563.3,267.1L567.4,264.3L569.1,264.9L569.4,265.6L569.2,266.1L568.6,266.7ZM296.9,225.4L296.8,218.9L297.8,202.6L297.6,188.2L298.4,181L302,176.5L303.6,173.2L304.8,168.6L306.7,164.8L310.9,161.8L311.6,160.1L316.1,155L318.8,148.4L320.8,146.1L323.2,144L325,143L328,141.9L330.3,141.2L330.7,140.7L330.8,139.7L330.2,135.6L331.1,134.2L332.6,131.6L334.4,129L336,127.4L336.9,125.7L337.3,122.9L337.5,120.8L337.3,117.5L336.9,109.9L335,103.6L333.8,96.6L334.6,94.2L333.1,90.1L332.5,89.8L331.2,88.9L329.7,85.1L328.5,81.5L327.9,80.5L322.8,77.5L320.3,70.1L317.4,68.4L315.9,61.1L315.7,59.1L317.3,51.7L317,50L315.4,48.5L310.6,47L306.8,43.9L307.2,42.9L307.5,41.8L305.6,41.1L299.7,28.5L307.2,21.1L314.8,13.5L324.7,3.8L333.7,-5L341.4,-12.6L348.3,-19.5L348.2,-18.2L348.2,-16.5L349.1,-15.4L350.5,-14.7L352.5,-15.5L354.1,-16.5L355.9,-16.7L366.3,-13.9L368,-11.4L368,-8.8L368.4,-6.8L367.6,-4.9L366.8,1L367,6.4L370.1,10.3L372.9,13.5L375,17.9L376.8,19.2L379,19.9L386.1,20.1L396.7,20.3L406.9,20.6L407.8,20.7L410,21.3L419.3,27.3L427.9,32.7L435.2,37.4L442.2,42L449.2,46.4L454.4,50.2L459.7,51.3L468.1,51.8L474.1,52L479.5,53.5L487.7,54.9L493.6,55.7L497.3,56.5L507.4,57.4L509.1,56.9L513.5,52.8L518.6,46.2L520.6,42.5L527,38.8L538.3,33.8L546.3,30.2L555.3,26.6L559.4,29.7L564.9,34.7L567.4,37.2L569.4,38.3L572.5,39L576.2,39L578.2,38.9L582.3,38.2L591.9,37.6L597.4,37.7L592.8,44.3L587.3,52.3L577,67L569.2,74.7L563.3,80.5L562.7,81.6L562.9,88.1L562.9,104L563,135.7L563.2,167.4L563.3,199.1L563.3,215L563.3,220.4L568.4,227.1L573.6,233.5L580.2,242.2L583.8,246.8L584.4,248.4L584.2,251.4L578.7,257.9L574.3,260.9L568.2,262.2L566.4,262L564,261.1L563,262.6L562.3,265L561,264.5L560,263.8L560.6,268.1L561.3,270.2L560.3,273.1L557.3,275.6L557.1,277.7L550.7,283.2L541.7,283.9L537,286.6L534.8,288.9L533.2,293.8L533.9,301.4L531.3,307.1L530.9,310.1L526.1,313.8L524.1,317.3L522.6,320.8L521.3,322.4L519.6,330.2L517.5,335L516.9,336.6L516.4,338.1L514.8,340.9L513.7,342.8L512.9,344.1L507.3,356.4L503,361.9L499.7,361.3L497.4,363.5L497.1,364.4L496.1,363.9L493.2,361.9L487.4,357.7L481.7,353.5L475.9,349.4L470,345.2L464.3,341L458.5,336.8L452.7,332.7L447,328.5L443.6,326L442.1,324.6L440.9,321.7L440.4,321L438.7,320.1L437,319.9L436.4,319.4L436.4,318L437.1,316L439.3,312.2L439.4,309.9L439,307.3L438.3,303.3L437.8,302.3L434,300.2L426,295.7L417.9,291.2L409.9,286.7L401.9,282.2L393.9,277.7L385.7,273.3L377.7,268.8L369.7,264.3L361.7,259.8L353.7,255.3L345.6,250.9L337.6,246.3L329.6,241.9L321.6,237.4L313.6,232.9L305.5,228.4L302.5,226.7L299.8,225.4Z"/>
+      <path class="map-country" d="M170.9,278L170.1,279L166.7,286L166,287.1L166.3,287.7L167.8,289.1L167,291.3L166.6,291.9L166,294L166.3,295.9L167.1,296.6L169.4,297.5L172.8,298.1L176.7,299.7L179.3,300L180,301.2L179.8,303.2L180.5,305L180.5,308.2L179.7,311L175.6,312.3L173.6,313.7L172.9,314.4L173.5,315.2L173.7,316.4L169.9,319.2L166,322.8L165.1,325.3L164.3,328.1L163.2,330L160.1,332.7L157.1,338L155.6,341.6L148,350L141.3,354.1L139.3,355.5L127.5,355.3L126.6,349.6L124.8,341.9L120.7,334.9L120.3,332.1L120.5,326.4L120.5,318.5L120.2,314.3L120.3,311.2L120.9,305.8L120.7,302.6L118.2,298.9L114.8,295L113,293L112.9,291.5L112.9,290L113.4,287.9L114.8,285.6L116.1,285.4L119.8,286.3L123.5,288.3L125.5,292.7L127,293.4L129.8,293.4L136.9,292.8L138.6,292.8L141.9,291.8L145,289.9L146,287.9L146.6,283.6L147.3,275.7L148.9,275.6L153.4,278.4L154.4,278.6L155.3,278.5L156.9,277.1L158.8,276L160.2,276L165.3,274.7L168.2,277.1L169.9,277.8Z"/>
+      <path class="map-border" d="M164.9,784L159.4,784.1L149.8,784.1L139.9,784.1L130.6,786.1L123.2,789.2L114.2,794.1L111.3,796L109.1,797.5L107.6,799.4L106.9,803.6L106.9,810L106.1,814.6L103.3,818.8L89.7,824L80.9,828.2L72.1,833.2L65.6,839.6L61,847.6L53.5,857.4L45.9,866L37.8,875.1L28.7,878.4L21.1,877.6L11.9,873.9L4.6,873.2L-0.7,875.6L-5.7,874.8L-10.3,871.1L-14.1,869.8L-17.2,870.7L-21.3,870.6L-28.5,868.6L-34.9,862.2L-38.2,859.6L-40.8,858.7L-48.3,857.6L-65.6,856.2L-67.4,856.6L-74.6,857.8L-83.5,859.4L-91.1,860.9L-99.2,862.5L-106.7,855.9L-115.2,848.5L-124,840.2L-130.7,833.7L-133.9,829.9L-139.8,825L-144,822.6L-145.6,821.4L-149.7,808.3L-152,796.2L-152,787.2L-152,774.6L-152,762.1L-152,749.6L-152,737.2L-152,724.7L-152,712.2L-152,699.8L-152,687.4L-152,681.3L-143.3,681.3L-133.5,681.3L-123.2,681.3L-112,681.3L-100.9,681.3L-89.6,681.3L-81.8,681.3L-79.7,681.2L-77.3,680.8L-77.1,679.6L-80.4,673.5L-80.1,671.4L-79.3,667.2L-78,663.7L-76.2,659L-76.1,656.3L-77.4,647.3L-77.3,642.3L-76.9,637.1L-76.5,632.1L-77,628.7L-76.5,626.9L-75.4,624.2L-74.8,621.2L-74.2,619.9L-74.3,618.7L-75,616.5L-75.5,611.4L-76.3,604.4L-77.1,599.4L-75.8,599.7L-72.9,600.1L-71.6,602.6L-70.8,605.3L-68.9,605.5L-63.9,607.1L-62.1,609.3L-61,614.1L-61.7,616.6L-63.3,618.6L-61.7,620.3L-58.3,621.5L-56.4,621.1L-50.7,617.9L-48.5,617.3L-45.6,616.7L-42.9,615.8L-35.4,614.3L-31.3,613.7L-29,612.5L-27.4,612.5L-26.2,613.4L-27.3,616.8L-27.7,619.9L-26.2,625.6L-25.1,628.3L-22.7,630.2L-20.9,631.2L-19,633.3L-14.9,632.9L-6.1,635.8L-3.4,637.1L0.4,638.5L3,639L12.2,640L15.6,640.7L21.8,641.7L26.8,641.8L30.5,641.4L32.9,640.5L34.4,639.6L35.1,638.9L36.2,636L38.1,629.8L38.7,628L40.6,627.1L43.1,626.5L44.4,627.5L46.1,634.4L53,640.6L55.4,645.8L57.2,650.2L58.7,651.5L61.2,653L65.6,653.6L69.4,653.7L77.2,656.9L83.6,659.5L88.2,661.3L90.2,662.7L91.7,665L92.6,666.8L93.9,671.3L95.4,674.9L97.8,675.7L100,675.9L102.2,678.4L103.8,680.6L107.1,685.9L109.4,689.6L110.2,693.2L112.9,695.5L116.5,696.6L119.9,696.7L121.8,695.6L126.7,693.8L130.5,691.6L133.2,690.9L134.8,691.4L136.1,692.9L136.7,695.7L136.9,697.4L139.6,698.8L141.5,698.2L142.3,696.5L142.3,695.6L142.3,687.8L142.3,681L142.3,674.6L142.3,666.8L142.3,660.1L142.3,654.5L142.3,648.7L140.5,649L138.4,650.4L133.4,650.5L131.5,651.5L130.9,653L131.2,655L131.3,657.6L130.6,658.9L128.5,659.3L125.2,658.3L119.5,657L114.8,656.2L111.4,652.6L106.6,647.4L103.7,644.7L96.3,639.2L95.1,638.1L92.8,635.5L90.9,631.1L90,628.3L89.2,626.1L88.1,622.9L89.8,617.9L92.4,608.5L94.2,601.7L95.1,596.7L98.8,591.6L99.1,587.1L97.6,581.2L98,578L98.1,569.8L98.4,562.9L98.4,559.6L97.4,553.8L95,547.3L89.7,538.3L89.7,536.4L93,534.3L97.8,530.6L100.3,528.4L103.3,525.3L104.6,523.7L107.5,519.7L109.2,516.4L109.9,512.3L108.5,508.2L111.3,507.4L120.5,506L130.5,504.5L141.2,502.9L151.9,501.2L162.4,499.6L171.7,498.1L178.2,497.1L179.3,499.9L181.2,504.5L183.6,507.8L186.5,510.7L188.9,512.5L190.5,513.1L200.8,512.9L204.5,514.6L207.8,517L208.6,520.5L210.7,522.6L213,524.4L214,524.6L215.6,524.2L218.5,524.1L221,524.9L222.3,525.6L222.4,528.6L223.1,529.9L226.6,530.4L230.1,530.6L233.7,532.6L237.3,533L241.6,533.8L243.7,535.9L248.2,538.2L253.7,540.1L257.8,542.4L259.9,543.4L260.1,544.4L261,546.3L262.1,547.7L262.2,549.7L262.8,551.6L264.4,552L265.6,552.2L266.9,550.9L268.5,550.9L270.2,551.7L270.9,553.9L272.4,556.8L274.6,558.8L276.2,560.7L275.7,564.3L274.7,567.5L277.7,570.6L281.8,573.7L282.9,575L283.1,579.5L283.8,581L286.5,584.7L287.9,587.2L287.7,588.6L280.4,596L278.1,596.7L275.9,597.1L273.9,598.7L272.8,600.2L273.2,601.1L274,603.6L275.7,607.6L277.3,610.4L275.9,613.9L273.1,619.8L271.7,620.3L271.5,624.9L272.4,626.5L273.8,627.8L274.3,630.9L274.4,635.1L274.3,638.4L272.4,647.1L275.8,654.6L276.9,655.5L281.5,655.5L282.2,656.1L281.1,658.3L279.2,660.5L278,661.6L272.1,664.2L263.7,667L262,669.8L260.9,673.7L261.8,676.1L262.9,677.4L262.5,680.9L261.8,684.5L262.1,687.4L261.7,690L260.6,691.2L259.1,695.1L257.4,699L255.9,700.7L253.8,702.6L250.6,704.1L250.6,704.9L254.4,706.7L255.3,707.9L255.6,708.8L254.8,709.6L254.1,710.7L255.9,712L257.9,713L259.9,715.5L261.7,719.2L262.2,720.4L262.7,720.9L263.3,721L264.6,720.4L266.9,718.4L268.5,717.7L270.5,720.6L262.4,723.3L258.2,724.7L246.1,728.9L235.5,732.6L232.8,733.2L227.3,735.1L224.6,736.1L215.1,739.3L211.2,740.9L207.9,742.4L200,744.8L192.6,747L184.4,749.3L175.4,751.9L170.2,753.7L166.8,755.3L158.7,758.5L158.3,759.3L158.4,761.5L159.5,766L161.5,770.2L163.2,772.5L164.3,778.6Z"/>
+      <path class="map-border" d="M296.9,225.4L292.9,225.4L286.1,225.4L279.5,225.4L272.8,225.4L266,225.4L259.4,225.4L252.6,225.4L246,225.4L239.3,225.4L232.6,225.4L225.9,225.4L219.1,225.4L212.5,225.4L205.9,225.4L199.1,225.4L192.4,225.4L185.8,225.4L181.7,225.4L181.1,225.2L180.5,225L177.9,225.6L175.4,227.2L172.5,227.9L169.5,227.6L169.1,227.8L167.6,227.7L165.5,227.6L163.6,228L162.1,229.5L160.5,232L157.7,234.8L155.6,237.3L153.8,239.1L149.6,242.1L147.3,242.9L146.2,242.8L145.5,242.3L144.2,238.5L143.4,237.9L135.2,239.8L134,239.9L134.2,238.7L133.6,229.8L133.5,224.4L134.6,221L135.1,217.1L135.2,213.7L136.7,207.8L136.2,204.2L138.1,191.9L138.6,189.9L139.3,183.9L140.5,182.1L141.6,181.4L143,177.7L145.7,171.8L147.6,168.8L147.2,162.2L147.4,157.8L147.9,156.7L151.8,155.1L156.9,151L159,146.1L162.1,143L167.9,141L168,141L185.5,124.2L193.7,115.2L197.2,110.6L197.3,108.9L198,106.8L196.5,105.1L194.9,103.5L194.3,102.1L192.9,101.4L190.7,101.4L189.3,100.4L187.8,98.4L186.2,97.1L181.2,97.2L177.4,95.1L177.4,92.3L179,86.8L181.9,80.3L182,78.6L181.6,77.1L180.9,75.8L179.6,74.5L178.4,73L179.3,68.4L181.2,63.9L182.7,61.7L184.2,59.2L183.6,57.1L181.6,56.1L182.7,54.1L185,50.7L189.5,47.3L193.4,45L196,45L201.1,46.8L205.7,48.9L208.3,49L211.3,48.1L217.7,44.3L219.1,45.5L221,47.9L223.1,51.7L227.1,53.4L229,54.6L230.4,55L231.2,54.7L232.7,51.7L234.5,50L238,47.9L245.4,46.3L250.7,45.8L253,45.4L256.8,44.5L262.8,41.4L268.8,45.4L275.1,46.2L281.4,46.1L283.3,44.9L284.3,44L290.8,37.5L299.7,28.5L305.6,41.1L307.5,41.8L307.2,42.9L306.8,43.9L310.6,47L315.4,48.5L317,50L317.3,51.7L315.7,59.1L315.9,61.1L317.4,68.4L320.3,70.1L322.8,77.5L327.9,80.5L328.5,81.5L329.7,85.1L331.2,88.9L332.5,89.8L333.1,90.1L334.6,94.2L333.8,96.6L335,103.6L336.9,109.9L337.3,117.5L337.5,120.8L337.3,122.9L336.9,125.7L336,127.4L334.4,129L332.6,131.6L331.1,134.2L330.2,135.6L330.8,139.7L330.7,140.7L330.3,141.2L328,141.9L325,143L323.2,144L320.8,146.1L318.8,148.4L316.1,155L311.6,160.1L310.9,161.8L306.7,164.8L304.8,168.6L303.6,173.2L302,176.5L298.4,181L297.6,188.2L297.8,202.6L296.8,218.9Z"/>
+      <path class="map-border" d="M507.6,420.5L510.4,428.6L510,430.1L508,431L506.9,431.1L505.7,429.8L504.7,427.1L503.2,427.7L500.7,424.5L498,424.3L495.7,420.4L496.6,417.1L496.1,411.3L498.9,408.4L500.5,403.4L502.3,406.8L502.7,412L505.1,418.3L507.2,420.2ZM521.4,372.5L521.7,374.5L521,376.2L521.1,382L521,385.8L518.8,391L517.1,392.9L515.4,392.3L514.2,391.5L513.1,390L515.2,380.4L514.2,373.4L518.3,374ZM259.9,543.4L257.8,542.4L253.7,540.1L248.2,538.2L243.7,535.9L241.6,533.8L237.3,533L233.7,532.6L230.1,530.6L226.6,530.4L223.1,529.9L222.4,528.6L222.3,525.6L221,524.9L218.5,524.1L215.6,524.2L214,524.6L213,524.4L210.7,522.6L208.6,520.5L207.8,517L204.5,514.6L200.8,512.9L190.5,513.1L188.9,512.5L186.5,510.7L183.6,507.8L181.2,504.5L179.3,499.9L178.2,497.1L177.1,493.8L174.6,488.7L171,481.5L168.3,475.6L165.3,469.3L164.1,464.7L161.8,459.5L158,453.2L156.1,450.8L154,448.6L148.5,444.3L142.4,440.1L139,437.3L134.6,428.9L132.7,425.8L131.5,420.4L130.4,414.9L130.8,412.6L134.8,405.5L135.2,403.4L134.7,400.7L132.8,395L131.3,391.3L130.2,388.1L128.2,382.7L125.2,375.5L124.5,372.2L124.5,369.9L126.2,363.6L127.5,357.1L127.5,355.3L139.3,355.5L141.3,354.1L148,350L155.6,341.6L157.1,338L160.1,332.7L163.2,330L164.3,328.1L165.1,325.3L166,322.8L169.9,319.2L173.7,316.4L173.5,315.2L172.9,314.4L173.6,313.7L175.6,312.3L179.7,311L180.5,308.2L180.5,305L179.8,303.2L180,301.2L179.3,300L176.7,299.7L172.8,298.1L169.4,297.5L167.1,296.6L166.3,295.9L166,294L166.6,291.9L167,291.3L167.8,289.1L166.3,287.7L166,287.1L166.7,286L170.1,279L170.9,278L172.4,277.9L174.7,277L176.9,276.6L178.8,276.9L180,276.6L181.2,275.6L182.1,272.9L183,268.3L182.6,264.6L180.8,261.7L180.4,257.3L181.2,251.4L180.5,246.5L178.6,242.5L176.7,240.2L173.7,239.1L169.1,233.1L167.6,230.2L167.9,228.4L169.1,227.8L169.5,227.6L172.5,227.9L175.4,227.2L177.9,225.6L180.5,225L181.1,225.2L181.7,225.4L185.8,225.4L192.4,225.4L199.1,225.4L205.9,225.4L212.5,225.4L219.1,225.4L225.9,225.4L232.6,225.4L239.3,225.4L246,225.4L252.6,225.4L259.4,225.4L266,225.4L272.8,225.4L279.5,225.4L286.1,225.4L292.9,225.4L296.9,225.4L299.8,225.4L302.5,226.7L305.5,228.4L313.6,232.9L321.6,237.4L329.6,241.9L337.6,246.3L345.6,250.9L353.7,255.3L361.7,259.8L369.7,264.3L377.7,268.8L385.7,273.3L393.9,277.7L401.9,282.2L409.9,286.7L417.9,291.2L426,295.7L434,300.2L437.8,302.3L438.3,303.3L439,307.3L439.4,309.9L439.3,312.2L437.1,316L436.4,318L436.4,319.4L437,319.9L438.7,320.1L440.4,321L440.9,321.7L442.1,324.6L443.6,326L447,328.5L452.7,332.7L458.5,336.8L464.3,341L470,345.2L475.9,349.4L481.7,353.5L487.4,357.7L493.2,361.9L496.1,363.9L497.1,364.4L496.5,367.7L493.5,375.3L493.3,378.5L492.1,382.4L491,384.8L488.1,395.7L485.5,399.7L482.1,409.3L481.4,416.6L483.5,421.7L484.1,426.4L488.2,431.2L491.3,432.8L493.6,435L497.4,439.9L499.7,444.8L506.6,447.2L509.3,452.7L508.4,456.5L505.1,459.7L502.2,464.7L499.7,471.5L499.6,481.7L501.3,480.2L505,482.7L505.4,490.2L501.6,499L500.5,503.1L500.3,506.6L503.1,517.2L507.2,522.6L506.9,524.3L505.8,525.7L513,535.2L512.3,543.5L515,549.9L516.3,555.5L518,559.8L518.3,562.7L516.1,566L521.4,566.8L524.4,569.6L525.9,572.1L529.7,572L531.7,573.7L534.7,575.2L541.1,579.5L542.8,581.7L543.5,583L543.9,583.8L539.6,587.1L532.8,592.4L526,597.5L519.6,600.9L515,602.6L510,603.5L505.4,605.7L500.9,609L495.2,610.7L488.3,610.7L481.1,613.1L474,617.6L469.8,620.2L463,616.3L457.8,615L451.9,615.1L448.2,615.7L446.9,616.5L445.8,618.9L444.8,622.8L440.9,626.6L434,630.3L427.6,631.6L421.8,630.7L417.9,629.2L415.8,627.1L412.7,626.1L408.8,626.3L405,627.7L401.3,630.6L395.4,631.8L387.4,631.5L383.2,630.1L382.5,627.7L379,624.9L372.6,621.8L367.8,621.7L364.7,624.7L362,626.7L359.4,627.5L357.3,627.5L355.2,626.9L354,626.7L345.1,626.4L336.7,626.5L336.4,625.2L335.8,622.1L334.1,619.4L332.6,617.8L330.7,617.4L329.7,617.5L328.9,616.2L328,613.5L326.5,611.1L324.6,609.2L323.5,607.4L323.1,605.7L323.4,603.9L325.1,599.5L325.7,596.3L325.5,593.2L324.6,590L322.6,586.1L322.8,585L322.2,582.4L322,580.5L322.4,578.3L322,575.3L320.3,568.8L320.3,567.2L318.5,564.1L312.9,556.7L312.7,555.8L303.9,548.3L300.5,546.7L299.1,548.1L298.7,549.4L299.1,551.8L298.8,553L298.4,553.5L296.4,553.4L295.1,553.2L291.8,551.2L289.2,550.7L282.9,551.1L280.5,551.5L278.8,551.1L275.4,547.7L271.5,546.9L267.8,546.7L262,542.9L260.6,543.1ZM515.6,488.9L513.5,489.4L512.7,488.9L511.5,487.4L513.7,486L515.8,483.4L520.7,479.5L522.4,477L523,476.5L522.6,479.4L519.9,486L517.5,486.4Z"/>
+      <path class="map-border" d="M134,239.9L135.2,239.8L143.4,237.9L144.2,238.5L145.5,242.3L146.2,242.8L147.3,242.9L149.6,242.1L153.8,239.1L155.6,237.3L157.7,234.8L160.5,232L162.1,229.5L163.6,228L165.5,227.6L167.6,227.7L169.1,227.8L167.9,228.4L167.6,230.2L169.1,233.1L173.7,239.1L176.7,240.2L178.6,242.5L180.5,246.5L181.2,251.4L180.4,257.3L180.8,261.7L182.6,264.6L183,268.3L182.1,272.9L181.2,275.6L180,276.6L178.8,276.9L176.9,276.6L174.7,277L172.4,277.9L170.9,278L169.9,277.8L168.2,277.1L165.3,274.7L160.2,276L158.8,276L156.9,277.1L155.3,278.5L154.4,278.6L153.4,278.4L148.9,275.6L147.3,275.7L146.6,283.6L146,287.9L145,289.9L141.9,291.8L138.6,292.8L136.9,292.8L129.8,293.4L127,293.4L125.5,292.7L123.5,288.3L119.8,286.3L116.1,285.4L114.8,285.6L113.4,287.9L112.9,290L109.4,288.6L108.4,286.8L108.3,283.8L106.9,279.8L107.7,278L109.1,276.9L111.9,274.7L116.4,271.7L117.4,270.3L117.9,267.9L117.6,262.4L117.2,257.7L117.8,256L119.8,252.4L122.4,248.6L125.6,244.8L127.5,244.4L130,242.9L132.5,240.7Z"/>
+      <path class="map-border" d="M198.4,1053.4L203.8,1049.2L209.1,1043.3L215.4,1036.4L221,1030.2L225.9,1024.8L232.6,1017.4L239.2,1010.1L240.8,1009.2L241.5,1008.5L238.7,1002.1L243.3,994.5L243.4,989.7L243.3,985L243.8,982.9L245.2,981L250.6,977.1L254.7,970.8L258,965.1L262.7,955.7L263.1,953.6L263.2,951.3L261.8,948.2L258.9,943.1L256.6,938.7L254.5,931.9L256.6,926L257.2,922.5L257.2,920.6L256.4,918.8L254.1,917.4L252.2,916.5L251.7,914.1L251.7,911.2L252.5,909.6L257.5,907L258.6,905.7L259.1,904.1L259.3,901.9L260.8,896.3L262.7,891L262.8,889.1L262.1,887.5L261.6,884.5L261.3,880L261.2,867.5L262.2,854.5L261.8,847.2L258.6,838.8L258.3,832.7L260.6,828.4L261,825.9L259.3,825.6L255.7,825.4L253.2,824.5L249.2,821.1L242.3,818.2L234.5,815.5L223.1,814.8L213.6,806.4L206.1,805L203.7,804L196.5,798.9L185.4,798.5L173.7,797.9L166.4,797.8L165.3,797.1L164.9,790.2L164.9,784L164.3,778.6L163.2,772.5L161.5,770.2L159.5,766L158.4,761.5L158.3,759.3L158.7,758.5L166.8,755.3L170.2,753.7L175.4,751.9L184.4,749.3L192.6,747L200,744.8L207.9,742.4L211.2,740.9L215.1,739.3L224.6,736.1L227.3,735.1L232.8,733.2L235.5,732.6L246.1,728.9L258.2,724.7L262.4,723.3L270.5,720.6L272.1,721.7L277.6,731.3L281.9,736.9L286.9,742.1L287.7,741.8L289.1,740.6L291.7,740.1L299.4,738.9L302.5,738.8L304.4,737.5L308.5,736.5L313.1,735.9L314.7,736.5L319.6,743.2L320.3,748.4L321.3,755.9L321.6,759.5L321.5,764.4L320.9,770.5L317,777.5L316.2,781L314,786.4L311.2,789.1L309.8,791.3L310,793.6L311.5,795.5L314.7,798.9L315.8,801.1L315.5,803.1L315.5,805.8L316.3,807.6L317.1,808.7L320.5,810.5L323.6,814.9L329.2,820.3L335.7,827.8L338.8,830.1L341.3,830.7L342.5,833.3L341.8,836.2L339.9,837.9L340.7,840.3L341.7,841.6L342.9,842.2L345.9,842.4L348.5,841.9L349.1,841.1L348.9,829.7L346.8,823L344.9,820.5L344.5,820L345.2,817.8L347.4,812.7L349.3,807.6L350.4,805.5L351.7,804.2L360.8,802.9L365,801.7L366.6,800.3L368,796.4L369.1,785.5L369.5,775.2L368.5,769.3L369.9,760.3L371.9,754.7L370.8,753.6L370.1,746.1L364.2,738.1L356.6,727.8L352.4,722.3L347.5,716L338.7,706.2L334.8,702.7L332.6,701.3L325.5,700.1L323.6,698.2L321.8,695.2L321.1,689.6L321.1,685.5L320.3,678.4L318.8,668.4L318.1,665.5L316.1,658L314.2,650.8L314,649.1L314.7,647.4L318,642.1L320.4,638.4L321.5,636.3L323.4,630.8L323.9,628.1L325.4,626.9L331.6,626.4L336.7,626.5L345.1,626.4L354,626.7L355.2,626.9L357.3,627.5L359.4,627.5L362,626.7L364.7,624.7L367.8,621.7L372.6,621.8L379,624.9L382.5,627.7L383.2,630.1L387.4,631.5L395.4,631.8L401.3,630.6L405,627.7L408.8,626.3L412.7,626.1L415.8,627.1L417.9,629.2L421.8,630.7L427.6,631.6L434,630.3L440.9,626.6L444.8,622.8L445.8,618.9L446.9,616.5L448.2,615.7L451.9,615.1L457.8,615L463,616.3L469.8,620.2L474,617.6L481.1,613.1L488.3,610.7L495.2,610.7L500.9,609L505.4,605.7L510,603.5L515,602.6L519.6,600.9L526,597.5L532.8,592.4L539.6,587.1L543.9,583.8L545.9,587.8L549.5,591.4L547.4,593.4L544.9,595.3L548.9,597.8L545.9,601.6L545.5,604.3L546.3,605.3L547,606.9L545,611.2L542.3,614.5L541.6,617.1L544,621.6L542.8,629.5L545.1,636.7L545.7,640.4L546.5,642.9L545.4,647.4L545.7,654.8L546.2,657.9L544.9,661.7L547.2,663L548.4,667.2L548,672L547.3,674.5L543.4,677.6L542.8,678.8L543,680.6L547.8,680.7L548.1,683.5L547.7,685.7L548,690L547.3,692.7L548.4,695.7L547,699.2L547.6,701.9L547.6,705.3L548.8,714L548.9,724.8L549.2,726.5L551,727.7L553.4,728.3L553.4,731.3L550.5,735.2L550.4,737.6L550.8,740.9L553.8,736.3L555.7,736.4L557.3,738.2L557.1,740.8L557.6,742.2L557.3,744.7L558.3,748L557.9,750.8L555.7,752.8L552.8,756.1L552.3,759.4L552.6,761.4L550.7,762.1L549.7,763.4L551.1,766.4L551,769.1L547.6,777.4L538.3,788.7L534.3,792.8L530.6,797.2L530.6,799L530.2,800.6L525.9,806.8L521.3,807.9L518.6,809.6L520.6,815.1L517.6,816.4L512.3,820.7L498,829.1L495.7,831L492,836.2L487.2,837.5L484.5,838.9L479.7,839.4L478,839L476.4,839.2L475,840.3L465.6,844L456.6,846.8L454.4,848.1L453,849.9L445.1,852.7L432.8,859.8L422.7,866.4L415.4,873.2L413.5,874.2L411.2,876.5L410.5,879.9L409.7,881.8L404.3,888.9L396.2,897.2L394.7,899.6L391.4,904.2L391.1,907.2L388.2,908.2L385.7,905.3L384.8,910.9L382.7,911.3L380.6,910.1L375.2,913L370.4,916.1L362.8,922.9L352,936.2L336.3,948.9L334.1,949.2L332.7,949.2L327.7,944.8L325,944.4L327.4,947.1L329.1,949.3L328.7,953.5L328.8,960L326.9,972.6L327.2,975.4L329.3,978.9L333.5,983.3L337.6,988.8L342.6,1004.5L343,1012.5L348.3,1022.9L348.5,1027.4L350.6,1038.6L350.5,1047.6L350.1,1053.2L352.7,1055.5L353.6,1053.4L353.3,1049.9L354,1044.2L355.4,1041.7L356.9,1042.1L357.3,1044.8L358.2,1047.1L358.6,1049.3L358.6,1052.3L356.7,1063.8L357.3,1068.5L359.8,1076.3L356.9,1085.4L352.4,1106.8L352.2,1110.5L353.2,1112.2L355.6,1112.7L356.5,1110L357.9,1110L358.6,1111.6L356.7,1121.5L354.7,1125.9L347.8,1136.6L344.1,1141.2L337.9,1145.7L323.5,1152.8L294.4,1163L282.9,1168.1L276.1,1171.1L261.4,1180.6L255.1,1187L252.5,1194.4L249.9,1197.8L247.5,1202.1L249.6,1205.8L251.8,1208.6L254.3,1210.4L255.6,1212L257.2,1213.2L259,1207.4L259.8,1205.5L261.3,1205.4L260.5,1212.5L258.7,1236.9L258.6,1237.7L254.5,1237.7L247.5,1237.9L243.3,1238L238.5,1238.2L232.8,1236.9L229.6,1237.2L229.3,1223.8L228.2,1220.8L227.1,1216.5L226.9,1213.7L227.6,1210.9L227.8,1206.6L227.6,1202.7L224.2,1200.7L223.3,1200.2L222.5,1197.1L222.3,1192.5L224.7,1186.5L224.6,1175.1L224.8,1171.2L224.7,1163.3L224.7,1153.7L224.7,1145.2L224.7,1137.9L224,1134.4L223.5,1132.4L221.9,1128.6L220,1120.5L217.8,1114.4L214.9,1110.4L214,1108.2L213,1105.5L210.3,1100.5L208.2,1097.5L207.6,1095.2L207.6,1089.2L205.2,1078.5L203.4,1070.6L200.7,1062.2L199,1056.5L198.7,1055.5ZM324.7,643.3L324.1,642.1L322.8,641.6L321.5,642.1L320.9,643.5L322.4,645.3L324.1,645.3ZM327.7,647L328.7,646.2L329.1,645L329.1,644L328.4,643.2L327.4,642.8L326.2,643.1L325.7,644.6L325.5,646.6L326.4,647.3Z"/>
+      <path class="map-border" d="M327.7,647L326.4,647.3L325.5,646.6L325.7,644.6L326.2,643.1L327.4,642.8L328.4,643.2L329.1,644L329.1,645L328.7,646.2ZM324.7,643.3L324.1,645.3L322.4,645.3L320.9,643.5L321.5,642.1L322.8,641.6L324.1,642.1ZM270.5,720.6L268.5,717.7L266.9,718.4L264.6,720.4L263.3,721L262.7,720.9L262.2,720.4L261.7,719.2L259.9,715.5L257.9,713L255.9,712L254.1,710.7L254.8,709.6L255.6,708.8L255.3,707.9L254.4,706.7L250.6,704.9L250.6,704.1L253.8,702.6L255.9,700.7L257.4,699L259.1,695.1L260.6,691.2L261.7,690L262.1,687.4L261.8,684.5L262.5,680.9L262.9,677.4L261.8,676.1L260.9,673.7L262,669.8L263.7,667L272.1,664.2L278,661.6L279.2,660.5L281.1,658.3L282.2,656.1L281.5,655.5L276.9,655.5L275.8,654.6L272.4,647.1L274.3,638.4L274.4,635.1L274.3,630.9L273.8,627.8L272.4,626.5L271.5,624.9L271.7,620.3L273.1,619.8L275.9,613.9L277.3,610.4L275.7,607.6L274,603.6L273.2,601.1L272.8,600.2L273.9,598.7L275.9,597.1L278.1,596.7L280.4,596L287.7,588.6L287.9,587.2L286.5,584.7L283.8,581L283.1,579.5L282.9,575L281.8,573.7L277.7,570.6L274.7,567.5L275.7,564.3L276.2,560.7L274.6,558.8L272.4,556.8L270.9,553.9L270.2,551.7L268.5,550.9L266.9,550.9L265.6,552.2L264.4,552L262.8,551.6L262.2,549.7L262.1,547.7L261,546.3L260.1,544.4L259.9,543.4L260.6,543.1L262,542.9L267.8,546.7L271.5,546.9L275.4,547.7L278.8,551.1L280.5,551.5L282.9,551.1L289.2,550.7L291.8,551.2L295.1,553.2L296.4,553.4L298.4,553.5L298.8,553L299.1,551.8L298.7,549.4L299.1,548.1L300.5,546.7L303.9,548.3L312.7,555.8L312.9,556.7L318.5,564.1L320.3,567.2L320.3,568.8L322,575.3L322.4,578.3L322,580.5L322.2,582.4L322.8,585L322.6,586.1L324.6,590L325.5,593.2L325.7,596.3L325.1,599.5L323.4,603.9L323.1,605.7L323.5,607.4L324.6,609.2L326.5,611.1L328,613.5L328.9,616.2L329.7,617.5L330.7,617.4L332.6,617.8L334.1,619.4L335.8,622.1L336.4,625.2L336.7,626.5L331.6,626.4L325.4,626.9L323.9,628.1L323.4,630.8L321.5,636.3L320.4,638.4L318,642.1L314.7,647.4L314,649.1L314.2,650.8L316.1,658L318.1,665.5L318.8,668.4L320.3,678.4L321.1,685.5L321.1,689.6L321.8,695.2L323.6,698.2L325.5,700.1L332.6,701.3L334.8,702.7L338.7,706.2L347.5,716L352.4,722.3L356.6,727.8L364.2,738.1L370.1,746.1L370.8,753.6L371.9,754.7L369.9,760.3L368.5,769.3L369.5,775.2L369.1,785.5L368,796.4L366.6,800.3L365,801.7L360.8,802.9L351.7,804.2L350.4,805.5L349.3,807.6L347.4,812.7L345.2,817.8L344.5,820L344.9,820.5L346.8,823L348.9,829.7L349.1,841.1L348.5,841.9L345.9,842.4L342.9,842.2L341.7,841.6L340.7,840.3L339.9,837.9L341.8,836.2L342.5,833.3L341.3,830.7L338.8,830.1L335.7,827.8L329.2,820.3L323.6,814.9L320.5,810.5L317.1,808.7L316.3,807.6L315.5,805.8L315.5,803.1L315.8,801.1L314.7,798.9L311.5,795.5L310,793.6L309.8,791.3L311.2,789.1L314,786.4L316.2,781L317,777.5L320.9,770.5L321.5,764.4L321.6,759.5L321.3,755.9L320.3,748.4L319.6,743.2L314.7,736.5L313.1,735.9L308.5,736.5L304.4,737.5L302.5,738.8L299.4,738.9L291.7,740.1L289.1,740.6L287.7,741.8L286.9,742.1L281.9,736.9L277.6,731.3L272.1,721.7Z"/>
+      <path class="map-border" d="M564,268.9L562.5,269.2L563.3,267.1L567.4,264.3L569.1,264.9L569.4,265.6L569.2,266.1L568.6,266.7ZM296.9,225.4L296.8,218.9L297.8,202.6L297.6,188.2L298.4,181L302,176.5L303.6,173.2L304.8,168.6L306.7,164.8L310.9,161.8L311.6,160.1L316.1,155L318.8,148.4L320.8,146.1L323.2,144L325,143L328,141.9L330.3,141.2L330.7,140.7L330.8,139.7L330.2,135.6L331.1,134.2L332.6,131.6L334.4,129L336,127.4L336.9,125.7L337.3,122.9L337.5,120.8L337.3,117.5L336.9,109.9L335,103.6L333.8,96.6L334.6,94.2L333.1,90.1L332.5,89.8L331.2,88.9L329.7,85.1L328.5,81.5L327.9,80.5L322.8,77.5L320.3,70.1L317.4,68.4L315.9,61.1L315.7,59.1L317.3,51.7L317,50L315.4,48.5L310.6,47L306.8,43.9L307.2,42.9L307.5,41.8L305.6,41.1L299.7,28.5L307.2,21.1L314.8,13.5L324.7,3.8L333.7,-5L341.4,-12.6L348.3,-19.5L348.2,-18.2L348.2,-16.5L349.1,-15.4L350.5,-14.7L352.5,-15.5L354.1,-16.5L355.9,-16.7L366.3,-13.9L368,-11.4L368,-8.8L368.4,-6.8L367.6,-4.9L366.8,1L367,6.4L370.1,10.3L372.9,13.5L375,17.9L376.8,19.2L379,19.9L386.1,20.1L396.7,20.3L406.9,20.6L407.8,20.7L410,21.3L419.3,27.3L427.9,32.7L435.2,37.4L442.2,42L449.2,46.4L454.4,50.2L459.7,51.3L468.1,51.8L474.1,52L479.5,53.5L487.7,54.9L493.6,55.7L497.3,56.5L507.4,57.4L509.1,56.9L513.5,52.8L518.6,46.2L520.6,42.5L527,38.8L538.3,33.8L546.3,30.2L555.3,26.6L559.4,29.7L564.9,34.7L567.4,37.2L569.4,38.3L572.5,39L576.2,39L578.2,38.9L582.3,38.2L591.9,37.6L597.4,37.7L592.8,44.3L587.3,52.3L577,67L569.2,74.7L563.3,80.5L562.7,81.6L562.9,88.1L562.9,104L563,135.7L563.2,167.4L563.3,199.1L563.3,215L563.3,220.4L568.4,227.1L573.6,233.5L580.2,242.2L583.8,246.8L584.4,248.4L584.2,251.4L578.7,257.9L574.3,260.9L568.2,262.2L566.4,262L564,261.1L563,262.6L562.3,265L561,264.5L560,263.8L560.6,268.1L561.3,270.2L560.3,273.1L557.3,275.6L557.1,277.7L550.7,283.2L541.7,283.9L537,286.6L534.8,288.9L533.2,293.8L533.9,301.4L531.3,307.1L530.9,310.1L526.1,313.8L524.1,317.3L522.6,320.8L521.3,322.4L519.6,330.2L517.5,335L516.9,336.6L516.4,338.1L514.8,340.9L513.7,342.8L512.9,344.1L507.3,356.4L503,361.9L499.7,361.3L497.4,363.5L497.1,364.4L496.1,363.9L493.2,361.9L487.4,357.7L481.7,353.5L475.9,349.4L470,345.2L464.3,341L458.5,336.8L452.7,332.7L447,328.5L443.6,326L442.1,324.6L440.9,321.7L440.4,321L438.7,320.1L437,319.9L436.4,319.4L436.4,318L437.1,316L439.3,312.2L439.4,309.9L439,307.3L438.3,303.3L437.8,302.3L434,300.2L426,295.7L417.9,291.2L409.9,286.7L401.9,282.2L393.9,277.7L385.7,273.3L377.7,268.8L369.7,264.3L361.7,259.8L353.7,255.3L345.6,250.9L337.6,246.3L329.6,241.9L321.6,237.4L313.6,232.9L305.5,228.4L302.5,226.7L299.8,225.4Z"/>
+      <path class="map-border" d="M170.9,278L170.1,279L166.7,286L166,287.1L166.3,287.7L167.8,289.1L167,291.3L166.6,291.9L166,294L166.3,295.9L167.1,296.6L169.4,297.5L172.8,298.1L176.7,299.7L179.3,300L180,301.2L179.8,303.2L180.5,305L180.5,308.2L179.7,311L175.6,312.3L173.6,313.7L172.9,314.4L173.5,315.2L173.7,316.4L169.9,319.2L166,322.8L165.1,325.3L164.3,328.1L163.2,330L160.1,332.7L157.1,338L155.6,341.6L148,350L141.3,354.1L139.3,355.5L127.5,355.3L126.6,349.6L124.8,341.9L120.7,334.9L120.3,332.1L120.5,326.4L120.5,318.5L120.2,314.3L120.3,311.2L120.9,305.8L120.7,302.6L118.2,298.9L114.8,295L113,293L112.9,291.5L112.9,290L113.4,287.9L114.8,285.6L116.1,285.4L119.8,286.3L123.5,288.3L125.5,292.7L127,293.4L129.8,293.4L136.9,292.8L138.6,292.8L141.9,291.8L145,289.9L146,287.9L146.6,283.6L147.3,275.7L148.9,275.6L153.4,278.4L154.4,278.6L155.3,278.5L156.9,277.1L158.8,276L160.2,276L165.3,274.7L168.2,277.1L169.9,277.8Z"/>
+      <circle class="map-dot is-hq" cx="438.6" cy="444.9" r="6.5"><title>Morogoro — head office</title></circle>
+      <circle class="map-dot" cx="289.3" cy="543.1" r="5"><title>Songwe River Basin</title></circle>
+      <circle class="map-dot" cx="443.7" cy="448" r="5"><title>Wami/Ruvu Basin</title></circle>
+      <circle class="map-dot" cx="172.6" cy="285.5" r="5"><title>Akagera River (Ngara)</title></circle>
+      <circle class="map-dot" cx="462.5" cy="482.2" r="5"><title>Rufiji Basin</title></circle>
+      <circle class="map-dot" cx="323.2" cy="165" r="5"><title>Nzoia Watershed, Kenya</title></circle>
+      <circle class="map-dot" cx="242.7" cy="185.7" r="5"><title>Nile Basin (NBI, Entebbe)</title></circle>
+      <circle class="map-dot" cx="193.1" cy="437.9" r="5"><title>Katavi & Mahale NPs</title></circle>
+      <circle class="map-dot" cx="240.3" cy="489.8" r="5"><title>Lake Rukwa Basin</title></circle>
+      <circle class="map-dot" cx="387.2" cy="505" r="5"><title>Kilombero River Basin</title></circle>
+    </svg></div>
+        <ul class="map-legend"><li><span class="dot is-hq"></span><span><b>Morogoro</b> — head office</span></li>
+        <li><span class="dot"></span><span><b>Songwe River Basin</b> — flood EWS &amp; monitoring network design</span></li>
+        <li><span class="dot"></span><span><b>Wami/Ruvu Basin</b> — monitoring stations &amp; environmental flows</span></li>
+        <li><span class="dot"></span><span><b>Akagera River, Ngara</b> — river avulsion assessment (with HYDROC)</span></li>
+        <li><span class="dot"></span><span><b>Rufiji Basin</b> — hydrological &amp; sedimentation study</span></li>
+        <li><span class="dot"></span><span><b>Nzoia Watershed, Kenya</b> — physiographic survey (with HYDROC)</span></li>
+        <li><span class="dot"></span><span><b>Nile Basin — NBI, Entebbe</b> — environmental flows guidance (with HYDROC)</span></li>
+        <li><span class="dot"></span><span><b>Katavi &amp; Mahale National Parks</b> — water-management feasibility study</span></li>
+        <li><span class="dot"></span><span><b>Lake Rukwa Basin</b> — environmental flows assessment</span></li>
+        <li><span class="dot"></span><span><b>Kilombero River Basin</b> — water resources management</span></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">GIS capability</span><h2>Analysis we can produce</h2></div>
+        <p class="lede">Illustrative examples of the geospatial and hydrological analysis behind our assignments &mdash; terrain, flood exposure and groundwater potential.</p>
+      </div>
+      <div class="gallery">
+        <button type="button" data-full="map-tanzania-gis-capability.jpg" data-caption="Terrain, river network and administrative regions of Tanzania">
+          <img src="map-tanzania-gis-capability.jpg" alt="GIS terrain, river network and administrative regions map of Tanzania">
+          <figcaption>GIS &amp; terrain mapping</figcaption>
+        </button>
+        <button type="button" data-full="map-flood-msimbazi.jpg" data-caption="Flood exposure screening (HAND method), Msimbazi River, Dar es Salaam">
+          <img src="map-flood-msimbazi.jpg" alt="Flood exposure screening map of the Msimbazi River, Dar es Salaam">
+          <figcaption>Flood mapping</figcaption>
+        </button>
+        <button type="button" data-full="map-groundwater-katuma.jpg" data-caption="Groundwater potential mapping, Katuma River catchment">
+          <img src="map-groundwater-katuma.jpg" alt="Groundwater potential map of the Katuma River catchment">
+          <figcaption>Groundwater mapping</figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow">Partners &amp; clients</span>
+      <div class="chipline" style="margin-top:16px">
+        <span class="chip strong">HYDROC GmbH &mdash; technical partner</span>
+        <span class="chip">Songwe River Basin Commission</span>
+        <span class="chip">Wami/Ruvu Basin Water Board</span>
+        <span class="chip">NELSAP &middot; Nile Basin Initiative</span>
+        <span class="chip">TANESCO</span>
+        <span class="chip">Ministry of Water &amp; Irrigation, Kenya</span>
+        <span class="chip">GIZ</span>
+        <span class="chip">KfW</span>
+        <span class="chip">WREM International</span>
+        <span class="chip">Sida</span>
+        <span class="chip">NERC / DFID</span>
+        <span class="chip">WWF Tanzania</span>
+        <span class="chip">World Bank / GFDRR</span>
+        <span class="chip">University of Dar es Salaam</span>
+        <span class="chip">Sokoine University of Agriculture</span>
+        <span class="chip">The Water Institute</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="border-bottom:none">
+    <div class="wrap">
+      <div class="mv-grid">
+        <h2>Vision, mission<br>&amp; values</h2>
+        <div>
+          <div class="mv-item">
+            <span class="eyebrow">Vision</span>
+            <p>To become a leading environmental and water resources consulting firm providing long-term solutions for informed decision-making and sustainable development.</p>
+          </div>
+          <div class="mv-item">
+            <span class="eyebrow">Mission</span>
+            <p>To help clients manage risks and protect people and the environment by delivering strategic, sustainable and technically sound services at affordable cost.</p>
+          </div>
+          <div class="values-row">
+            <span class="value-pill">Customer focus</span>
+            <span class="value-pill">Integrity</span>
+            <span class="value-pill">Teamwork</span>
+            <span class="value-pill">Respect</span>
+            <span class="value-pill">Efficiency &amp; effectiveness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site dark" id="c-footer">
+    <div class="wrap">
+      <div class="foot-col">
+        <img class="foot-logo" src="consult-icon.png" alt="Ndika Engineers Ltd">
+        <p class="brand-blurb">Environmental &amp; water-resources consultancy &mdash; hydrology, GIS, flood early warning and catchment management since 2014.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/ndikaengineersltd_" target="_blank" rel="noopener" aria-label="Ndika Engineers on Instagram"><svg><use href="#i-instagram"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Also on this site</h4>
+        <div class="foot-links">
+          <a href="#">Ndika Engineers &mdash; home</a>
+          <a href="#construction">Ndika Construction Company</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="contact-line"><svg><use href="#i-pin"/></svg><span>P.O. Box 876, Morogoro, Tanzania</span></div>
+        <div class="contact-line"><svg><use href="#i-mail"/></svg><span style="user-select:all">ndikaengineers@gmail.com</span></div>
+        <div class="copy-row" style="margin-top:10px">
+          <button class="copy-btn" data-copy="ndikaengineers@gmail.com">Copy email</button>
+        </div>
+      </div>
+      <div class="foot-bottom">&copy; 2026 Ndika Engineers Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</section>
+
+<!-- ============================================================= CONSTRUCTION ============================================================= -->
+<section data-view="construction" data-division="construction" hidden>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="back-row">
+        <a class="back-link" href="#"><svg style="width:14px;height:14px;transform:rotate(180deg)"><use href="#i-arrow"/></svg> Ndika Engineers</a>
+        <span class="topbar-meta">&middot; Civil &amp; Building Contractor</span>
+      </div>
+      <div class="navlinks">
+        <button class="navlink" data-scroll="k-services">Services</button>
+        <button class="navlink" data-scroll="k-fleet">Fleet</button>
+        <button class="navlink" data-scroll="k-projects">Projects</button>
+        <button class="navlink" data-scroll="k-map">Map</button>
+        <button class="navlink" data-scroll="k-footer">Contact</button>
+      </div>
+      <button class="navcta" data-scroll="k-footer">Contact us</button>
+    </div>
+  </div>
+
+  <div class="hero-photo" id="k-hero">
+    <img src="site-earthworks-valley.jpg" alt="Ndika earthworks crew grading and compacting a wide civil works platform">
+    <div class="hero-photo-inner wrap">
+      <span class="eyebrow">Ndika Construction Company</span>
+      <h1>Class I civil and building contractor.</h1>
+      <p class="lede">Ndika is registered as a Class I construction company in Tanzania, holding Civil and Building licences. The portfolio builds buildings and civil infrastructure, delivers specialised works such as drilling and hydrometric-station construction, and hires out its own plant fleet.</p>
+      <a class="crosslink" href="#consultants">Looking for the consultancy portfolio? <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+
+  <div class="quicknav">
+    <div class="wrap quicknav-row">
+      <button class="qpill" data-scroll="k-services">Services</button>
+      <button class="qpill" data-scroll="k-fleet">Fleet</button>
+      <button class="qpill" data-scroll="k-projects">Projects</button>
+      <button class="qpill" data-scroll="k-map">Map</button>
+      <button class="qpill" data-scroll="k-footer">Contact</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>Class I</b><span>Civil &amp; building licence</span></div>
+      <div class="stat"><b>20+</b><span>Units of owned plant for hire</span></div>
+      <div class="stat"><b>4</b><span>Regions with active projects</span></div>
+    </div>
+  </div>
+
+  <div class="clients-strip">
+    <div class="wrap">
+      <span class="cl-label">Clients &amp; partners</span>
+      <span class="cl-names"><b>TANROADS</b> &middot; <b>TANESCO</b> &middot; <b>IDB</b> &middot; Local Government Authorities &middot; <b>Water Boards</b></span>
+    </div>
+  </div>
+
+  <div class="photoband green" id="k-top">
+    <img src="site-dam-causeway-hero.jpg" alt="Ndika crew and excavator building a rock-armoured causeway over a reservoir">
+    <div class="wrap">
+      <span class="eyebrow">In the field</span>
+      <h2>Site progress on one of our current civil works projects.</h2>
+    </div>
+  </div>
+
+  <section class="block" id="k-services">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Services</span><h2>What we build</h2></div>
+        <p class="lede">From single buildings to basin-wide civil infrastructure, plus the specialised work that comes from our hydrology background.</p>
+      </div>
+      <div class="dept-grid">
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-building"/></svg></span>
+          <h3>Construction of Buildings</h3>
+          <p class="intro">Offices, institutional buildings and other structures, built to full regulatory standard.</p>
+        </div>
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-road"/></svg></span>
+          <h3>Civil Works</h3>
+          <p class="intro">Roads, water supply schemes and irrigation infrastructure, and similar civil works.</p>
+        </div>
+        <div class="dept-card">
+          <span class="icon"><svg><use href="#i-drill"/></svg></span>
+          <h3>Specialised Projects</h3>
+          <p class="intro">Drilling and the construction and installation of hydrometric stations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="k-fleet">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Plant &amp; equipment</span><h2>Fleet for hire</h2></div>
+        <p class="lede">Plus hand-held compactors, plate compactors, concrete mixers and other small plant.</p>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Equipment</th><th class="num">Units</th></tr></thead>
+          <tbody>
+            <tr><td>Motor grader</td><td class="num">2</td></tr>
+            <tr><td>Pneumatic compaction roller</td><td class="num">2</td></tr>
+            <tr><td>Excavator</td><td class="num">2</td></tr>
+            <tr><td>Bulldozer</td><td class="num">2</td></tr>
+            <tr><td>Wheel loader</td><td class="num">1</td></tr>
+            <tr><td>Tipper trucks (large)</td><td class="num">4</td></tr>
+            <tr><td>Tipper trucks (small)</td><td class="num">2</td></tr>
+            <tr><td>Lowbed trailer</td><td class="num">1</td></tr>
+            <tr><td>Flatbed trailer</td><td class="num">2</td></tr>
+            <tr><td>Crane lorry (5&nbsp;t)</td><td class="num">1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-size:1rem;margin:32px 0 14px">On site</h3>
+      <div class="gallery">
+        <button type="button" data-full="site-excavator-trench.jpg" data-caption="Excavator digging a drainage trench, dump truck alongside">
+          <img src="site-excavator-trench.jpg" alt="Ndika excavator digging a drainage trench with a dump truck alongside">
+          <figcaption>Excavator</figcaption>
+        </button>
+        <button type="button" data-full="equip-bulldozer.jpg" data-caption="Bulldozer on earthworks, blade down">
+          <img src="equip-bulldozer.jpg" alt="Bulldozer on an earthworks site">
+          <figcaption>Bulldozer</figcaption>
+        </button>
+        <button type="button" data-full="equip-grader.jpg" data-caption="Motor grader, ready for road levelling and drainage works">
+          <img src="equip-grader.jpg" alt="Motor grader facing the camera on a cleared site">
+          <figcaption>Motor grader</figcaption>
+        </button>
+        <button type="button" data-full="equip-roller-sheepsfoot.jpg" data-caption="Padfoot compaction roller on a graded red-soil road">
+          <img src="equip-roller-sheepsfoot.jpg" alt="Padfoot compaction roller on a graded red-soil road">
+          <figcaption>Compaction roller</figcaption>
+        </button>
+        <button type="button" data-full="equip-lowbed.jpg" data-caption="Low-bed trailer and tractor horse for plant transport">
+          <img src="equip-lowbed.jpg" alt="Low-bed trailer and tractor unit for hauling heavy plant">
+          <figcaption>Low-bed trailer</figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="k-projects">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Projects</span><h2>Completed &amp; in progress</h2></div>
+        <p class="lede">A working sample of recent and current builds across four regions.</p>
+      </div>
+      <h3 style="font-size:1rem;margin-bottom:4px">Completed</h3>
+      <ul class="plist">
+        <li><span class="tag-sm">Hydrometric</span><span>Construction and installation of hydrometric stations, Lake Victoria Basin</span></li>
+        <li><span class="tag-sm">Monitoring</span><span>Supply, construction and installation of water level recorders, water quality sonde and flow-measuring devices, Wami/Ruvu Basin</span></li>
+        <li><span class="tag-sm">Roads</span><span>Periodic maintenance of roads, Morogoro Region</span></li>
+        <li><span class="tag-sm">Water supply</span><span>Construction of the Idende&ndash;Unenamwa Water Supply Scheme, Njombe Region</span></li>
+      </ul>
+      <h3 style="font-size:1rem;margin:28px 0 4px">In progress</h3>
+      <ul class="plist">
+        <li><span class="tag-sm">Building</span><span>Office building for IDB, Babati, Manyara Region</span></li>
+        <li><span class="tag-sm">Water supply</span><span>Rehabilitation of the Malangali Water Supply Scheme, Iringa Region</span></li>
+        <li><span class="tag-sm">Water supply</span><span>Construction of the Wangama&ndash;Mufumbi Water Supply Project, Njombe Region</span></li>
+      </ul>
+
+      <h3 style="font-size:1rem;margin:32px 0 14px">From the site</h3>
+      <div class="gallery">
+        <button type="button" data-full="site-pipe-fusion-welding.jpg" data-caption="HDPE pipe fusion welding on a water supply project">
+          <img src="site-pipe-fusion-welding.jpg" alt="Ndika crew fusing HDPE pipe on a water supply project, tanker in background">
+          <figcaption>Pipe fusion welding</figcaption>
+        </button>
+        <button type="button" data-full="site-quality-testing-dcp.jpg" data-caption="Field quality testing on an active site">
+          <img src="site-quality-testing-dcp.jpg" alt="Ndika technicians carrying out a dynamic cone penetration soil test on site">
+          <figcaption>Field quality testing</figcaption>
+        </button>
+        <button type="button" data-full="site-redsoil-cutting.jpg" data-caption="Earthworks cutting on an active civil works site">
+          <img src="site-redsoil-cutting.jpg" alt="Red laterite soil cutting and embankment on an active civil works site">
+          <figcaption>Earthworks cutting</figcaption>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="k-map">
+    <div class="wrap">
+      <div class="block-head">
+        <div><span class="eyebrow">Where we build</span><h2>Seven sites, four regions</h2></div>
+        <p class="lede">Approximate locations of the projects above, plus our head office in Morogoro.</p>
+      </div>
+      <div class="map-layout">
+        <div class="map-card"><svg viewBox="0 0 620 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of Tanzania and neighbouring countries with project locations marked">
+      <path class="map-country" d="M164.9,784L159.4,784.1L149.8,784.1L139.9,784.1L130.6,786.1L123.2,789.2L114.2,794.1L111.3,796L109.1,797.5L107.6,799.4L106.9,803.6L106.9,810L106.1,814.6L103.3,818.8L89.7,824L80.9,828.2L72.1,833.2L65.6,839.6L61,847.6L53.5,857.4L45.9,866L37.8,875.1L28.7,878.4L21.1,877.6L11.9,873.9L4.6,873.2L-0.7,875.6L-5.7,874.8L-10.3,871.1L-14.1,869.8L-17.2,870.7L-21.3,870.6L-28.5,868.6L-34.9,862.2L-38.2,859.6L-40.8,858.7L-48.3,857.6L-65.6,856.2L-67.4,856.6L-74.6,857.8L-83.5,859.4L-91.1,860.9L-99.2,862.5L-106.7,855.9L-115.2,848.5L-124,840.2L-130.7,833.7L-133.9,829.9L-139.8,825L-144,822.6L-145.6,821.4L-149.7,808.3L-152,796.2L-152,787.2L-152,774.6L-152,762.1L-152,749.6L-152,737.2L-152,724.7L-152,712.2L-152,699.8L-152,687.4L-152,681.3L-143.3,681.3L-133.5,681.3L-123.2,681.3L-112,681.3L-100.9,681.3L-89.6,681.3L-81.8,681.3L-79.7,681.2L-77.3,680.8L-77.1,679.6L-80.4,673.5L-80.1,671.4L-79.3,667.2L-78,663.7L-76.2,659L-76.1,656.3L-77.4,647.3L-77.3,642.3L-76.9,637.1L-76.5,632.1L-77,628.7L-76.5,626.9L-75.4,624.2L-74.8,621.2L-74.2,619.9L-74.3,618.7L-75,616.5L-75.5,611.4L-76.3,604.4L-77.1,599.4L-75.8,599.7L-72.9,600.1L-71.6,602.6L-70.8,605.3L-68.9,605.5L-63.9,607.1L-62.1,609.3L-61,614.1L-61.7,616.6L-63.3,618.6L-61.7,620.3L-58.3,621.5L-56.4,621.1L-50.7,617.9L-48.5,617.3L-45.6,616.7L-42.9,615.8L-35.4,614.3L-31.3,613.7L-29,612.5L-27.4,612.5L-26.2,613.4L-27.3,616.8L-27.7,619.9L-26.2,625.6L-25.1,628.3L-22.7,630.2L-20.9,631.2L-19,633.3L-14.9,632.9L-6.1,635.8L-3.4,637.1L0.4,638.5L3,639L12.2,640L15.6,640.7L21.8,641.7L26.8,641.8L30.5,641.4L32.9,640.5L34.4,639.6L35.1,638.9L36.2,636L38.1,629.8L38.7,628L40.6,627.1L43.1,626.5L44.4,627.5L46.1,634.4L53,640.6L55.4,645.8L57.2,650.2L58.7,651.5L61.2,653L65.6,653.6L69.4,653.7L77.2,656.9L83.6,659.5L88.2,661.3L90.2,662.7L91.7,665L92.6,666.8L93.9,671.3L95.4,674.9L97.8,675.7L100,675.9L102.2,678.4L103.8,680.6L107.1,685.9L109.4,689.6L110.2,693.2L112.9,695.5L116.5,696.6L119.9,696.7L121.8,695.6L126.7,693.8L130.5,691.6L133.2,690.9L134.8,691.4L136.1,692.9L136.7,695.7L136.9,697.4L139.6,698.8L141.5,698.2L142.3,696.5L142.3,695.6L142.3,687.8L142.3,681L142.3,674.6L142.3,666.8L142.3,660.1L142.3,654.5L142.3,648.7L140.5,649L138.4,650.4L133.4,650.5L131.5,651.5L130.9,653L131.2,655L131.3,657.6L130.6,658.9L128.5,659.3L125.2,658.3L119.5,657L114.8,656.2L111.4,652.6L106.6,647.4L103.7,644.7L96.3,639.2L95.1,638.1L92.8,635.5L90.9,631.1L90,628.3L89.2,626.1L88.1,622.9L89.8,617.9L92.4,608.5L94.2,601.7L95.1,596.7L98.8,591.6L99.1,587.1L97.6,581.2L98,578L98.1,569.8L98.4,562.9L98.4,559.6L97.4,553.8L95,547.3L89.7,538.3L89.7,536.4L93,534.3L97.8,530.6L100.3,528.4L103.3,525.3L104.6,523.7L107.5,519.7L109.2,516.4L109.9,512.3L108.5,508.2L111.3,507.4L120.5,506L130.5,504.5L141.2,502.9L151.9,501.2L162.4,499.6L171.7,498.1L178.2,497.1L179.3,499.9L181.2,504.5L183.6,507.8L186.5,510.7L188.9,512.5L190.5,513.1L200.8,512.9L204.5,514.6L207.8,517L208.6,520.5L210.7,522.6L213,524.4L214,524.6L215.6,524.2L218.5,524.1L221,524.9L222.3,525.6L222.4,528.6L223.1,529.9L226.6,530.4L230.1,530.6L233.7,532.6L237.3,533L241.6,533.8L243.7,535.9L248.2,538.2L253.7,540.1L257.8,542.4L259.9,543.4L260.1,544.4L261,546.3L262.1,547.7L262.2,549.7L262.8,551.6L264.4,552L265.6,552.2L266.9,550.9L268.5,550.9L270.2,551.7L270.9,553.9L272.4,556.8L274.6,558.8L276.2,560.7L275.7,564.3L274.7,567.5L277.7,570.6L281.8,573.7L282.9,575L283.1,579.5L283.8,581L286.5,584.7L287.9,587.2L287.7,588.6L280.4,596L278.1,596.7L275.9,597.1L273.9,598.7L272.8,600.2L273.2,601.1L274,603.6L275.7,607.6L277.3,610.4L275.9,613.9L273.1,619.8L271.7,620.3L271.5,624.9L272.4,626.5L273.8,627.8L274.3,630.9L274.4,635.1L274.3,638.4L272.4,647.1L275.8,654.6L276.9,655.5L281.5,655.5L282.2,656.1L281.1,658.3L279.2,660.5L278,661.6L272.1,664.2L263.7,667L262,669.8L260.9,673.7L261.8,676.1L262.9,677.4L262.5,680.9L261.8,684.5L262.1,687.4L261.7,690L260.6,691.2L259.1,695.1L257.4,699L255.9,700.7L253.8,702.6L250.6,704.1L250.6,704.9L254.4,706.7L255.3,707.9L255.6,708.8L254.8,709.6L254.1,710.7L255.9,712L257.9,713L259.9,715.5L261.7,719.2L262.2,720.4L262.7,720.9L263.3,721L264.6,720.4L266.9,718.4L268.5,717.7L270.5,720.6L262.4,723.3L258.2,724.7L246.1,728.9L235.5,732.6L232.8,733.2L227.3,735.1L224.6,736.1L215.1,739.3L211.2,740.9L207.9,742.4L200,744.8L192.6,747L184.4,749.3L175.4,751.9L170.2,753.7L166.8,755.3L158.7,758.5L158.3,759.3L158.4,761.5L159.5,766L161.5,770.2L163.2,772.5L164.3,778.6Z"/>
+      <path class="map-country" d="M296.9,225.4L292.9,225.4L286.1,225.4L279.5,225.4L272.8,225.4L266,225.4L259.4,225.4L252.6,225.4L246,225.4L239.3,225.4L232.6,225.4L225.9,225.4L219.1,225.4L212.5,225.4L205.9,225.4L199.1,225.4L192.4,225.4L185.8,225.4L181.7,225.4L181.1,225.2L180.5,225L177.9,225.6L175.4,227.2L172.5,227.9L169.5,227.6L169.1,227.8L167.6,227.7L165.5,227.6L163.6,228L162.1,229.5L160.5,232L157.7,234.8L155.6,237.3L153.8,239.1L149.6,242.1L147.3,242.9L146.2,242.8L145.5,242.3L144.2,238.5L143.4,237.9L135.2,239.8L134,239.9L134.2,238.7L133.6,229.8L133.5,224.4L134.6,221L135.1,217.1L135.2,213.7L136.7,207.8L136.2,204.2L138.1,191.9L138.6,189.9L139.3,183.9L140.5,182.1L141.6,181.4L143,177.7L145.7,171.8L147.6,168.8L147.2,162.2L147.4,157.8L147.9,156.7L151.8,155.1L156.9,151L159,146.1L162.1,143L167.9,141L168,141L185.5,124.2L193.7,115.2L197.2,110.6L197.3,108.9L198,106.8L196.5,105.1L194.9,103.5L194.3,102.1L192.9,101.4L190.7,101.4L189.3,100.4L187.8,98.4L186.2,97.1L181.2,97.2L177.4,95.1L177.4,92.3L179,86.8L181.9,80.3L182,78.6L181.6,77.1L180.9,75.8L179.6,74.5L178.4,73L179.3,68.4L181.2,63.9L182.7,61.7L184.2,59.2L183.6,57.1L181.6,56.1L182.7,54.1L185,50.7L189.5,47.3L193.4,45L196,45L201.1,46.8L205.7,48.9L208.3,49L211.3,48.1L217.7,44.3L219.1,45.5L221,47.9L223.1,51.7L227.1,53.4L229,54.6L230.4,55L231.2,54.7L232.7,51.7L234.5,50L238,47.9L245.4,46.3L250.7,45.8L253,45.4L256.8,44.5L262.8,41.4L268.8,45.4L275.1,46.2L281.4,46.1L283.3,44.9L284.3,44L290.8,37.5L299.7,28.5L305.6,41.1L307.5,41.8L307.2,42.9L306.8,43.9L310.6,47L315.4,48.5L317,50L317.3,51.7L315.7,59.1L315.9,61.1L317.4,68.4L320.3,70.1L322.8,77.5L327.9,80.5L328.5,81.5L329.7,85.1L331.2,88.9L332.5,89.8L333.1,90.1L334.6,94.2L333.8,96.6L335,103.6L336.9,109.9L337.3,117.5L337.5,120.8L337.3,122.9L336.9,125.7L336,127.4L334.4,129L332.6,131.6L331.1,134.2L330.2,135.6L330.8,139.7L330.7,140.7L330.3,141.2L328,141.9L325,143L323.2,144L320.8,146.1L318.8,148.4L316.1,155L311.6,160.1L310.9,161.8L306.7,164.8L304.8,168.6L303.6,173.2L302,176.5L298.4,181L297.6,188.2L297.8,202.6L296.8,218.9Z"/>
+      <path class="map-country is-home" d="M507.6,420.5L510.4,428.6L510,430.1L508,431L506.9,431.1L505.7,429.8L504.7,427.1L503.2,427.7L500.7,424.5L498,424.3L495.7,420.4L496.6,417.1L496.1,411.3L498.9,408.4L500.5,403.4L502.3,406.8L502.7,412L505.1,418.3L507.2,420.2ZM521.4,372.5L521.7,374.5L521,376.2L521.1,382L521,385.8L518.8,391L517.1,392.9L515.4,392.3L514.2,391.5L513.1,390L515.2,380.4L514.2,373.4L518.3,374ZM259.9,543.4L257.8,542.4L253.7,540.1L248.2,538.2L243.7,535.9L241.6,533.8L237.3,533L233.7,532.6L230.1,530.6L226.6,530.4L223.1,529.9L222.4,528.6L222.3,525.6L221,524.9L218.5,524.1L215.6,524.2L214,524.6L213,524.4L210.7,522.6L208.6,520.5L207.8,517L204.5,514.6L200.8,512.9L190.5,513.1L188.9,512.5L186.5,510.7L183.6,507.8L181.2,504.5L179.3,499.9L178.2,497.1L177.1,493.8L174.6,488.7L171,481.5L168.3,475.6L165.3,469.3L164.1,464.7L161.8,459.5L158,453.2L156.1,450.8L154,448.6L148.5,444.3L142.4,440.1L139,437.3L134.6,428.9L132.7,425.8L131.5,420.4L130.4,414.9L130.8,412.6L134.8,405.5L135.2,403.4L134.7,400.7L132.8,395L131.3,391.3L130.2,388.1L128.2,382.7L125.2,375.5L124.5,372.2L124.5,369.9L126.2,363.6L127.5,357.1L127.5,355.3L139.3,355.5L141.3,354.1L148,350L155.6,341.6L157.1,338L160.1,332.7L163.2,330L164.3,328.1L165.1,325.3L166,322.8L169.9,319.2L173.7,316.4L173.5,315.2L172.9,314.4L173.6,313.7L175.6,312.3L179.7,311L180.5,308.2L180.5,305L179.8,303.2L180,301.2L179.3,300L176.7,299.7L172.8,298.1L169.4,297.5L167.1,296.6L166.3,295.9L166,294L166.6,291.9L167,291.3L167.8,289.1L166.3,287.7L166,287.1L166.7,286L170.1,279L170.9,278L172.4,277.9L174.7,277L176.9,276.6L178.8,276.9L180,276.6L181.2,275.6L182.1,272.9L183,268.3L182.6,264.6L180.8,261.7L180.4,257.3L181.2,251.4L180.5,246.5L178.6,242.5L176.7,240.2L173.7,239.1L169.1,233.1L167.6,230.2L167.9,228.4L169.1,227.8L169.5,227.6L172.5,227.9L175.4,227.2L177.9,225.6L180.5,225L181.1,225.2L181.7,225.4L185.8,225.4L192.4,225.4L199.1,225.4L205.9,225.4L212.5,225.4L219.1,225.4L225.9,225.4L232.6,225.4L239.3,225.4L246,225.4L252.6,225.4L259.4,225.4L266,225.4L272.8,225.4L279.5,225.4L286.1,225.4L292.9,225.4L296.9,225.4L299.8,225.4L302.5,226.7L305.5,228.4L313.6,232.9L321.6,237.4L329.6,241.9L337.6,246.3L345.6,250.9L353.7,255.3L361.7,259.8L369.7,264.3L377.7,268.8L385.7,273.3L393.9,277.7L401.9,282.2L409.9,286.7L417.9,291.2L426,295.7L434,300.2L437.8,302.3L438.3,303.3L439,307.3L439.4,309.9L439.3,312.2L437.1,316L436.4,318L436.4,319.4L437,319.9L438.7,320.1L440.4,321L440.9,321.7L442.1,324.6L443.6,326L447,328.5L452.7,332.7L458.5,336.8L464.3,341L470,345.2L475.9,349.4L481.7,353.5L487.4,357.7L493.2,361.9L496.1,363.9L497.1,364.4L496.5,367.7L493.5,375.3L493.3,378.5L492.1,382.4L491,384.8L488.1,395.7L485.5,399.7L482.1,409.3L481.4,416.6L483.5,421.7L484.1,426.4L488.2,431.2L491.3,432.8L493.6,435L497.4,439.9L499.7,444.8L506.6,447.2L509.3,452.7L508.4,456.5L505.1,459.7L502.2,464.7L499.7,471.5L499.6,481.7L501.3,480.2L505,482.7L505.4,490.2L501.6,499L500.5,503.1L500.3,506.6L503.1,517.2L507.2,522.6L506.9,524.3L505.8,525.7L513,535.2L512.3,543.5L515,549.9L516.3,555.5L518,559.8L518.3,562.7L516.1,566L521.4,566.8L524.4,569.6L525.9,572.1L529.7,572L531.7,573.7L534.7,575.2L541.1,579.5L542.8,581.7L543.5,583L543.9,583.8L539.6,587.1L532.8,592.4L526,597.5L519.6,600.9L515,602.6L510,603.5L505.4,605.7L500.9,609L495.2,610.7L488.3,610.7L481.1,613.1L474,617.6L469.8,620.2L463,616.3L457.8,615L451.9,615.1L448.2,615.7L446.9,616.5L445.8,618.9L444.8,622.8L440.9,626.6L434,630.3L427.6,631.6L421.8,630.7L417.9,629.2L415.8,627.1L412.7,626.1L408.8,626.3L405,627.7L401.3,630.6L395.4,631.8L387.4,631.5L383.2,630.1L382.5,627.7L379,624.9L372.6,621.8L367.8,621.7L364.7,624.7L362,626.7L359.4,627.5L357.3,627.5L355.2,626.9L354,626.7L345.1,626.4L336.7,626.5L336.4,625.2L335.8,622.1L334.1,619.4L332.6,617.8L330.7,617.4L329.7,617.5L328.9,616.2L328,613.5L326.5,611.1L324.6,609.2L323.5,607.4L323.1,605.7L323.4,603.9L325.1,599.5L325.7,596.3L325.5,593.2L324.6,590L322.6,586.1L322.8,585L322.2,582.4L322,580.5L322.4,578.3L322,575.3L320.3,568.8L320.3,567.2L318.5,564.1L312.9,556.7L312.7,555.8L303.9,548.3L300.5,546.7L299.1,548.1L298.7,549.4L299.1,551.8L298.8,553L298.4,553.5L296.4,553.4L295.1,553.2L291.8,551.2L289.2,550.7L282.9,551.1L280.5,551.5L278.8,551.1L275.4,547.7L271.5,546.9L267.8,546.7L262,542.9L260.6,543.1ZM515.6,488.9L513.5,489.4L512.7,488.9L511.5,487.4L513.7,486L515.8,483.4L520.7,479.5L522.4,477L523,476.5L522.6,479.4L519.9,486L517.5,486.4Z"/>
+      <path class="map-country" d="M134,239.9L135.2,239.8L143.4,237.9L144.2,238.5L145.5,242.3L146.2,242.8L147.3,242.9L149.6,242.1L153.8,239.1L155.6,237.3L157.7,234.8L160.5,232L162.1,229.5L163.6,228L165.5,227.6L167.6,227.7L169.1,227.8L167.9,228.4L167.6,230.2L169.1,233.1L173.7,239.1L176.7,240.2L178.6,242.5L180.5,246.5L181.2,251.4L180.4,257.3L180.8,261.7L182.6,264.6L183,268.3L182.1,272.9L181.2,275.6L180,276.6L178.8,276.9L176.9,276.6L174.7,277L172.4,277.9L170.9,278L169.9,277.8L168.2,277.1L165.3,274.7L160.2,276L158.8,276L156.9,277.1L155.3,278.5L154.4,278.6L153.4,278.4L148.9,275.6L147.3,275.7L146.6,283.6L146,287.9L145,289.9L141.9,291.8L138.6,292.8L136.9,292.8L129.8,293.4L127,293.4L125.5,292.7L123.5,288.3L119.8,286.3L116.1,285.4L114.8,285.6L113.4,287.9L112.9,290L109.4,288.6L108.4,286.8L108.3,283.8L106.9,279.8L107.7,278L109.1,276.9L111.9,274.7L116.4,271.7L117.4,270.3L117.9,267.9L117.6,262.4L117.2,257.7L117.8,256L119.8,252.4L122.4,248.6L125.6,244.8L127.5,244.4L130,242.9L132.5,240.7Z"/>
+      <path class="map-country" d="M198.4,1053.4L203.8,1049.2L209.1,1043.3L215.4,1036.4L221,1030.2L225.9,1024.8L232.6,1017.4L239.2,1010.1L240.8,1009.2L241.5,1008.5L238.7,1002.1L243.3,994.5L243.4,989.7L243.3,985L243.8,982.9L245.2,981L250.6,977.1L254.7,970.8L258,965.1L262.7,955.7L263.1,953.6L263.2,951.3L261.8,948.2L258.9,943.1L256.6,938.7L254.5,931.9L256.6,926L257.2,922.5L257.2,920.6L256.4,918.8L254.1,917.4L252.2,916.5L251.7,914.1L251.7,911.2L252.5,909.6L257.5,907L258.6,905.7L259.1,904.1L259.3,901.9L260.8,896.3L262.7,891L262.8,889.1L262.1,887.5L261.6,884.5L261.3,880L261.2,867.5L262.2,854.5L261.8,847.2L258.6,838.8L258.3,832.7L260.6,828.4L261,825.9L259.3,825.6L255.7,825.4L253.2,824.5L249.2,821.1L242.3,818.2L234.5,815.5L223.1,814.8L213.6,806.4L206.1,805L203.7,804L196.5,798.9L185.4,798.5L173.7,797.9L166.4,797.8L165.3,797.1L164.9,790.2L164.9,784L164.3,778.6L163.2,772.5L161.5,770.2L159.5,766L158.4,761.5L158.3,759.3L158.7,758.5L166.8,755.3L170.2,753.7L175.4,751.9L184.4,749.3L192.6,747L200,744.8L207.9,742.4L211.2,740.9L215.1,739.3L224.6,736.1L227.3,735.1L232.8,733.2L235.5,732.6L246.1,728.9L258.2,724.7L262.4,723.3L270.5,720.6L272.1,721.7L277.6,731.3L281.9,736.9L286.9,742.1L287.7,741.8L289.1,740.6L291.7,740.1L299.4,738.9L302.5,738.8L304.4,737.5L308.5,736.5L313.1,735.9L314.7,736.5L319.6,743.2L320.3,748.4L321.3,755.9L321.6,759.5L321.5,764.4L320.9,770.5L317,777.5L316.2,781L314,786.4L311.2,789.1L309.8,791.3L310,793.6L311.5,795.5L314.7,798.9L315.8,801.1L315.5,803.1L315.5,805.8L316.3,807.6L317.1,808.7L320.5,810.5L323.6,814.9L329.2,820.3L335.7,827.8L338.8,830.1L341.3,830.7L342.5,833.3L341.8,836.2L339.9,837.9L340.7,840.3L341.7,841.6L342.9,842.2L345.9,842.4L348.5,841.9L349.1,841.1L348.9,829.7L346.8,823L344.9,820.5L344.5,820L345.2,817.8L347.4,812.7L349.3,807.6L350.4,805.5L351.7,804.2L360.8,802.9L365,801.7L366.6,800.3L368,796.4L369.1,785.5L369.5,775.2L368.5,769.3L369.9,760.3L371.9,754.7L370.8,753.6L370.1,746.1L364.2,738.1L356.6,727.8L352.4,722.3L347.5,716L338.7,706.2L334.8,702.7L332.6,701.3L325.5,700.1L323.6,698.2L321.8,695.2L321.1,689.6L321.1,685.5L320.3,678.4L318.8,668.4L318.1,665.5L316.1,658L314.2,650.8L314,649.1L314.7,647.4L318,642.1L320.4,638.4L321.5,636.3L323.4,630.8L323.9,628.1L325.4,626.9L331.6,626.4L336.7,626.5L345.1,626.4L354,626.7L355.2,626.9L357.3,627.5L359.4,627.5L362,626.7L364.7,624.7L367.8,621.7L372.6,621.8L379,624.9L382.5,627.7L383.2,630.1L387.4,631.5L395.4,631.8L401.3,630.6L405,627.7L408.8,626.3L412.7,626.1L415.8,627.1L417.9,629.2L421.8,630.7L427.6,631.6L434,630.3L440.9,626.6L444.8,622.8L445.8,618.9L446.9,616.5L448.2,615.7L451.9,615.1L457.8,615L463,616.3L469.8,620.2L474,617.6L481.1,613.1L488.3,610.7L495.2,610.7L500.9,609L505.4,605.7L510,603.5L515,602.6L519.6,600.9L526,597.5L532.8,592.4L539.6,587.1L543.9,583.8L545.9,587.8L549.5,591.4L547.4,593.4L544.9,595.3L548.9,597.8L545.9,601.6L545.5,604.3L546.3,605.3L547,606.9L545,611.2L542.3,614.5L541.6,617.1L544,621.6L542.8,629.5L545.1,636.7L545.7,640.4L546.5,642.9L545.4,647.4L545.7,654.8L546.2,657.9L544.9,661.7L547.2,663L548.4,667.2L548,672L547.3,674.5L543.4,677.6L542.8,678.8L543,680.6L547.8,680.7L548.1,683.5L547.7,685.7L548,690L547.3,692.7L548.4,695.7L547,699.2L547.6,701.9L547.6,705.3L548.8,714L548.9,724.8L549.2,726.5L551,727.7L553.4,728.3L553.4,731.3L550.5,735.2L550.4,737.6L550.8,740.9L553.8,736.3L555.7,736.4L557.3,738.2L557.1,740.8L557.6,742.2L557.3,744.7L558.3,748L557.9,750.8L555.7,752.8L552.8,756.1L552.3,759.4L552.6,761.4L550.7,762.1L549.7,763.4L551.1,766.4L551,769.1L547.6,777.4L538.3,788.7L534.3,792.8L530.6,797.2L530.6,799L530.2,800.6L525.9,806.8L521.3,807.9L518.6,809.6L520.6,815.1L517.6,816.4L512.3,820.7L498,829.1L495.7,831L492,836.2L487.2,837.5L484.5,838.9L479.7,839.4L478,839L476.4,839.2L475,840.3L465.6,844L456.6,846.8L454.4,848.1L453,849.9L445.1,852.7L432.8,859.8L422.7,866.4L415.4,873.2L413.5,874.2L411.2,876.5L410.5,879.9L409.7,881.8L404.3,888.9L396.2,897.2L394.7,899.6L391.4,904.2L391.1,907.2L388.2,908.2L385.7,905.3L384.8,910.9L382.7,911.3L380.6,910.1L375.2,913L370.4,916.1L362.8,922.9L352,936.2L336.3,948.9L334.1,949.2L332.7,949.2L327.7,944.8L325,944.4L327.4,947.1L329.1,949.3L328.7,953.5L328.8,960L326.9,972.6L327.2,975.4L329.3,978.9L333.5,983.3L337.6,988.8L342.6,1004.5L343,1012.5L348.3,1022.9L348.5,1027.4L350.6,1038.6L350.5,1047.6L350.1,1053.2L352.7,1055.5L353.6,1053.4L353.3,1049.9L354,1044.2L355.4,1041.7L356.9,1042.1L357.3,1044.8L358.2,1047.1L358.6,1049.3L358.6,1052.3L356.7,1063.8L357.3,1068.5L359.8,1076.3L356.9,1085.4L352.4,1106.8L352.2,1110.5L353.2,1112.2L355.6,1112.7L356.5,1110L357.9,1110L358.6,1111.6L356.7,1121.5L354.7,1125.9L347.8,1136.6L344.1,1141.2L337.9,1145.7L323.5,1152.8L294.4,1163L282.9,1168.1L276.1,1171.1L261.4,1180.6L255.1,1187L252.5,1194.4L249.9,1197.8L247.5,1202.1L249.6,1205.8L251.8,1208.6L254.3,1210.4L255.6,1212L257.2,1213.2L259,1207.4L259.8,1205.5L261.3,1205.4L260.5,1212.5L258.7,1236.9L258.6,1237.7L254.5,1237.7L247.5,1237.9L243.3,1238L238.5,1238.2L232.8,1236.9L229.6,1237.2L229.3,1223.8L228.2,1220.8L227.1,1216.5L226.9,1213.7L227.6,1210.9L227.8,1206.6L227.6,1202.7L224.2,1200.7L223.3,1200.2L222.5,1197.1L222.3,1192.5L224.7,1186.5L224.6,1175.1L224.8,1171.2L224.7,1163.3L224.7,1153.7L224.7,1145.2L224.7,1137.9L224,1134.4L223.5,1132.4L221.9,1128.6L220,1120.5L217.8,1114.4L214.9,1110.4L214,1108.2L213,1105.5L210.3,1100.5L208.2,1097.5L207.6,1095.2L207.6,1089.2L205.2,1078.5L203.4,1070.6L200.7,1062.2L199,1056.5L198.7,1055.5ZM324.7,643.3L324.1,642.1L322.8,641.6L321.5,642.1L320.9,643.5L322.4,645.3L324.1,645.3ZM327.7,647L328.7,646.2L329.1,645L329.1,644L328.4,643.2L327.4,642.8L326.2,643.1L325.7,644.6L325.5,646.6L326.4,647.3Z"/>
+      <path class="map-country" d="M327.7,647L326.4,647.3L325.5,646.6L325.7,644.6L326.2,643.1L327.4,642.8L328.4,643.2L329.1,644L329.1,645L328.7,646.2ZM324.7,643.3L324.1,645.3L322.4,645.3L320.9,643.5L321.5,642.1L322.8,641.6L324.1,642.1ZM270.5,720.6L268.5,717.7L266.9,718.4L264.6,720.4L263.3,721L262.7,720.9L262.2,720.4L261.7,719.2L259.9,715.5L257.9,713L255.9,712L254.1,710.7L254.8,709.6L255.6,708.8L255.3,707.9L254.4,706.7L250.6,704.9L250.6,704.1L253.8,702.6L255.9,700.7L257.4,699L259.1,695.1L260.6,691.2L261.7,690L262.1,687.4L261.8,684.5L262.5,680.9L262.9,677.4L261.8,676.1L260.9,673.7L262,669.8L263.7,667L272.1,664.2L278,661.6L279.2,660.5L281.1,658.3L282.2,656.1L281.5,655.5L276.9,655.5L275.8,654.6L272.4,647.1L274.3,638.4L274.4,635.1L274.3,630.9L273.8,627.8L272.4,626.5L271.5,624.9L271.7,620.3L273.1,619.8L275.9,613.9L277.3,610.4L275.7,607.6L274,603.6L273.2,601.1L272.8,600.2L273.9,598.7L275.9,597.1L278.1,596.7L280.4,596L287.7,588.6L287.9,587.2L286.5,584.7L283.8,581L283.1,579.5L282.9,575L281.8,573.7L277.7,570.6L274.7,567.5L275.7,564.3L276.2,560.7L274.6,558.8L272.4,556.8L270.9,553.9L270.2,551.7L268.5,550.9L266.9,550.9L265.6,552.2L264.4,552L262.8,551.6L262.2,549.7L262.1,547.7L261,546.3L260.1,544.4L259.9,543.4L260.6,543.1L262,542.9L267.8,546.7L271.5,546.9L275.4,547.7L278.8,551.1L280.5,551.5L282.9,551.1L289.2,550.7L291.8,551.2L295.1,553.2L296.4,553.4L298.4,553.5L298.8,553L299.1,551.8L298.7,549.4L299.1,548.1L300.5,546.7L303.9,548.3L312.7,555.8L312.9,556.7L318.5,564.1L320.3,567.2L320.3,568.8L322,575.3L322.4,578.3L322,580.5L322.2,582.4L322.8,585L322.6,586.1L324.6,590L325.5,593.2L325.7,596.3L325.1,599.5L323.4,603.9L323.1,605.7L323.5,607.4L324.6,609.2L326.5,611.1L328,613.5L328.9,616.2L329.7,617.5L330.7,617.4L332.6,617.8L334.1,619.4L335.8,622.1L336.4,625.2L336.7,626.5L331.6,626.4L325.4,626.9L323.9,628.1L323.4,630.8L321.5,636.3L320.4,638.4L318,642.1L314.7,647.4L314,649.1L314.2,650.8L316.1,658L318.1,665.5L318.8,668.4L320.3,678.4L321.1,685.5L321.1,689.6L321.8,695.2L323.6,698.2L325.5,700.1L332.6,701.3L334.8,702.7L338.7,706.2L347.5,716L352.4,722.3L356.6,727.8L364.2,738.1L370.1,746.1L370.8,753.6L371.9,754.7L369.9,760.3L368.5,769.3L369.5,775.2L369.1,785.5L368,796.4L366.6,800.3L365,801.7L360.8,802.9L351.7,804.2L350.4,805.5L349.3,807.6L347.4,812.7L345.2,817.8L344.5,820L344.9,820.5L346.8,823L348.9,829.7L349.1,841.1L348.5,841.9L345.9,842.4L342.9,842.2L341.7,841.6L340.7,840.3L339.9,837.9L341.8,836.2L342.5,833.3L341.3,830.7L338.8,830.1L335.7,827.8L329.2,820.3L323.6,814.9L320.5,810.5L317.1,808.7L316.3,807.6L315.5,805.8L315.5,803.1L315.8,801.1L314.7,798.9L311.5,795.5L310,793.6L309.8,791.3L311.2,789.1L314,786.4L316.2,781L317,777.5L320.9,770.5L321.5,764.4L321.6,759.5L321.3,755.9L320.3,748.4L319.6,743.2L314.7,736.5L313.1,735.9L308.5,736.5L304.4,737.5L302.5,738.8L299.4,738.9L291.7,740.1L289.1,740.6L287.7,741.8L286.9,742.1L281.9,736.9L277.6,731.3L272.1,721.7Z"/>
+      <path class="map-country" d="M564,268.9L562.5,269.2L563.3,267.1L567.4,264.3L569.1,264.9L569.4,265.6L569.2,266.1L568.6,266.7ZM296.9,225.4L296.8,218.9L297.8,202.6L297.6,188.2L298.4,181L302,176.5L303.6,173.2L304.8,168.6L306.7,164.8L310.9,161.8L311.6,160.1L316.1,155L318.8,148.4L320.8,146.1L323.2,144L325,143L328,141.9L330.3,141.2L330.7,140.7L330.8,139.7L330.2,135.6L331.1,134.2L332.6,131.6L334.4,129L336,127.4L336.9,125.7L337.3,122.9L337.5,120.8L337.3,117.5L336.9,109.9L335,103.6L333.8,96.6L334.6,94.2L333.1,90.1L332.5,89.8L331.2,88.9L329.7,85.1L328.5,81.5L327.9,80.5L322.8,77.5L320.3,70.1L317.4,68.4L315.9,61.1L315.7,59.1L317.3,51.7L317,50L315.4,48.5L310.6,47L306.8,43.9L307.2,42.9L307.5,41.8L305.6,41.1L299.7,28.5L307.2,21.1L314.8,13.5L324.7,3.8L333.7,-5L341.4,-12.6L348.3,-19.5L348.2,-18.2L348.2,-16.5L349.1,-15.4L350.5,-14.7L352.5,-15.5L354.1,-16.5L355.9,-16.7L366.3,-13.9L368,-11.4L368,-8.8L368.4,-6.8L367.6,-4.9L366.8,1L367,6.4L370.1,10.3L372.9,13.5L375,17.9L376.8,19.2L379,19.9L386.1,20.1L396.7,20.3L406.9,20.6L407.8,20.7L410,21.3L419.3,27.3L427.9,32.7L435.2,37.4L442.2,42L449.2,46.4L454.4,50.2L459.7,51.3L468.1,51.8L474.1,52L479.5,53.5L487.7,54.9L493.6,55.7L497.3,56.5L507.4,57.4L509.1,56.9L513.5,52.8L518.6,46.2L520.6,42.5L527,38.8L538.3,33.8L546.3,30.2L555.3,26.6L559.4,29.7L564.9,34.7L567.4,37.2L569.4,38.3L572.5,39L576.2,39L578.2,38.9L582.3,38.2L591.9,37.6L597.4,37.7L592.8,44.3L587.3,52.3L577,67L569.2,74.7L563.3,80.5L562.7,81.6L562.9,88.1L562.9,104L563,135.7L563.2,167.4L563.3,199.1L563.3,215L563.3,220.4L568.4,227.1L573.6,233.5L580.2,242.2L583.8,246.8L584.4,248.4L584.2,251.4L578.7,257.9L574.3,260.9L568.2,262.2L566.4,262L564,261.1L563,262.6L562.3,265L561,264.5L560,263.8L560.6,268.1L561.3,270.2L560.3,273.1L557.3,275.6L557.1,277.7L550.7,283.2L541.7,283.9L537,286.6L534.8,288.9L533.2,293.8L533.9,301.4L531.3,307.1L530.9,310.1L526.1,313.8L524.1,317.3L522.6,320.8L521.3,322.4L519.6,330.2L517.5,335L516.9,336.6L516.4,338.1L514.8,340.9L513.7,342.8L512.9,344.1L507.3,356.4L503,361.9L499.7,361.3L497.4,363.5L497.1,364.4L496.1,363.9L493.2,361.9L487.4,357.7L481.7,353.5L475.9,349.4L470,345.2L464.3,341L458.5,336.8L452.7,332.7L447,328.5L443.6,326L442.1,324.6L440.9,321.7L440.4,321L438.7,320.1L437,319.9L436.4,319.4L436.4,318L437.1,316L439.3,312.2L439.4,309.9L439,307.3L438.3,303.3L437.8,302.3L434,300.2L426,295.7L417.9,291.2L409.9,286.7L401.9,282.2L393.9,277.7L385.7,273.3L377.7,268.8L369.7,264.3L361.7,259.8L353.7,255.3L345.6,250.9L337.6,246.3L329.6,241.9L321.6,237.4L313.6,232.9L305.5,228.4L302.5,226.7L299.8,225.4Z"/>
+      <path class="map-country" d="M170.9,278L170.1,279L166.7,286L166,287.1L166.3,287.7L167.8,289.1L167,291.3L166.6,291.9L166,294L166.3,295.9L167.1,296.6L169.4,297.5L172.8,298.1L176.7,299.7L179.3,300L180,301.2L179.8,303.2L180.5,305L180.5,308.2L179.7,311L175.6,312.3L173.6,313.7L172.9,314.4L173.5,315.2L173.7,316.4L169.9,319.2L166,322.8L165.1,325.3L164.3,328.1L163.2,330L160.1,332.7L157.1,338L155.6,341.6L148,350L141.3,354.1L139.3,355.5L127.5,355.3L126.6,349.6L124.8,341.9L120.7,334.9L120.3,332.1L120.5,326.4L120.5,318.5L120.2,314.3L120.3,311.2L120.9,305.8L120.7,302.6L118.2,298.9L114.8,295L113,293L112.9,291.5L112.9,290L113.4,287.9L114.8,285.6L116.1,285.4L119.8,286.3L123.5,288.3L125.5,292.7L127,293.4L129.8,293.4L136.9,292.8L138.6,292.8L141.9,291.8L145,289.9L146,287.9L146.6,283.6L147.3,275.7L148.9,275.6L153.4,278.4L154.4,278.6L155.3,278.5L156.9,277.1L158.8,276L160.2,276L165.3,274.7L168.2,277.1L169.9,277.8Z"/>
+      <path class="map-border" d="M164.9,784L159.4,784.1L149.8,784.1L139.9,784.1L130.6,786.1L123.2,789.2L114.2,794.1L111.3,796L109.1,797.5L107.6,799.4L106.9,803.6L106.9,810L106.1,814.6L103.3,818.8L89.7,824L80.9,828.2L72.1,833.2L65.6,839.6L61,847.6L53.5,857.4L45.9,866L37.8,875.1L28.7,878.4L21.1,877.6L11.9,873.9L4.6,873.2L-0.7,875.6L-5.7,874.8L-10.3,871.1L-14.1,869.8L-17.2,870.7L-21.3,870.6L-28.5,868.6L-34.9,862.2L-38.2,859.6L-40.8,858.7L-48.3,857.6L-65.6,856.2L-67.4,856.6L-74.6,857.8L-83.5,859.4L-91.1,860.9L-99.2,862.5L-106.7,855.9L-115.2,848.5L-124,840.2L-130.7,833.7L-133.9,829.9L-139.8,825L-144,822.6L-145.6,821.4L-149.7,808.3L-152,796.2L-152,787.2L-152,774.6L-152,762.1L-152,749.6L-152,737.2L-152,724.7L-152,712.2L-152,699.8L-152,687.4L-152,681.3L-143.3,681.3L-133.5,681.3L-123.2,681.3L-112,681.3L-100.9,681.3L-89.6,681.3L-81.8,681.3L-79.7,681.2L-77.3,680.8L-77.1,679.6L-80.4,673.5L-80.1,671.4L-79.3,667.2L-78,663.7L-76.2,659L-76.1,656.3L-77.4,647.3L-77.3,642.3L-76.9,637.1L-76.5,632.1L-77,628.7L-76.5,626.9L-75.4,624.2L-74.8,621.2L-74.2,619.9L-74.3,618.7L-75,616.5L-75.5,611.4L-76.3,604.4L-77.1,599.4L-75.8,599.7L-72.9,600.1L-71.6,602.6L-70.8,605.3L-68.9,605.5L-63.9,607.1L-62.1,609.3L-61,614.1L-61.7,616.6L-63.3,618.6L-61.7,620.3L-58.3,621.5L-56.4,621.1L-50.7,617.9L-48.5,617.3L-45.6,616.7L-42.9,615.8L-35.4,614.3L-31.3,613.7L-29,612.5L-27.4,612.5L-26.2,613.4L-27.3,616.8L-27.7,619.9L-26.2,625.6L-25.1,628.3L-22.7,630.2L-20.9,631.2L-19,633.3L-14.9,632.9L-6.1,635.8L-3.4,637.1L0.4,638.5L3,639L12.2,640L15.6,640.7L21.8,641.7L26.8,641.8L30.5,641.4L32.9,640.5L34.4,639.6L35.1,638.9L36.2,636L38.1,629.8L38.7,628L40.6,627.1L43.1,626.5L44.4,627.5L46.1,634.4L53,640.6L55.4,645.8L57.2,650.2L58.7,651.5L61.2,653L65.6,653.6L69.4,653.7L77.2,656.9L83.6,659.5L88.2,661.3L90.2,662.7L91.7,665L92.6,666.8L93.9,671.3L95.4,674.9L97.8,675.7L100,675.9L102.2,678.4L103.8,680.6L107.1,685.9L109.4,689.6L110.2,693.2L112.9,695.5L116.5,696.6L119.9,696.7L121.8,695.6L126.7,693.8L130.5,691.6L133.2,690.9L134.8,691.4L136.1,692.9L136.7,695.7L136.9,697.4L139.6,698.8L141.5,698.2L142.3,696.5L142.3,695.6L142.3,687.8L142.3,681L142.3,674.6L142.3,666.8L142.3,660.1L142.3,654.5L142.3,648.7L140.5,649L138.4,650.4L133.4,650.5L131.5,651.5L130.9,653L131.2,655L131.3,657.6L130.6,658.9L128.5,659.3L125.2,658.3L119.5,657L114.8,656.2L111.4,652.6L106.6,647.4L103.7,644.7L96.3,639.2L95.1,638.1L92.8,635.5L90.9,631.1L90,628.3L89.2,626.1L88.1,622.9L89.8,617.9L92.4,608.5L94.2,601.7L95.1,596.7L98.8,591.6L99.1,587.1L97.6,581.2L98,578L98.1,569.8L98.4,562.9L98.4,559.6L97.4,553.8L95,547.3L89.7,538.3L89.7,536.4L93,534.3L97.8,530.6L100.3,528.4L103.3,525.3L104.6,523.7L107.5,519.7L109.2,516.4L109.9,512.3L108.5,508.2L111.3,507.4L120.5,506L130.5,504.5L141.2,502.9L151.9,501.2L162.4,499.6L171.7,498.1L178.2,497.1L179.3,499.9L181.2,504.5L183.6,507.8L186.5,510.7L188.9,512.5L190.5,513.1L200.8,512.9L204.5,514.6L207.8,517L208.6,520.5L210.7,522.6L213,524.4L214,524.6L215.6,524.2L218.5,524.1L221,524.9L222.3,525.6L222.4,528.6L223.1,529.9L226.6,530.4L230.1,530.6L233.7,532.6L237.3,533L241.6,533.8L243.7,535.9L248.2,538.2L253.7,540.1L257.8,542.4L259.9,543.4L260.1,544.4L261,546.3L262.1,547.7L262.2,549.7L262.8,551.6L264.4,552L265.6,552.2L266.9,550.9L268.5,550.9L270.2,551.7L270.9,553.9L272.4,556.8L274.6,558.8L276.2,560.7L275.7,564.3L274.7,567.5L277.7,570.6L281.8,573.7L282.9,575L283.1,579.5L283.8,581L286.5,584.7L287.9,587.2L287.7,588.6L280.4,596L278.1,596.7L275.9,597.1L273.9,598.7L272.8,600.2L273.2,601.1L274,603.6L275.7,607.6L277.3,610.4L275.9,613.9L273.1,619.8L271.7,620.3L271.5,624.9L272.4,626.5L273.8,627.8L274.3,630.9L274.4,635.1L274.3,638.4L272.4,647.1L275.8,654.6L276.9,655.5L281.5,655.5L282.2,656.1L281.1,658.3L279.2,660.5L278,661.6L272.1,664.2L263.7,667L262,669.8L260.9,673.7L261.8,676.1L262.9,677.4L262.5,680.9L261.8,684.5L262.1,687.4L261.7,690L260.6,691.2L259.1,695.1L257.4,699L255.9,700.7L253.8,702.6L250.6,704.1L250.6,704.9L254.4,706.7L255.3,707.9L255.6,708.8L254.8,709.6L254.1,710.7L255.9,712L257.9,713L259.9,715.5L261.7,719.2L262.2,720.4L262.7,720.9L263.3,721L264.6,720.4L266.9,718.4L268.5,717.7L270.5,720.6L262.4,723.3L258.2,724.7L246.1,728.9L235.5,732.6L232.8,733.2L227.3,735.1L224.6,736.1L215.1,739.3L211.2,740.9L207.9,742.4L200,744.8L192.6,747L184.4,749.3L175.4,751.9L170.2,753.7L166.8,755.3L158.7,758.5L158.3,759.3L158.4,761.5L159.5,766L161.5,770.2L163.2,772.5L164.3,778.6Z"/>
+      <path class="map-border" d="M296.9,225.4L292.9,225.4L286.1,225.4L279.5,225.4L272.8,225.4L266,225.4L259.4,225.4L252.6,225.4L246,225.4L239.3,225.4L232.6,225.4L225.9,225.4L219.1,225.4L212.5,225.4L205.9,225.4L199.1,225.4L192.4,225.4L185.8,225.4L181.7,225.4L181.1,225.2L180.5,225L177.9,225.6L175.4,227.2L172.5,227.9L169.5,227.6L169.1,227.8L167.6,227.7L165.5,227.6L163.6,228L162.1,229.5L160.5,232L157.7,234.8L155.6,237.3L153.8,239.1L149.6,242.1L147.3,242.9L146.2,242.8L145.5,242.3L144.2,238.5L143.4,237.9L135.2,239.8L134,239.9L134.2,238.7L133.6,229.8L133.5,224.4L134.6,221L135.1,217.1L135.2,213.7L136.7,207.8L136.2,204.2L138.1,191.9L138.6,189.9L139.3,183.9L140.5,182.1L141.6,181.4L143,177.7L145.7,171.8L147.6,168.8L147.2,162.2L147.4,157.8L147.9,156.7L151.8,155.1L156.9,151L159,146.1L162.1,143L167.9,141L168,141L185.5,124.2L193.7,115.2L197.2,110.6L197.3,108.9L198,106.8L196.5,105.1L194.9,103.5L194.3,102.1L192.9,101.4L190.7,101.4L189.3,100.4L187.8,98.4L186.2,97.1L181.2,97.2L177.4,95.1L177.4,92.3L179,86.8L181.9,80.3L182,78.6L181.6,77.1L180.9,75.8L179.6,74.5L178.4,73L179.3,68.4L181.2,63.9L182.7,61.7L184.2,59.2L183.6,57.1L181.6,56.1L182.7,54.1L185,50.7L189.5,47.3L193.4,45L196,45L201.1,46.8L205.7,48.9L208.3,49L211.3,48.1L217.7,44.3L219.1,45.5L221,47.9L223.1,51.7L227.1,53.4L229,54.6L230.4,55L231.2,54.7L232.7,51.7L234.5,50L238,47.9L245.4,46.3L250.7,45.8L253,45.4L256.8,44.5L262.8,41.4L268.8,45.4L275.1,46.2L281.4,46.1L283.3,44.9L284.3,44L290.8,37.5L299.7,28.5L305.6,41.1L307.5,41.8L307.2,42.9L306.8,43.9L310.6,47L315.4,48.5L317,50L317.3,51.7L315.7,59.1L315.9,61.1L317.4,68.4L320.3,70.1L322.8,77.5L327.9,80.5L328.5,81.5L329.7,85.1L331.2,88.9L332.5,89.8L333.1,90.1L334.6,94.2L333.8,96.6L335,103.6L336.9,109.9L337.3,117.5L337.5,120.8L337.3,122.9L336.9,125.7L336,127.4L334.4,129L332.6,131.6L331.1,134.2L330.2,135.6L330.8,139.7L330.7,140.7L330.3,141.2L328,141.9L325,143L323.2,144L320.8,146.1L318.8,148.4L316.1,155L311.6,160.1L310.9,161.8L306.7,164.8L304.8,168.6L303.6,173.2L302,176.5L298.4,181L297.6,188.2L297.8,202.6L296.8,218.9Z"/>
+      <path class="map-border" d="M507.6,420.5L510.4,428.6L510,430.1L508,431L506.9,431.1L505.7,429.8L504.7,427.1L503.2,427.7L500.7,424.5L498,424.3L495.7,420.4L496.6,417.1L496.1,411.3L498.9,408.4L500.5,403.4L502.3,406.8L502.7,412L505.1,418.3L507.2,420.2ZM521.4,372.5L521.7,374.5L521,376.2L521.1,382L521,385.8L518.8,391L517.1,392.9L515.4,392.3L514.2,391.5L513.1,390L515.2,380.4L514.2,373.4L518.3,374ZM259.9,543.4L257.8,542.4L253.7,540.1L248.2,538.2L243.7,535.9L241.6,533.8L237.3,533L233.7,532.6L230.1,530.6L226.6,530.4L223.1,529.9L222.4,528.6L222.3,525.6L221,524.9L218.5,524.1L215.6,524.2L214,524.6L213,524.4L210.7,522.6L208.6,520.5L207.8,517L204.5,514.6L200.8,512.9L190.5,513.1L188.9,512.5L186.5,510.7L183.6,507.8L181.2,504.5L179.3,499.9L178.2,497.1L177.1,493.8L174.6,488.7L171,481.5L168.3,475.6L165.3,469.3L164.1,464.7L161.8,459.5L158,453.2L156.1,450.8L154,448.6L148.5,444.3L142.4,440.1L139,437.3L134.6,428.9L132.7,425.8L131.5,420.4L130.4,414.9L130.8,412.6L134.8,405.5L135.2,403.4L134.7,400.7L132.8,395L131.3,391.3L130.2,388.1L128.2,382.7L125.2,375.5L124.5,372.2L124.5,369.9L126.2,363.6L127.5,357.1L127.5,355.3L139.3,355.5L141.3,354.1L148,350L155.6,341.6L157.1,338L160.1,332.7L163.2,330L164.3,328.1L165.1,325.3L166,322.8L169.9,319.2L173.7,316.4L173.5,315.2L172.9,314.4L173.6,313.7L175.6,312.3L179.7,311L180.5,308.2L180.5,305L179.8,303.2L180,301.2L179.3,300L176.7,299.7L172.8,298.1L169.4,297.5L167.1,296.6L166.3,295.9L166,294L166.6,291.9L167,291.3L167.8,289.1L166.3,287.7L166,287.1L166.7,286L170.1,279L170.9,278L172.4,277.9L174.7,277L176.9,276.6L178.8,276.9L180,276.6L181.2,275.6L182.1,272.9L183,268.3L182.6,264.6L180.8,261.7L180.4,257.3L181.2,251.4L180.5,246.5L178.6,242.5L176.7,240.2L173.7,239.1L169.1,233.1L167.6,230.2L167.9,228.4L169.1,227.8L169.5,227.6L172.5,227.9L175.4,227.2L177.9,225.6L180.5,225L181.1,225.2L181.7,225.4L185.8,225.4L192.4,225.4L199.1,225.4L205.9,225.4L212.5,225.4L219.1,225.4L225.9,225.4L232.6,225.4L239.3,225.4L246,225.4L252.6,225.4L259.4,225.4L266,225.4L272.8,225.4L279.5,225.4L286.1,225.4L292.9,225.4L296.9,225.4L299.8,225.4L302.5,226.7L305.5,228.4L313.6,232.9L321.6,237.4L329.6,241.9L337.6,246.3L345.6,250.9L353.7,255.3L361.7,259.8L369.7,264.3L377.7,268.8L385.7,273.3L393.9,277.7L401.9,282.2L409.9,286.7L417.9,291.2L426,295.7L434,300.2L437.8,302.3L438.3,303.3L439,307.3L439.4,309.9L439.3,312.2L437.1,316L436.4,318L436.4,319.4L437,319.9L438.7,320.1L440.4,321L440.9,321.7L442.1,324.6L443.6,326L447,328.5L452.7,332.7L458.5,336.8L464.3,341L470,345.2L475.9,349.4L481.7,353.5L487.4,357.7L493.2,361.9L496.1,363.9L497.1,364.4L496.5,367.7L493.5,375.3L493.3,378.5L492.1,382.4L491,384.8L488.1,395.7L485.5,399.7L482.1,409.3L481.4,416.6L483.5,421.7L484.1,426.4L488.2,431.2L491.3,432.8L493.6,435L497.4,439.9L499.7,444.8L506.6,447.2L509.3,452.7L508.4,456.5L505.1,459.7L502.2,464.7L499.7,471.5L499.6,481.7L501.3,480.2L505,482.7L505.4,490.2L501.6,499L500.5,503.1L500.3,506.6L503.1,517.2L507.2,522.6L506.9,524.3L505.8,525.7L513,535.2L512.3,543.5L515,549.9L516.3,555.5L518,559.8L518.3,562.7L516.1,566L521.4,566.8L524.4,569.6L525.9,572.1L529.7,572L531.7,573.7L534.7,575.2L541.1,579.5L542.8,581.7L543.5,583L543.9,583.8L539.6,587.1L532.8,592.4L526,597.5L519.6,600.9L515,602.6L510,603.5L505.4,605.7L500.9,609L495.2,610.7L488.3,610.7L481.1,613.1L474,617.6L469.8,620.2L463,616.3L457.8,615L451.9,615.1L448.2,615.7L446.9,616.5L445.8,618.9L444.8,622.8L440.9,626.6L434,630.3L427.6,631.6L421.8,630.7L417.9,629.2L415.8,627.1L412.7,626.1L408.8,626.3L405,627.7L401.3,630.6L395.4,631.8L387.4,631.5L383.2,630.1L382.5,627.7L379,624.9L372.6,621.8L367.8,621.7L364.7,624.7L362,626.7L359.4,627.5L357.3,627.5L355.2,626.9L354,626.7L345.1,626.4L336.7,626.5L336.4,625.2L335.8,622.1L334.1,619.4L332.6,617.8L330.7,617.4L329.7,617.5L328.9,616.2L328,613.5L326.5,611.1L324.6,609.2L323.5,607.4L323.1,605.7L323.4,603.9L325.1,599.5L325.7,596.3L325.5,593.2L324.6,590L322.6,586.1L322.8,585L322.2,582.4L322,580.5L322.4,578.3L322,575.3L320.3,568.8L320.3,567.2L318.5,564.1L312.9,556.7L312.7,555.8L303.9,548.3L300.5,546.7L299.1,548.1L298.7,549.4L299.1,551.8L298.8,553L298.4,553.5L296.4,553.4L295.1,553.2L291.8,551.2L289.2,550.7L282.9,551.1L280.5,551.5L278.8,551.1L275.4,547.7L271.5,546.9L267.8,546.7L262,542.9L260.6,543.1ZM515.6,488.9L513.5,489.4L512.7,488.9L511.5,487.4L513.7,486L515.8,483.4L520.7,479.5L522.4,477L523,476.5L522.6,479.4L519.9,486L517.5,486.4Z"/>
+      <path class="map-border" d="M134,239.9L135.2,239.8L143.4,237.9L144.2,238.5L145.5,242.3L146.2,242.8L147.3,242.9L149.6,242.1L153.8,239.1L155.6,237.3L157.7,234.8L160.5,232L162.1,229.5L163.6,228L165.5,227.6L167.6,227.7L169.1,227.8L167.9,228.4L167.6,230.2L169.1,233.1L173.7,239.1L176.7,240.2L178.6,242.5L180.5,246.5L181.2,251.4L180.4,257.3L180.8,261.7L182.6,264.6L183,268.3L182.1,272.9L181.2,275.6L180,276.6L178.8,276.9L176.9,276.6L174.7,277L172.4,277.9L170.9,278L169.9,277.8L168.2,277.1L165.3,274.7L160.2,276L158.8,276L156.9,277.1L155.3,278.5L154.4,278.6L153.4,278.4L148.9,275.6L147.3,275.7L146.6,283.6L146,287.9L145,289.9L141.9,291.8L138.6,292.8L136.9,292.8L129.8,293.4L127,293.4L125.5,292.7L123.5,288.3L119.8,286.3L116.1,285.4L114.8,285.6L113.4,287.9L112.9,290L109.4,288.6L108.4,286.8L108.3,283.8L106.9,279.8L107.7,278L109.1,276.9L111.9,274.7L116.4,271.7L117.4,270.3L117.9,267.9L117.6,262.4L117.2,257.7L117.8,256L119.8,252.4L122.4,248.6L125.6,244.8L127.5,244.4L130,242.9L132.5,240.7Z"/>
+      <path class="map-border" d="M198.4,1053.4L203.8,1049.2L209.1,1043.3L215.4,1036.4L221,1030.2L225.9,1024.8L232.6,1017.4L239.2,1010.1L240.8,1009.2L241.5,1008.5L238.7,1002.1L243.3,994.5L243.4,989.7L243.3,985L243.8,982.9L245.2,981L250.6,977.1L254.7,970.8L258,965.1L262.7,955.7L263.1,953.6L263.2,951.3L261.8,948.2L258.9,943.1L256.6,938.7L254.5,931.9L256.6,926L257.2,922.5L257.2,920.6L256.4,918.8L254.1,917.4L252.2,916.5L251.7,914.1L251.7,911.2L252.5,909.6L257.5,907L258.6,905.7L259.1,904.1L259.3,901.9L260.8,896.3L262.7,891L262.8,889.1L262.1,887.5L261.6,884.5L261.3,880L261.2,867.5L262.2,854.5L261.8,847.2L258.6,838.8L258.3,832.7L260.6,828.4L261,825.9L259.3,825.6L255.7,825.4L253.2,824.5L249.2,821.1L242.3,818.2L234.5,815.5L223.1,814.8L213.6,806.4L206.1,805L203.7,804L196.5,798.9L185.4,798.5L173.7,797.9L166.4,797.8L165.3,797.1L164.9,790.2L164.9,784L164.3,778.6L163.2,772.5L161.5,770.2L159.5,766L158.4,761.5L158.3,759.3L158.7,758.5L166.8,755.3L170.2,753.7L175.4,751.9L184.4,749.3L192.6,747L200,744.8L207.9,742.4L211.2,740.9L215.1,739.3L224.6,736.1L227.3,735.1L232.8,733.2L235.5,732.6L246.1,728.9L258.2,724.7L262.4,723.3L270.5,720.6L272.1,721.7L277.6,731.3L281.9,736.9L286.9,742.1L287.7,741.8L289.1,740.6L291.7,740.1L299.4,738.9L302.5,738.8L304.4,737.5L308.5,736.5L313.1,735.9L314.7,736.5L319.6,743.2L320.3,748.4L321.3,755.9L321.6,759.5L321.5,764.4L320.9,770.5L317,777.5L316.2,781L314,786.4L311.2,789.1L309.8,791.3L310,793.6L311.5,795.5L314.7,798.9L315.8,801.1L315.5,803.1L315.5,805.8L316.3,807.6L317.1,808.7L320.5,810.5L323.6,814.9L329.2,820.3L335.7,827.8L338.8,830.1L341.3,830.7L342.5,833.3L341.8,836.2L339.9,837.9L340.7,840.3L341.7,841.6L342.9,842.2L345.9,842.4L348.5,841.9L349.1,841.1L348.9,829.7L346.8,823L344.9,820.5L344.5,820L345.2,817.8L347.4,812.7L349.3,807.6L350.4,805.5L351.7,804.2L360.8,802.9L365,801.7L366.6,800.3L368,796.4L369.1,785.5L369.5,775.2L368.5,769.3L369.9,760.3L371.9,754.7L370.8,753.6L370.1,746.1L364.2,738.1L356.6,727.8L352.4,722.3L347.5,716L338.7,706.2L334.8,702.7L332.6,701.3L325.5,700.1L323.6,698.2L321.8,695.2L321.1,689.6L321.1,685.5L320.3,678.4L318.8,668.4L318.1,665.5L316.1,658L314.2,650.8L314,649.1L314.7,647.4L318,642.1L320.4,638.4L321.5,636.3L323.4,630.8L323.9,628.1L325.4,626.9L331.6,626.4L336.7,626.5L345.1,626.4L354,626.7L355.2,626.9L357.3,627.5L359.4,627.5L362,626.7L364.7,624.7L367.8,621.7L372.6,621.8L379,624.9L382.5,627.7L383.2,630.1L387.4,631.5L395.4,631.8L401.3,630.6L405,627.7L408.8,626.3L412.7,626.1L415.8,627.1L417.9,629.2L421.8,630.7L427.6,631.6L434,630.3L440.9,626.6L444.8,622.8L445.8,618.9L446.9,616.5L448.2,615.7L451.9,615.1L457.8,615L463,616.3L469.8,620.2L474,617.6L481.1,613.1L488.3,610.7L495.2,610.7L500.9,609L505.4,605.7L510,603.5L515,602.6L519.6,600.9L526,597.5L532.8,592.4L539.6,587.1L543.9,583.8L545.9,587.8L549.5,591.4L547.4,593.4L544.9,595.3L548.9,597.8L545.9,601.6L545.5,604.3L546.3,605.3L547,606.9L545,611.2L542.3,614.5L541.6,617.1L544,621.6L542.8,629.5L545.1,636.7L545.7,640.4L546.5,642.9L545.4,647.4L545.7,654.8L546.2,657.9L544.9,661.7L547.2,663L548.4,667.2L548,672L547.3,674.5L543.4,677.6L542.8,678.8L543,680.6L547.8,680.7L548.1,683.5L547.7,685.7L548,690L547.3,692.7L548.4,695.7L547,699.2L547.6,701.9L547.6,705.3L548.8,714L548.9,724.8L549.2,726.5L551,727.7L553.4,728.3L553.4,731.3L550.5,735.2L550.4,737.6L550.8,740.9L553.8,736.3L555.7,736.4L557.3,738.2L557.1,740.8L557.6,742.2L557.3,744.7L558.3,748L557.9,750.8L555.7,752.8L552.8,756.1L552.3,759.4L552.6,761.4L550.7,762.1L549.7,763.4L551.1,766.4L551,769.1L547.6,777.4L538.3,788.7L534.3,792.8L530.6,797.2L530.6,799L530.2,800.6L525.9,806.8L521.3,807.9L518.6,809.6L520.6,815.1L517.6,816.4L512.3,820.7L498,829.1L495.7,831L492,836.2L487.2,837.5L484.5,838.9L479.7,839.4L478,839L476.4,839.2L475,840.3L465.6,844L456.6,846.8L454.4,848.1L453,849.9L445.1,852.7L432.8,859.8L422.7,866.4L415.4,873.2L413.5,874.2L411.2,876.5L410.5,879.9L409.7,881.8L404.3,888.9L396.2,897.2L394.7,899.6L391.4,904.2L391.1,907.2L388.2,908.2L385.7,905.3L384.8,910.9L382.7,911.3L380.6,910.1L375.2,913L370.4,916.1L362.8,922.9L352,936.2L336.3,948.9L334.1,949.2L332.7,949.2L327.7,944.8L325,944.4L327.4,947.1L329.1,949.3L328.7,953.5L328.8,960L326.9,972.6L327.2,975.4L329.3,978.9L333.5,983.3L337.6,988.8L342.6,1004.5L343,1012.5L348.3,1022.9L348.5,1027.4L350.6,1038.6L350.5,1047.6L350.1,1053.2L352.7,1055.5L353.6,1053.4L353.3,1049.9L354,1044.2L355.4,1041.7L356.9,1042.1L357.3,1044.8L358.2,1047.1L358.6,1049.3L358.6,1052.3L356.7,1063.8L357.3,1068.5L359.8,1076.3L356.9,1085.4L352.4,1106.8L352.2,1110.5L353.2,1112.2L355.6,1112.7L356.5,1110L357.9,1110L358.6,1111.6L356.7,1121.5L354.7,1125.9L347.8,1136.6L344.1,1141.2L337.9,1145.7L323.5,1152.8L294.4,1163L282.9,1168.1L276.1,1171.1L261.4,1180.6L255.1,1187L252.5,1194.4L249.9,1197.8L247.5,1202.1L249.6,1205.8L251.8,1208.6L254.3,1210.4L255.6,1212L257.2,1213.2L259,1207.4L259.8,1205.5L261.3,1205.4L260.5,1212.5L258.7,1236.9L258.6,1237.7L254.5,1237.7L247.5,1237.9L243.3,1238L238.5,1238.2L232.8,1236.9L229.6,1237.2L229.3,1223.8L228.2,1220.8L227.1,1216.5L226.9,1213.7L227.6,1210.9L227.8,1206.6L227.6,1202.7L224.2,1200.7L223.3,1200.2L222.5,1197.1L222.3,1192.5L224.7,1186.5L224.6,1175.1L224.8,1171.2L224.7,1163.3L224.7,1153.7L224.7,1145.2L224.7,1137.9L224,1134.4L223.5,1132.4L221.9,1128.6L220,1120.5L217.8,1114.4L214.9,1110.4L214,1108.2L213,1105.5L210.3,1100.5L208.2,1097.5L207.6,1095.2L207.6,1089.2L205.2,1078.5L203.4,1070.6L200.7,1062.2L199,1056.5L198.7,1055.5ZM324.7,643.3L324.1,642.1L322.8,641.6L321.5,642.1L320.9,643.5L322.4,645.3L324.1,645.3ZM327.7,647L328.7,646.2L329.1,645L329.1,644L328.4,643.2L327.4,642.8L326.2,643.1L325.7,644.6L325.5,646.6L326.4,647.3Z"/>
+      <path class="map-border" d="M327.7,647L326.4,647.3L325.5,646.6L325.7,644.6L326.2,643.1L327.4,642.8L328.4,643.2L329.1,644L329.1,645L328.7,646.2ZM324.7,643.3L324.1,645.3L322.4,645.3L320.9,643.5L321.5,642.1L322.8,641.6L324.1,642.1ZM270.5,720.6L268.5,717.7L266.9,718.4L264.6,720.4L263.3,721L262.7,720.9L262.2,720.4L261.7,719.2L259.9,715.5L257.9,713L255.9,712L254.1,710.7L254.8,709.6L255.6,708.8L255.3,707.9L254.4,706.7L250.6,704.9L250.6,704.1L253.8,702.6L255.9,700.7L257.4,699L259.1,695.1L260.6,691.2L261.7,690L262.1,687.4L261.8,684.5L262.5,680.9L262.9,677.4L261.8,676.1L260.9,673.7L262,669.8L263.7,667L272.1,664.2L278,661.6L279.2,660.5L281.1,658.3L282.2,656.1L281.5,655.5L276.9,655.5L275.8,654.6L272.4,647.1L274.3,638.4L274.4,635.1L274.3,630.9L273.8,627.8L272.4,626.5L271.5,624.9L271.7,620.3L273.1,619.8L275.9,613.9L277.3,610.4L275.7,607.6L274,603.6L273.2,601.1L272.8,600.2L273.9,598.7L275.9,597.1L278.1,596.7L280.4,596L287.7,588.6L287.9,587.2L286.5,584.7L283.8,581L283.1,579.5L282.9,575L281.8,573.7L277.7,570.6L274.7,567.5L275.7,564.3L276.2,560.7L274.6,558.8L272.4,556.8L270.9,553.9L270.2,551.7L268.5,550.9L266.9,550.9L265.6,552.2L264.4,552L262.8,551.6L262.2,549.7L262.1,547.7L261,546.3L260.1,544.4L259.9,543.4L260.6,543.1L262,542.9L267.8,546.7L271.5,546.9L275.4,547.7L278.8,551.1L280.5,551.5L282.9,551.1L289.2,550.7L291.8,551.2L295.1,553.2L296.4,553.4L298.4,553.5L298.8,553L299.1,551.8L298.7,549.4L299.1,548.1L300.5,546.7L303.9,548.3L312.7,555.8L312.9,556.7L318.5,564.1L320.3,567.2L320.3,568.8L322,575.3L322.4,578.3L322,580.5L322.2,582.4L322.8,585L322.6,586.1L324.6,590L325.5,593.2L325.7,596.3L325.1,599.5L323.4,603.9L323.1,605.7L323.5,607.4L324.6,609.2L326.5,611.1L328,613.5L328.9,616.2L329.7,617.5L330.7,617.4L332.6,617.8L334.1,619.4L335.8,622.1L336.4,625.2L336.7,626.5L331.6,626.4L325.4,626.9L323.9,628.1L323.4,630.8L321.5,636.3L320.4,638.4L318,642.1L314.7,647.4L314,649.1L314.2,650.8L316.1,658L318.1,665.5L318.8,668.4L320.3,678.4L321.1,685.5L321.1,689.6L321.8,695.2L323.6,698.2L325.5,700.1L332.6,701.3L334.8,702.7L338.7,706.2L347.5,716L352.4,722.3L356.6,727.8L364.2,738.1L370.1,746.1L370.8,753.6L371.9,754.7L369.9,760.3L368.5,769.3L369.5,775.2L369.1,785.5L368,796.4L366.6,800.3L365,801.7L360.8,802.9L351.7,804.2L350.4,805.5L349.3,807.6L347.4,812.7L345.2,817.8L344.5,820L344.9,820.5L346.8,823L348.9,829.7L349.1,841.1L348.5,841.9L345.9,842.4L342.9,842.2L341.7,841.6L340.7,840.3L339.9,837.9L341.8,836.2L342.5,833.3L341.3,830.7L338.8,830.1L335.7,827.8L329.2,820.3L323.6,814.9L320.5,810.5L317.1,808.7L316.3,807.6L315.5,805.8L315.5,803.1L315.8,801.1L314.7,798.9L311.5,795.5L310,793.6L309.8,791.3L311.2,789.1L314,786.4L316.2,781L317,777.5L320.9,770.5L321.5,764.4L321.6,759.5L321.3,755.9L320.3,748.4L319.6,743.2L314.7,736.5L313.1,735.9L308.5,736.5L304.4,737.5L302.5,738.8L299.4,738.9L291.7,740.1L289.1,740.6L287.7,741.8L286.9,742.1L281.9,736.9L277.6,731.3L272.1,721.7Z"/>
+      <path class="map-border" d="M564,268.9L562.5,269.2L563.3,267.1L567.4,264.3L569.1,264.9L569.4,265.6L569.2,266.1L568.6,266.7ZM296.9,225.4L296.8,218.9L297.8,202.6L297.6,188.2L298.4,181L302,176.5L303.6,173.2L304.8,168.6L306.7,164.8L310.9,161.8L311.6,160.1L316.1,155L318.8,148.4L320.8,146.1L323.2,144L325,143L328,141.9L330.3,141.2L330.7,140.7L330.8,139.7L330.2,135.6L331.1,134.2L332.6,131.6L334.4,129L336,127.4L336.9,125.7L337.3,122.9L337.5,120.8L337.3,117.5L336.9,109.9L335,103.6L333.8,96.6L334.6,94.2L333.1,90.1L332.5,89.8L331.2,88.9L329.7,85.1L328.5,81.5L327.9,80.5L322.8,77.5L320.3,70.1L317.4,68.4L315.9,61.1L315.7,59.1L317.3,51.7L317,50L315.4,48.5L310.6,47L306.8,43.9L307.2,42.9L307.5,41.8L305.6,41.1L299.7,28.5L307.2,21.1L314.8,13.5L324.7,3.8L333.7,-5L341.4,-12.6L348.3,-19.5L348.2,-18.2L348.2,-16.5L349.1,-15.4L350.5,-14.7L352.5,-15.5L354.1,-16.5L355.9,-16.7L366.3,-13.9L368,-11.4L368,-8.8L368.4,-6.8L367.6,-4.9L366.8,1L367,6.4L370.1,10.3L372.9,13.5L375,17.9L376.8,19.2L379,19.9L386.1,20.1L396.7,20.3L406.9,20.6L407.8,20.7L410,21.3L419.3,27.3L427.9,32.7L435.2,37.4L442.2,42L449.2,46.4L454.4,50.2L459.7,51.3L468.1,51.8L474.1,52L479.5,53.5L487.7,54.9L493.6,55.7L497.3,56.5L507.4,57.4L509.1,56.9L513.5,52.8L518.6,46.2L520.6,42.5L527,38.8L538.3,33.8L546.3,30.2L555.3,26.6L559.4,29.7L564.9,34.7L567.4,37.2L569.4,38.3L572.5,39L576.2,39L578.2,38.9L582.3,38.2L591.9,37.6L597.4,37.7L592.8,44.3L587.3,52.3L577,67L569.2,74.7L563.3,80.5L562.7,81.6L562.9,88.1L562.9,104L563,135.7L563.2,167.4L563.3,199.1L563.3,215L563.3,220.4L568.4,227.1L573.6,233.5L580.2,242.2L583.8,246.8L584.4,248.4L584.2,251.4L578.7,257.9L574.3,260.9L568.2,262.2L566.4,262L564,261.1L563,262.6L562.3,265L561,264.5L560,263.8L560.6,268.1L561.3,270.2L560.3,273.1L557.3,275.6L557.1,277.7L550.7,283.2L541.7,283.9L537,286.6L534.8,288.9L533.2,293.8L533.9,301.4L531.3,307.1L530.9,310.1L526.1,313.8L524.1,317.3L522.6,320.8L521.3,322.4L519.6,330.2L517.5,335L516.9,336.6L516.4,338.1L514.8,340.9L513.7,342.8L512.9,344.1L507.3,356.4L503,361.9L499.7,361.3L497.4,363.5L497.1,364.4L496.1,363.9L493.2,361.9L487.4,357.7L481.7,353.5L475.9,349.4L470,345.2L464.3,341L458.5,336.8L452.7,332.7L447,328.5L443.6,326L442.1,324.6L440.9,321.7L440.4,321L438.7,320.1L437,319.9L436.4,319.4L436.4,318L437.1,316L439.3,312.2L439.4,309.9L439,307.3L438.3,303.3L437.8,302.3L434,300.2L426,295.7L417.9,291.2L409.9,286.7L401.9,282.2L393.9,277.7L385.7,273.3L377.7,268.8L369.7,264.3L361.7,259.8L353.7,255.3L345.6,250.9L337.6,246.3L329.6,241.9L321.6,237.4L313.6,232.9L305.5,228.4L302.5,226.7L299.8,225.4Z"/>
+      <path class="map-border" d="M170.9,278L170.1,279L166.7,286L166,287.1L166.3,287.7L167.8,289.1L167,291.3L166.6,291.9L166,294L166.3,295.9L167.1,296.6L169.4,297.5L172.8,298.1L176.7,299.7L179.3,300L180,301.2L179.8,303.2L180.5,305L180.5,308.2L179.7,311L175.6,312.3L173.6,313.7L172.9,314.4L173.5,315.2L173.7,316.4L169.9,319.2L166,322.8L165.1,325.3L164.3,328.1L163.2,330L160.1,332.7L157.1,338L155.6,341.6L148,350L141.3,354.1L139.3,355.5L127.5,355.3L126.6,349.6L124.8,341.9L120.7,334.9L120.3,332.1L120.5,326.4L120.5,318.5L120.2,314.3L120.3,311.2L120.9,305.8L120.7,302.6L118.2,298.9L114.8,295L113,293L112.9,291.5L112.9,290L113.4,287.9L114.8,285.6L116.1,285.4L119.8,286.3L123.5,288.3L125.5,292.7L127,293.4L129.8,293.4L136.9,292.8L138.6,292.8L141.9,291.8L145,289.9L146,287.9L146.6,283.6L147.3,275.7L148.9,275.6L153.4,278.4L154.4,278.6L155.3,278.5L156.9,277.1L158.8,276L160.2,276L165.3,274.7L168.2,277.1L169.9,277.8Z"/>
+      <circle class="map-dot is-hq" cx="438.6" cy="444.9" r="6.5"><title>Morogoro — head office</title></circle>
+      <circle class="map-dot" cx="259.2" cy="281.8" r="5"><title>Lake Victoria Basin</title></circle>
+      <circle class="map-dot" cx="459.7" cy="438" r="5"><title>Wami/Ruvu Basin</title></circle>
+      <circle class="map-dot" cx="420.4" cy="458.2" r="5"><title>Morogoro Region (roads)</title></circle>
+      <circle class="map-dot" cx="319.6" cy="534.4" r="5"><title>Idende–Unenamwa, Njombe</title></circle>
+      <circle class="map-dot" cx="366.5" cy="346.2" r="5"><title>IDB Office, Babati</title></circle>
+      <circle class="map-dot" cx="332.6" cy="511.3" r="5"><title>Malangali, Iringa</title></circle>
+      <circle class="map-dot" cx="325.1" cy="522.1" r="5"><title>Wangama–Mufumbi, Njombe</title></circle>
+    </svg></div>
+        <ul class="map-legend"><li><span class="dot is-hq"></span><span><b>Morogoro</b> — head office</span></li>
+        <li><span class="dot"></span><span><b>Lake Victoria Basin</b> — hydrometric stations — completed</span></li>
+        <li><span class="dot"></span><span><b>Wami/Ruvu Basin</b> — monitoring stations — completed</span></li>
+        <li><span class="dot"></span><span><b>Morogoro Region</b> — periodic road maintenance — completed</span></li>
+        <li><span class="dot"></span><span><b>Idende–Unenamwa, Njombe</b> — water supply scheme — completed</span></li>
+        <li><span class="dot"></span><span><b>IDB Office, Babati</b> — office building — in progress</span></li>
+        <li><span class="dot"></span><span><b>Malangali, Iringa</b> — water supply scheme — in progress</span></li>
+        <li><span class="dot"></span><span><b>Wangama–Mufumbi, Njombe</b> — water supply project — in progress</span></li></ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site dark" id="k-footer">
+    <div class="wrap">
+      <div class="foot-col">
+        <img class="foot-logo" src="logo-construction-full.png" alt="Ndika Construction Company">
+        <p class="brand-blurb">Class I civil &amp; building contractor &mdash; buildings, roads, hydrometric stations and a plant-hire fleet.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/ndikaengineersltd_" target="_blank" rel="noopener" aria-label="Ndika Engineers on Instagram"><svg><use href="#i-instagram"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Also on this site</h4>
+        <div class="foot-links">
+          <a href="#">Ndika Engineers &mdash; home</a>
+          <a href="#consultants">Ndika Environmental Consultants</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <div class="contact-line"><svg><use href="#i-pin"/></svg><span>P.O. Box 876, Morogoro, Tanzania</span></div>
+        <div class="contact-line"><svg><use href="#i-mail"/></svg><span style="user-select:all">ndikaengineers@gmail.com</span></div>
+        <div class="copy-row" style="margin-top:10px">
+          <button class="copy-btn" data-copy="ndikaengineers@gmail.com">Copy email</button>
+        </div>
+      </div>
+      <div class="foot-bottom">&copy; 2026 Ndika Engineers Limited. All rights reserved.</div>
+    </div>
+  </footer>
+</section>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+(function(){
+  function sync(){
+    var hash = (location.hash || '').replace('#','');
+    var views = document.querySelectorAll('[data-view]');
+    for (var i=0;i<views.length;i++){
+      var token = views[i].getAttribute('data-view');
+      var active = (token === 'hub') ? (hash === '') : (hash === token);
+      views[i].hidden = !active;
+    }
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange', sync);
+  sync();
+
+  document.addEventListener('click', function(e){
+    var navBtn = e.target.closest && e.target.closest('[data-scroll]');
+    if (navBtn){
+      var target = document.getElementById(navBtn.getAttribute('data-scroll'));
+      if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      return;
+    }
+
+    var copyBtn = e.target.closest && e.target.closest('.copy-btn');
+    if (copyBtn){
+      var text = copyBtn.getAttribute('data-copy');
+      var done = function(){
+        var prev = copyBtn.textContent;
+        copyBtn.textContent = 'Copied';
+        setTimeout(function(){ copyBtn.textContent = prev; }, 1400);
+      };
+      var selectFallback = function(){
+        var prevEl = copyBtn.previousElementSibling;
+        if (!prevEl) return;
+        var r = document.createRange();
+        var sel = window.getSelection();
+        r.selectNodeContents(prevEl);
+        sel.removeAllRanges();
+        sel.addRange(r);
+      };
+      try{ navigator.clipboard.writeText(text).then(done, selectFallback); }
+      catch(err){ selectFallback(); }
+      return;
+    }
+
+    var galBtn = e.target.closest && e.target.closest('.gallery button');
+    if (galBtn){
+      var full = galBtn.getAttribute('data-full');
+      var cap = galBtn.getAttribute('data-caption') || '';
+      var lb = document.getElementById('lightbox');
+      var img = document.getElementById('lightbox-img');
+      img.src = full;
+      img.alt = cap;
+      lb.hidden = false;
+      return;
+    }
+
+    if (e.target.id === 'lightbox' || e.target.id === 'lightbox-close'){
+      document.getElementById('lightbox').hidden = true;
+    }
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape'){
+      document.getElementById('lightbox').hidden = true;
+    }
+  });
+})();
+</script>
+
+</body></html>
